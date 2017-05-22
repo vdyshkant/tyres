@@ -1,18 +1,26 @@
-.page-index .PROTO {
+.page-index .promo {
   // bg 1
 }
 
 
-.page-index .PROTO {
+.page-index .promo {
   & .shell {
     margin: 0 auto;
-    max-width: 1160px;
+    max-width: 1600px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;
 
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
     @media #{$mobile} {
       min-width: 320px;
+      max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
       //   min-width: initial;
@@ -28,31 +36,31 @@
     //
   }
 
-  & .PROTO-wrapper {
+  & .promo-wrapper {
     //
   }
 
-  & .PROTO-essence {
+  & .promo-essence {
     //
   }
 }
 
 
-.page-index .PROTO {
+.page-index .promo {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-index .promo {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-index .promo {
   & .CLASS{
 
   }

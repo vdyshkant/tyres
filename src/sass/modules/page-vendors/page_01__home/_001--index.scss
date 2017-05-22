@@ -41,32 +41,16 @@ RESET
 
 
 // 01
-@import "003--window";
+@import "002--filter";
 // 02
-@import "004--features";
+@import "003--slider";
 // 03
-@import "005--slider-sales";
+@import "004--promo";
 // 04
-@import "006--constructor";
+@import "005--services";
 // 05
-@import "007--interrogation";
-// 06
-@import "008--counter";
-// 07
-@import "009--feedbacks";
-// 08
-@import "010--gallery";
-// 09
-@import "011--consultation";
-// 10
-@import "012--video";
-// 11
-@import "013--articles";
-// 12
-@import "014--partners";
+@import "006--partners";
 
-@import "015--firms";
-// 13
 
 .page-index {
   & .main{
