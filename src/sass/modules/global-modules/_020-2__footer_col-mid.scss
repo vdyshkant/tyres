@@ -1,0 +1,86 @@
+
+
+.page-index .footer {
+  & .col-mid__title{
+    @include font(normal, 400, 33px, 48px, 'PT Sans Narrow');
+    color: #f39552;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.page-index .footer {
+  & .col-mid__desc{
+    text-align: center;
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .col-mid__form label{
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+
+    display: block;
+    margin-bottom: 15px;
+  }
+  & .col-mid__form input{
+    display: block;
+    width: 100%;
+    height: 40px;
+
+    border-radius: 2px;
+    border: 1px solid #6b6b72;
+    background-color: #353538;
+    outline: none;
+    padding: 12px;
+    @include font(italic, 600, 14px, 21px, 'Georgia');
+    opacity: 0.4;
+    color: #cfdee7;
+
+    margin-bottom: 30px;
+  }
+}
+
+
+
+.page-index .footer {
+  & .col-mid__form-btn{
+    display: block;
+    /* Style for "Прямоуголь" */
+    width: 100%;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+
+
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+  }
+}
+
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}

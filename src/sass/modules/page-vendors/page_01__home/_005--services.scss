@@ -76,6 +76,7 @@
 .page-index .services {
   & .services-content{
     position: relative;
+    @include clearfix;
   }
 }
 
@@ -100,12 +101,8 @@
 .page-index .services {
   & .services__item__title{
     /* Style for "Шиномонтаж" */
-    width: 242px;
-    height: 23px;
+    @include font(normal, 400, 24px, 36px, 'PT Sans Narrow');
     color: #f39552;
-    font-family: "PT Sans Narrow";
-    font-size: 24px;
-    line-height: 36px;
   }
   & .services__item__text{
     /* Style for "Вы можете" */

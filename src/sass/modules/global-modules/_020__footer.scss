@@ -1,3 +1,128 @@
+.page-index .footer {
+  background: #202021 url('../img/footer_wheel_bg.png') no-repeat top center;
+  padding-top: 105px;
+  // box-shadow: 0 0 68px 0 rgba(30, 30, 30, 0.6);
+  box-shadow: 0px 0px 68px 0px rgba(30, 30, 30, 0.6);
+}
+
+
+.page-index .footer {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .footer-wrapper {
+    //
+  }
+
+  & .footer-essence {
+    //
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+.page-index .footer {
+  & .footer-essence{
+    @include clearfix;
+    min-height: 610px;
+    height: 610px;
+    background: url('../img/footer_col-left_bg.png') no-repeat bottom left,
+                url('../img/footer_col-right_bg.png') no-repeat bottom right 13px;
+  }
+}
+
+// .page-index .footer {
+//   & .col-box{
+//     @include clearfix;
+//   }
+// }
+
+
+.page-index .footer {
+  & .col-left{
+    width: 370px;
+    float: left;
+    padding-top: 50px;
+  }
+}
+@import '020-1__footer_col-left';
+
+
+.page-index .footer {
+  & .col-mid{
+    background-color: #262627;
+    width: 430px;
+    float: left;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@import '020-2__footer_col-mid';
+
+.page-index .footer {
+  & .col-right{
+    width: 370px;
+    float: right;
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+}
+@import '020-3__footer_col-right';
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+
+
+
 // .footer {
 //   // bg 1
 //   background: url('../img/footer_bg.jpg') no-repeat 50% 0%,
