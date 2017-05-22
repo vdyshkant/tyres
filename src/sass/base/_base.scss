@@ -24,14 +24,14 @@ body {
     // Подключаем <link rel="stylesheet" href="css/normalize.css"> под аттачами шрифтов (у нас уже компилирован в начало)
     // ^^^ там только умолчания
 
-    background-color: #262627;
+    background: #262627;
 
     height: 100vh;
     position: relative;
     z-index: -1;
-    @media #{$mobile-tablet} {
-      background: #fff;
-    }
+    // @media #{$mobile-tablet} {
+    //   background: #fff;
+    // }
 }
 
 // <<<<<<<<<<<<<<<<<<<<<<<
@@ -40,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     // background-color: #FFCC00;
-    background: url('../img/bg_white.jpg');
+    // background: url('../img/bg_white.jpg');
 }
 html {
     height: 100%;

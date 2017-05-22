@@ -6,7 +6,7 @@
 .page-index .promo {
   & .shell {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1170px;
 
     outline: 2px dashed tan;
     outline-offset: -2px;
@@ -33,7 +33,7 @@
   }
 
   & .container {
-    //
+    padding: 50px 0 150px;
   }
 
   & .promo-wrapper {
@@ -42,6 +42,31 @@
 
   & .promo-essence {
     //
+  }
+}
+
+
+.page-index .promo {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .promo {
+  & .promo-item{
+    margin-bottom: 70px;
+    @include clearfix;
+  }
+}
+
+@import '004-1--promo__left';
+@import '004-2--promo__right';
+
+
+.page-index .promo {
+  & .CLASS{
+
   }
 }
 
