@@ -2,12 +2,13 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Энергосбережние'
+  - var PageTitle = 'Главная страница'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
   //- - var jQueryEasing = true
-      //- - var bxSlider = true
+  //- - var bxSlider = true
+  //- - var picturefill = true
   //- - var animateNumber = true
   //- - var animateCss = true
   //- - var wowJs = true
@@ -15,26 +16,27 @@ append 001_config
 
   //- smoothDivScroll
   - var jQuery = true
-  - var masonry = true
-        //- - var jQueryUI = true
-        //- - var jQueryMousewheel = true
-        //- - var jQkinetic = true
-        //- - var jQsmoothDivScroll = true
+  //- - var jQueryUI = true
+  //- - var jQueryMousewheel = true
+  //- - var jQkinetic = true
+  //- - var jQsmoothDivScroll = true
   //- eof smoothDivScroll
 
-        //- - var waterwheelCarousel = true
+  //- - var waterwheelCarousel = true
   //- counter:
-        //- - var animateNumber = true
-        //- - var animateCss = true
-        //- - var wowJs = true
+  //- - var animateNumber = true
+  //- - var animateCss = true
+  //- - var wowJs = true
+  - var flickity = true
 
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-doors')
+  - var updateBodyClass = bodyClasses.push('page-index');
 
-  //- - var GoogleFonts = 'Poiret+One'
-  //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
+  //- - var jQueryFancybox = true
+
+  //- - var GoogleFonts = GoogleFonts.concat('|PT+Sans:400,700&amp;subset=cyrillic')
   //- ...
 
 append stylesheets
@@ -55,18 +57,8 @@ block content
           ========================================================
 
     //- header
-    include ../../global-modules/001__header
+    include ../../global-modules/001-0__header-global
     //- eof header
-
-    include ../../global-modules/003c__side-burger
-
-
-    include ../../global-modules/003a__side-nav
-
-
-    include ../../global-modules/003b__side-right
-
-
 
     //
           ========================================================
@@ -77,28 +69,20 @@ block content
     main.main
 
 
-      include 01_breadcrumbs
-      //-
-      //-
-      //-
-      include 02_welcome
+      //- include 02--filter
 
-      include 03_ternar-tooltip
+      include 03--slider
 
-      include 04_balcons
+      include 04--promo
 
-      include 05_interior
+      //- include 05--services
 
-      include 06_entry
-      //-
-      //- include 05_process
-      //-
-      include 07_contact
-
-      include 08_prefooter
+      //- include 06--partners
 
 
       //- eof main
+
+
 
 
 
@@ -109,7 +93,10 @@ block content
 
     //- footer
 
-    include ../../global-modules/002__footer
+    include ../../global-modules/002__footer-global
+
+
+    //- include ../../global-modules/005__modal-content
 
 
 
