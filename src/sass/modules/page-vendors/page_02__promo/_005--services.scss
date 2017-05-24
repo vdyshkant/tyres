@@ -1,0 +1,174 @@
+.page-index .services {
+  // bg 1
+}
+
+
+.page-index .services {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding-bottom: 150px;
+  }
+
+  & .services-wrapper {
+    //
+  }
+
+  & .services-essence {
+    //
+  }
+}
+
+
+.page-index .services {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .services {
+  & .services-title{
+    /* Style for "Оказываем" */
+    @include font(normal, 400, 33px, 48px, 'PT Sans Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 110px;
+    padding-top: 40px;
+  }
+}
+
+
+.page-index .services {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .services {
+  & .services-content{
+    position: relative;
+    @include clearfix;
+  }
+}
+
+
+.page-index .services {
+  & .services__item{
+    float: right;
+    width: 770px;
+    padding: 50px;
+    margin-bottom: 95px;
+
+    border-radius: 2px;
+    border: 2px solid #464649;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.page-index .services {
+  & .services__item__title{
+    /* Style for "Шиномонтаж" */
+    @include font(normal, 400, 24px, 36px, 'PT Sans Narrow');
+    color: #f39552;
+  }
+  & .services__item__text{
+    /* Style for "Вы можете" */
+    width: 627px;
+    height: 72px;
+    color: #cfdee7;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  & .services__item__desc{
+
+  }
+  & .CLASS{
+
+  }
+  & .services__item__desc-title {
+    /* Style for "Наши услуг" */
+    color: #0ba360;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  & .services__item__desc-list {
+    /* Style for "- снятие/у" */
+    color: #cfdee7;
+    font-family: Georgia;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+  }
+}
+
+
+.page-index .services {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .services {
+  & .services__item__subscribe{
+    float: left;
+    width: 270px;
+    margin-right: 80px;
+    /* Style for "ЗАПИСАТЬСЯ" */
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: uppercase;
+  }
+}
+
+
+.page-index .services {
+  & .services__item__more{
+    /* Style for "Подробнее" */
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}

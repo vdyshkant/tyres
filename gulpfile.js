@@ -40,23 +40,15 @@ function errorLog(err){
 
 gulp.task('pug', function() {
   return gulp.src([
-    // '!src/templates/partials/*.pug', // ignore this file
-    // '!src/templates/conf/*.pug', // ignore this file
-    // 'src/templates/**/*.pug'   // ignore all files
-    'src/templates/pages/index.pug',
-    'src/templates/pages/windsystems.pug',
-    'src/templates/pages/fitments.pug',
-    'src/templates/pages/cottages.pug',
-    'src/templates/pages/glassunit.pug',
-    'src/templates/pages/accessories.pug',
-    'src/templates/pages/404.pug',
-    'src/templates/pages/affair.pug',
-    'src/templates/pages/article.pug',
-    'src/templates/pages/articles.pug',
-    'src/templates/pages/choosingadvices.pug',
-    'src/templates/pages/contacts.pug',
-    'src/templates/pages/doors.pug',
-    'src/templates/pages/i.pug'
+    // '!src/templates_pug/partials/*.pug', // ignore this file
+    // '!src/templates_pug/conf/*.pug', // ignore this file
+    // 'src/templates_pug/**/*.pug'   // ignore all files
+    'src/templates_pug/pages/index.pug',
+    'src/templates_pug/pages/promo.pug',
+    'src/templates_pug/pages/promo-item.pug',
+    'src/templates_pug/pages/services.pug',
+    'src/templates_pug/pages/services-item.pug',
+    'src/templates_pug/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
         .on('error', errorLog)
@@ -193,7 +185,7 @@ gulp.task('copyImages', ['removeImages'], function() {
 
 
 gulp.task('watch', function() {
-    gulp.watch('src/templates/**/*.pug', ['pug']);
+    gulp.watch('src/templates_pug/**/*.pug', ['pug']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/sass/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js', ['copyJsLib']);
