@@ -109,6 +109,24 @@ RESET
 // })();
 // EOF dropDown menu
 
+/* отрабатывать только для определенной страницы
+  ================================================ */
+(function($) {
+  if($('body').is('.page-index')){
+    $('.phone').stop(true, true).mouseenter(function(){
+      clearTimeout($.data(this, 'timer'));
+      $('.user-block .phone-tooltip').fadeIn(500);
+    });
+    $('.phone').stop(true, true).mouseleave(function(){
+      $.data(this, 'timer', setTimeout($.proxy(function() {
+
+          $('.user-block .phone-tooltip').fadeOut(500);
+      }, this), 500));
+
+    });
+  }
+})(jQuery); // eof autoFunction
+/* eof ^^^ */
 
 
 /* == eof $ MAIN == */
