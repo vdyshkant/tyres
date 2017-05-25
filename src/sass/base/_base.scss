@@ -24,7 +24,9 @@ body {
     // Подключаем <link rel="stylesheet" href="css/normalize.css"> под аттачами шрифтов (у нас уже компилирован в начало)
     // ^^^ там только умолчания
 
-    background: #262627;
+    // background: #262627;
+    background: #fff;
+    // background: hsla(240, 1%, 15%, 0.08);
 
     height: 100vh;
     position: relative;

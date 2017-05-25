@@ -1,28 +1,94 @@
-nav.main-menu
-  li.main-menu__item
-    a.main-menu__link Шины
+.menu-wrap
+  nav.menu
+    li.menu__item.dropdown
+      a.menu__link Шины
 
-    ul.main-submenu
-      li.main-submenu__item
-        a.main-submenu__link подменю-01
-      li.main-submenu__item
-        a.main-submenu__link подменю-02
-      li.main-submenu__item
-        a.main-submenu__link подменю-03
+      .submenu
+        .submenu-shell
+          .tabs
+            .tab-item
+              .tab-item-text Легковые/suv4x4 шины
+            .tab-item
+              .tab-item-text Коммерческие шины
+            .tab-item
+              .tab-item-text Грузовые шины
+          .tabs-cont
+            .tab-cont-1
+              .col-left
+                .col-left-title Бренды
+                ul.col-left-firm-list
+                  li.col-left-firm-item
+                    img.firm-item-img(src="img/menu_firm_01.png")
+                  li.col-left-firm-item
+                    img.firm-item-img(src="img/menu_firm_02.png")
+                  li.col-left-firm-item
+                    img.firm-item-img(src="img/menu_firm_03.png")
+                  li.col-left-firm-item
+                    img.firm-item-img(src="img/menu_firm_04.png")
+                  li.col-left-firm-item
+                    img.firm-item-img(src="img/menu_firm_05.png")
+                  li.col-left-firm-item
+                    img.firm-item-img(src="img/menu_firm_06.png")
+              //- MID
+              .col-mid
+                .col-mid-wrap
+                  img.col-mid-thumb(src="img/menu_firm_thumb.jpg")
+                  .col-mid-title
+                    .col-mid-title-essence Riken Snowtime B2
+                    .col-mid-stars
+                    .col-mid-stars
+                      .col-mid-stars-five
+                        .col-mid-stars-item.selected
+                        .col-mid-stars-item.selected
+                        .col-mid-stars-item.selected
+                        .col-mid-stars-item
+                        .col-mid-stars-item
+                      .col-mid-stars-voices 5 голосов
+                    .col-mid-icons
+                      .icon-item.icon-car
+                      .icon-item.icon-thorns
+                      .icon-item.icon-snow
 
-  li.main-menu__item
-    a.main-menu__link Диски
-  li.main-menu__item
-    a.main-menu__link Масла
-  li.main-menu__item
-    a.main-menu__link Аксессуары
-  li.main-menu__item
-    a.main-menu__link Услуги
-  li.main-menu__item
-    a.main-menu__link FAQ
-  li.main-menu__item
-    a.main-menu__link Акции
-  li.main-menu__item
-    a.main-menu__link О нас
-  li.main-menu__item
-    a.main-menu__link Контакты
+                  .col-mid-dimensions
+                    .width.dimensions-item
+                      .dimensions-title Ширина
+                      .dimensions-param 220
+                    .height.dimensions-item
+                      .dimensions-title Высота
+                      .dimensions-param 50
+                    .diametr.dimensions-item
+                      .dimensions-title Диаметр
+                      .dimensions-param 16
+
+                  .col-mid-index
+                    .index-item.index
+                      .index-title Индекс скорости
+                      .index-param 10
+                    .index-item.index
+                      .index-title Индекс нагрузки
+                      .index-param 92
+                  .col-mid-price
+                    .price-text Цена <span class="price-data">2300</span> тг
+
+              //- RIGHT
+              .col-right
+                .message Пора «переобуться»!  Закажите летние шины со скидкой до 10 %
+                .discount-btn получить скидку
+                .more узнать больше
+
+    li.menu__item
+      a.menu__link Диски
+    li.menu__item
+      a.menu__link Масла
+    li.menu__item
+      a.menu__link Аксессуары
+    li.menu__item
+      a.menu__link Услуги
+    li.menu__item
+      a.menu__link FAQ
+    li.menu__item
+      a.menu__link Акции
+    li.menu__item
+      a.menu__link О нас
+    li.menu__item
+      a.menu__link Контакты
