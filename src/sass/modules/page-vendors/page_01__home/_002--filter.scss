@@ -55,7 +55,7 @@
 
 
 .page-index .filter {
-  & .filter-title{
+  & .filter-title {
     @include font(normal, 400, 33px, 48px, 'PT Sans Narrow');
     color: #cfdee7;
     text-transform: uppercase;
@@ -72,8 +72,8 @@
     width: 320px;
     float: left;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
   }
   & .filter-essence__right{
     width: 890px;

@@ -10,7 +10,6 @@
 .page-index .filter {
   & .tab-cont-wrapper {
     @include clearfix;
-    background: #353538;
   }
   & .tab-cont__left {
     float: left;
