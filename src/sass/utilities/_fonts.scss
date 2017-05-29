@@ -15,3 +15,39 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'PTSans-Narrow';
+  src: url('../fonts/PTSansNarrow/PTSans-Narrow.woff') format('woff'),
+       url('../fonts/PTSansNarrow/PTSans-Narrow.ttf') format('truetype'),
+       url('../fonts/PTSansNarrow/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Narrow-Web-Regular';
+  src: url('../fonts/PTSansNarrow/PT_Sans-Narrow-Web-Regular.eot');
+  src: url('../fonts/PTSansNarrow/PT_Sans-Narrow-Web-Regular.woff2') format('woff2'),
+       url('../fonts/PTSansNarrow/PT_Sans-Narrow-Web-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-NarrowBold';
+  src: url('../fonts/PTSansNarrow/PTSans-NarrowBold.woff') format('woff'),
+       url('../fonts/PTSansNarrow/PTSans-NarrowBold.ttf') format('truetype'),
+       url('../fonts/PTSansNarrow/PTSans-NarrowBold.svg#PTSans-NarrowBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Narrow-Web-Bold';
+  src: url('../fonts/PTSansNarrow/PT_Sans-Narrow-Web-Bold.eot');
+  src: url('../fonts/PTSansNarrow/PT_Sans-Narrow-Web-Bold.woff2') format('woff2'),
+       url('../fonts/PTSansNarrow/PT_Sans-Narrow-Web-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
