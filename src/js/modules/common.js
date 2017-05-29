@@ -129,4 +129,10 @@ RESET
 /* eof ^^^ */
 
 
+
+$( document ).ready(function() {
+  $('nav.menu.flex').flexMenu();
+});
+
+
 /* == eof $ MAIN == */
