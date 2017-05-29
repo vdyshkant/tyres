@@ -12,8 +12,8 @@
     max-width: 1170px;
     // max-width: 1600px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$tablet} {
       min-width: 1024px;
@@ -58,26 +58,46 @@
 
 .page-index .footer {
   & .footer-essence{
+    position: relative;
     @include clearfix;
     min-height: 610px;
-    height: 610px;
-    background: url('../img/footer_col-left_bg.png') no-repeat bottom left,
-                url('../img/footer_col-right_bg.png') no-repeat bottom right 13px;
+
+    @media #{$tablet-wide} {
+      height: 610px;
+      background: url('../img/footer_col-left_bg.png') no-repeat bottom left,
+                  url('../img/footer_col-right_bg.png') no-repeat bottom right 13px;
+    }
+
+    @media #{$mobile} {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
-// .page-index .footer {
-//   & .col-box{
-//     @include clearfix;
-//   }
-// }
+.page-index .footer {
+  & .col-box{
+    margin-bottom: 60px;
+  }
+}
 
 
 .page-index .footer {
   & .col-left{
     width: 370px;
-    float: left;
     padding-top: 50px;
+
+    @media #{$tablet-wide} {
+      float: left;
+    }
+
+    @media #{$mobile} {
+      order: 2;
+      width: auto;
+      padding-top: 30px;
+      padding-bottom: 60px;
+      background: url('../img/footer_col-left_bg.png') no-repeat bottom left;
+    }
   }
 }
 @import '020-1__footer_col-left';
@@ -86,12 +106,21 @@
 .page-index .footer {
   & .col-mid{
     background-color: #262627;
-    width: 430px;
-    float: left;
     height: 100%;
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
+
+    @media #{$tablet-wide} {
+      float: left;
+      width: 430px;
+    }
+
+    @media #{$mobile} {
+      order: 1;
+      width: auto;
+      padding-bottom: 50px;
+    }
   }
 }
 @import '020-2__footer_col-mid';
@@ -99,9 +128,19 @@
 .page-index .footer {
   & .col-right{
     width: 370px;
-    float: right;
     padding-top: 50px;
-    padding-left: 100px;
+
+    @media #{$tablet-wide} {
+      float: right;
+      padding-left: 100px;
+    }
+
+    @media #{$mobile} {
+      order: 3;
+      width: auto;
+      padding-top: 60px;
+      background: url('../img/footer_col-right_bg.png') no-repeat bottom right 13px;
+    }
   }
 }
 @import '020-3__footer_col-right';

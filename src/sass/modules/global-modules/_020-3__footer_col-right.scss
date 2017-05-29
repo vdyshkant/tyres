@@ -2,9 +2,13 @@
 
 .page-index .footer {
   & .col-right h4{
-    @include font(normal, 400, 24px, 36px, 'PT Sans Narrow');
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
     color: #0ba360;
     margin-bottom: 20px;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
   }
 }
 
@@ -15,12 +19,18 @@
     margin-bottom: 40px;
   }
   & .phones-list-title{
-    @include font(normal, 400, 24px, 36px, 'PT Sans Narrow');
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
     color: #cfdee7;
     margin-bottom: 10px;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
   }
   & .phones-list{
-
+    @media #{$mobile} {
+      padding-left: 95px;
+    }
   }
   & .phones-list-item{
     @include font(normal, 400, 18px, 27px, 'Arial');
@@ -50,7 +60,20 @@
 
 .page-index .footer {
   & .socials {
-    @include clearfix;
+
+    @media #{$tablet-wide} {
+      @include clearfix;
+    }
+
+    &.col-box {
+      margin-bottom: 100px;
+    }
+  }
+  & .socials__list {
+    @media #{$mobile} {
+      display: flex;
+      justify-content: center;
+    }
   }
   & .socials__item{
     float: left;
