@@ -1,31 +1,26 @@
 
 
 
-.page-index {
-  & .menu-wrap {
-    background: #2f2f31 url('../img/menu_bg.png') repeat-x;
-  }
+.menu-wrap {
+  background: #2f2f31 url('../img/menu_bg.png') repeat-x;
 }
 
-
-.page-index {
-  & .menu {
+.menu {
     max-width: 1170px;
     // @include clearfix;
     @include list;
     margin: 0 auto;
-  }
 }
 
 
-.page-index {
+.menu {
   & .CLASS {
 
   }
 }
 
 
-.page-index {
+.menu {
   & .menu__item {
     // float: left;
     &:first-child {
@@ -55,7 +50,7 @@
 }
 
 
-.page-index {
+.menu {
   & .menu__link {
     display: block;
     position: relative;
@@ -76,14 +71,14 @@
 }
 
 
-.page-index {
+.menu {
   & .CLASS {
 
   }
 }
 
 // SUBMENU:
-.page-index {
+.menu {
   & .submenu {
     display: none;
     width: 100vw;
@@ -115,7 +110,7 @@
 }
 
 
-.page-index {
+.menu {
   & .submenu .tabs {
     float: left;
     width: 320px;
@@ -161,7 +156,7 @@
 }
 
 
-.page-index {
+.menu {
   & .submenu .tab-cont-1 {
     height: 100%;
 
@@ -393,14 +388,14 @@
 }
 
 
-.page-index {
+.menu {
   & .submenu__item {
 
   }
 }
 
 
-.page-index {
+.menu {
   & .submenu__link {
     display: block;
     height: 60px;
@@ -410,7 +405,7 @@
 }
 
 
-.page-index {
+.menu {
   & .CLASS {
 
   }

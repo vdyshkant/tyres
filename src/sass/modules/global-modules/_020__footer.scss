@@ -1,4 +1,4 @@
-.page-index .footer {
+.footer {
   background: #262627 url('../img/footer_wheel_bg.png') no-repeat top center;
   // background: #202021 url('../img/footer_wheel_bg.png') no-repeat top center;
   padding-top: 105px;
@@ -6,13 +6,13 @@
   box-shadow: 0px 0px 68px 0px rgba(30, 30, 30, 0.6);
 }
 
-.page-index .footer-inner {
+.footer-inner {
   background: #202021;
   box-shadow: 0 0 68px 0 rgba(30, 30, 30, 0.6);
 }
 
 
-.page-index .footer {
+.footer {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
@@ -56,13 +56,13 @@
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
-.page-index .footer {
+.footer {
   & .footer-essence{
     position: relative;
     @include clearfix;
@@ -81,14 +81,14 @@
   }
 }
 
-.page-index .footer {
+.footer {
   & .col-box{
     margin-bottom: 60px;
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .col-left{
     width: 370px;
     padding-top: 50px;
@@ -109,7 +109,7 @@
 @import '020-1__footer_col-left';
 
 
-.page-index .footer {
+.footer {
   & .col-mid{
     background-color: #262627;
     height: 100%;
@@ -131,7 +131,7 @@
 }
 @import '020-2__footer_col-mid';
 
-.page-index .footer {
+.footer {
   & .col-right{
     width: 370px;
     padding-top: 50px;
@@ -151,14 +151,14 @@
 }
 @import '020-3__footer_col-right';
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }
 }
 
 
-.page-index .footer {
+.footer {
   & .CLASS{
 
   }

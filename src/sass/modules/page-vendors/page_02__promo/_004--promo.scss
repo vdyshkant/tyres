@@ -1,9 +1,10 @@
-.page-index .promo {
+.page-promo .promo {
   // bg 1
+  background: #262627;
 }
 
 
-.page-index .promo {
+.page-promo .promo {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
@@ -46,45 +47,46 @@
 }
 
 
-.page-index .promo {
+.page-promo .promo {
   & .CLASS{
 
   }
 }
 
 
-.page-index .promo {
+.page-promo .promo {
   & .promo-item{
     margin-bottom: 70px;
     @include clearfix;
   }
 }
 
+@import '004-1--promo__breadcrumbs';
 @import '004-2--promo__right';
 
 
-.page-index .promo {
+.page-promo .promo {
   & .CLASS{
 
   }
 }
 
 
-.page-index .promo {
+.page-promo .promo {
   & .CLASS{
 
   }
 }
 
 
-.page-index .promo {
+.page-promo .promo {
   & .CLASS{
 
   }
 }
 
 
-.page-index .promo {
+.page-promo .promo {
   & .CLASS{
 
   }

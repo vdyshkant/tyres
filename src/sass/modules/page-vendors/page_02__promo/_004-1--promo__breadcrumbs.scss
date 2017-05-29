@@ -1,0 +1,64 @@
+// breadcrumbs
+
+.page-promo .breadcrumbs {
+    margin-bottom: 94px; // 90
+    padding-top: 18px;
+
+    @media #{$mobile} {
+        white-space: nowrap;
+    }
+
+    & ul {
+        font-size: 0;
+    }
+    & li {
+        font-size: initial;
+        position: relative;
+        display: inline-block;
+        padding-left: 22px;
+        vertical-align: top;
+        &:first-child {
+            padding-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+        &:not(:last-child) {
+            & a:hover {
+                color: #0084c4;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            content: '';
+
+            background: #cfdee7;
+        }
+    }
+    & a {
+        text-decoration: none;
+        letter-spacing: .5px;
+
+        // @include font(normal, 300, 18px, 18px, $ul);
+
+        /* Style for "Главная •" */
+width: 136px;
+height: 16px;
+color: #cfdee7;
+font-family: Georgia;
+font-size: 16px;
+font-style: italic;
+line-height: 24px;
+/* Text style for "Акции" */
+text-decoration: underline;
+
+    }
+}
+
+// eof breadcrumbs

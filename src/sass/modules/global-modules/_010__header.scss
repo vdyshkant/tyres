@@ -1,4 +1,4 @@
-.page-index .header {
+.header {
   // bg 1
   margin-top: 2px;
   background: #090b09;
@@ -7,7 +7,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
@@ -51,28 +51,28 @@
 }
 
 
-.page-index .header {
+.header {
   & .CLASS{
 
   }
 }
 
 
-.page-index .header {
+.header {
   & .header-wrap  {
     @include clearfix;
   }
 }
 
 
-.page-index .header {
+.header {
   & .CLASS{
 
   }
 }
 
 
-.page-index .header {
+.header {
   & .header-logo {
     position: absolute;
     top: 15px;
@@ -86,7 +86,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .header-desc {
     margin-left: 140px;
     float: left;
@@ -113,7 +113,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .CLASS{
 
   }
@@ -121,14 +121,14 @@
 
 @import '_010-03__header__user-block';
 
-.page-index .header {
+.header {
   & .CLASS{
 
   }
 }
 
 
-.page-index .header {
+.header {
   & .CLASS{
 
   }

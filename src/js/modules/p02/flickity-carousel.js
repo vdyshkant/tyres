@@ -1,6 +1,7 @@
-  if($('body').is('.page-index')){
 
-    var flky = new Flickity( '.page-index .carousel', {
+  if($('body').is('.page-promo')){
+
+    var flky = new Flickity( '.page-promo .carousel', {
       // options, defaults listed
 
       accessibility: true,
