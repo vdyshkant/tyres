@@ -5,7 +5,7 @@ section.filter
         .range
           .filter-wrapper
             //- titele
-            h2.filter-title
+            h2.filter-title Воспользуйтесь фильтром поиска шин
             //- hr
 
 
@@ -14,7 +14,7 @@ section.filter
               .filter-tabs
                 //- LEFT
                 .filter-essence__left
-                  .filter-essence__title Выберите тип продукции:
+                  .filter-essence__title.dimmed Выберите тип продукции:
                   a.filter-tabs__tab.active(href='#tab1-panel')
                     .filter-tabs__tab-substrate
                     .filter-tabs__tab-text Легковые/suv4x4 шины
@@ -35,70 +35,18 @@ section.filter
                         .filter-essence__title Подобрать шины по параметрам
                         .filter-essence__subtitle Этим способом пользуются те кто знает необходимый размер
                         //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
-                        form.form-suv4-right
-                          ul.form-suv4-right-list-label
-                            li.form-suv4-right-item
-                              label.tab-cont-label(for="doza") Ширина
-                            li.form-suv4-right-item
-                              label.tab-cont-label Высота
-                            li.form-suv4-right-item
-                              label.tab-cont-label Диаметр
-                            li.form-suv4-right-item
-                              label.tab-cont-label Бренд
-                            li.form-suv4-right-item
-                              label.tab-cont-label Сезон
-                          ul.form-suv4-right-list-select
-                            li.form-suv4-right-item
-                              select.tab-cont-select(name='doza')
-                                option(value='any' selected='selected') Любая
-                                option(value='volvo') Volvo
-                                option(value='saab') Saab
-                                option(value='fiat') Fiat
-                                option(value='audi') Audi
-                            li.form-suv4-right-item
-                              select.tab-cont-select
-                                option(value='any' selected='selected') Любая
-                                option(value='volvo') Volvo
-                                option(value='saab') Saab
-                                option(value='fiat') Fiat
-                                option(value='audi') Audi
-                            li.form-suv4-right-item
-                              select.tab-cont-select
-                                option(value='any' selected='selected') Любая
-                                option(value='volvo') Volvo
-                                option(value='saab') Saab
-                                option(value='fiat') Fiat
-                                option(value='audi') Audi
-                            li.form-suv4-right-item
-                              select.tab-cont-select
-                                option(value='any' selected='selected') Любая
-                                option(value='volvo') Volvo
-                                option(value='saab') Saab
-                                option(value='fiat') Fiat
-                                option(value='audi') Audi
-                            li.form-suv4-right-item
-                              select.tab-cont-select
-                                option(value='any' selected='selected') Любая
-                                option(value='volvo') Volvo
-                                option(value='saab') Saab
-                                option(value='fiat') Fiat
-                                option(value='audi') Audi
-                          button.tab-cont-btn(type=button) Подобрать
-
-                      .tab-cont__right
-                        .filter-essence__title Подобрать шины по автомобилю
-                        .filter-essence__subtitle Очень удобно для тех кто хочет узнать какие покрышки можно устанавливать на его модель автомобиля.
-                        //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
                         form.form-suv4-left
                           ul.form-suv4-left-list-label
                             li.form-suv4-left-item
-                              label.tab-cont-label(for="doza") Марка
+                              label.tab-cont-label(for="doza") Ширина
                             li.form-suv4-left-item
-                              label.tab-cont-label Модель
+                              label.tab-cont-label Высота
                             li.form-suv4-left-item
-                              label.tab-cont-label Год
+                              label.tab-cont-label Диаметр
                             li.form-suv4-left-item
-                              label.tab-cont-label Модификация
+                              label.tab-cont-label Бренд
+                            li.form-suv4-left-item
+                              label.tab-cont-label Сезон
                           ul.form-suv4-left-list-select
                             li.form-suv4-left-item
                               select.tab-cont-select(name='doza')
@@ -122,6 +70,58 @@ section.filter
                                 option(value='fiat') Fiat
                                 option(value='audi') Audi
                             li.form-suv4-left-item
+                              select.tab-cont-select
+                                option(value='any' selected='selected') Любая
+                                option(value='volvo') Volvo
+                                option(value='saab') Saab
+                                option(value='fiat') Fiat
+                                option(value='audi') Audi
+                            li.form-suv4-left-item
+                              select.tab-cont-select
+                                option(value='any' selected='selected') Любая
+                                option(value='volvo') Volvo
+                                option(value='saab') Saab
+                                option(value='fiat') Fiat
+                                option(value='audi') Audi
+                          button.tab-cont-btn(type=button) Подобрать
+
+                      .tab-cont__right
+                        .filter-essence__title Подобрать шины по автомобилю
+                        .filter-essence__subtitle Очень удобно для тех кто хочет узнать какие покрышки можно устанавливать на его модель автомобиля.
+                        //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                        form.form-suv4-right
+                          ul.form-suv4-right-list-label
+                            li.form-suv4-right-item
+                              label.tab-cont-label(for="doza") Марка
+                            li.form-suv4-right-item
+                              label.tab-cont-label Модель
+                            li.form-suv4-right-item
+                              label.tab-cont-label Год
+                            li.form-suv4-right-item
+                              label.tab-cont-label Модификация
+                          ul.form-suv4-right-list-select
+                            li.form-suv4-right-item
+                              select.tab-cont-select(name='doza')
+                                option(value='any' selected='selected') Любая
+                                option(value='volvo') Volvo
+                                option(value='saab') Saab
+                                option(value='fiat') Fiat
+                                option(value='audi') Audi
+                            li.form-suv4-right-item
+                              select.tab-cont-select
+                                option(value='any' selected='selected') Любая
+                                option(value='volvo') Volvo
+                                option(value='saab') Saab
+                                option(value='fiat') Fiat
+                                option(value='audi') Audi
+                            li.form-suv4-right-item
+                              select.tab-cont-select
+                                option(value='any' selected='selected') Любая
+                                option(value='volvo') Volvo
+                                option(value='saab') Saab
+                                option(value='fiat') Fiat
+                                option(value='audi') Audi
+                            li.form-suv4-right-item
                               select.tab-cont-select
                                 option(value='any' selected='selected') Любая
                                 option(value='volvo') Volvo

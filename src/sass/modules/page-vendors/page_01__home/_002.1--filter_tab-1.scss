@@ -21,6 +21,21 @@
     height: 630px;
     min-height: 630px;
 
+    position: relative;
+
+    background: url('../img/home_filter_tab-1_col-left_thumb-btm.png') no-repeat;
+    background-position: center bottom -300px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 100%;
+      top: 3px;
+      right: -30px;
+      background: #353538;
+    }
+
     & .filter-essence__subtitle {
       max-width: 250px;
     }
@@ -35,8 +50,28 @@
     height: 630px;
     min-height: 630px;
 
+    position: relative;
+
+    background: url('../img/home_filter_tab-1_col-right_thumb-btm.png') no-repeat;
+    background-position: center bottom -10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 100%;
+      top: 3px;
+      right: -18px;
+      background: #353538;
+    }
+
     & .filter-essence__subtitle {
       max-width: 280px;
+      margin-bottom: 35px;
+    }
+
+    & .tab-cont-btn {
+      width: 275px;
     }
   }
 }
@@ -50,6 +85,11 @@
 
 
 .page-index .filter {
+  & .form-suv4-left {
+    padding-top: 20px;
+    background: url('../img/home_filter_tab-1_thumb-left.png') no-repeat;
+    background-position: 90% 10px;
+  }
   & .form-suv4-left,
   & .form-suv4-right {
     @include clearfix;
