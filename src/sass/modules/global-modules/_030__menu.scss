@@ -3,6 +3,8 @@
 
 .menu-wrap {
   background: #2f2f31 url('../img/menu_bg.png') repeat-x;
+  position: relative;
+  z-index: 1;
 
   @media #{$mobile} {
     background: #3a3a3d;
@@ -16,13 +18,120 @@
 }
 
 .menu {
-    max-width: 1170px;
+    // max-width: 1170px;
     // @include clearfix;
     @include list;
     margin: 0 auto;
     overflow: hidden;
+    height: 60px;
+
+    @media #{$tablet} {
+      margin-left: 190px;
+      // max-width: 900px;
+    }
+}
+
+.menu .flexMenu-viewMore .menu__link{
+  height: 43px;
+  line-height: 43px;
+}
+
+.flexMenu-viewMore {
+    & .flexMenu-popup {
+      // padding: 20px;
+      // width: 270px;
+      margin-left: -10px;
+      // min-height: 150px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      background: #6b6b72;
+      border: 2px solid #464649;
+      // position: absolute;
+      // top: 60px;
+      // right: 60px;
+      z-index: 1;
 
 
+    }
+    .flexMenu-popup:after, .flexMenu-popup:before {
+    	bottom: 100%;
+    	left: 90%;
+    	border: solid transparent;
+    	content: " ";
+    	height: 0;
+    	width: 0;
+    	position: absolute;
+    	pointer-events: none;
+    }
+
+    .flexMenu-popup:after {
+    	border-color: rgba(107, 107, 114, 0);
+    	border-bottom-color: #6b6b72;
+    	border-width: 8px;
+    	margin-left: -8px;
+    }
+    .flexMenu-popup:before {
+    	border-color: rgba(70, 70, 73, 0);
+    	border-bottom-color: #464649;
+    	border-width: 11px;
+    	margin-left: -11px;
+    }
+
+    & > a {
+      text-decoration: none;
+      display: block;
+      position: relative;
+      @include font(normal, 400, 16px, 60px, 'PTSans-Narrow');
+      color: #cfdee7;
+      text-transform: uppercase;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      position: relative;
+      padding-right: 45px;
+
+      transition: background .3s ease-out;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%) rotate(0deg);
+        transition: .3s ease-out;
+        width: 10px;
+        height: 6px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAxElEQVQYV2M8f+/5W0am/ykGClLrGbCACw+eBf7/xziH8fy95yUMDAytTP8YPfVVJPYhq71454XTP6b/2xkYGKoZQRIX7j9r//+fMevfv/9OxipSZ0FiZ+88M2ZiYtz3/z/DdCNlyQqwwv///zNeuP9yJgPD/0DG/3+twWKMzEcZGBjXGyiKpzMyMv4HKwSBVf//M6vef7HiPwODOYjPyMBw8raiREQYI+NfKB/hqqtXr7L94hTeDBJh+/7WV1tb+xdMFgA/yEiQ3ohSmAAAAABJRU5ErkJggg==');
+
+        @media #{$mobile} {
+          content: none;
+        }
+      }
+
+      &.opened {
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%) rotate(180deg);
+          transition: .3s ease-out;
+          width: 10px;
+          height: 6px;
+          background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAAxElEQVQYV2M8f+/5W0am/ykGClLrGbCACw+eBf7/xziH8fy95yUMDAytTP8YPfVVJPYhq71454XTP6b/2xkYGKoZQRIX7j9r//+fMevfv/9OxipSZ0FiZ+88M2ZiYtz3/z/DdCNlyQqwwv///zNeuP9yJgPD/0DG/3+twWKMzEcZGBjXGyiKpzMyMv4HKwSBVf//M6vef7HiPwODOYjPyMBw8raiREQYI+NfKB/hqqtXr7L94hTeDBJh+/7WV1tb+xdMFgA/yEiQ3ohSmAAAAABJRU5ErkJggg==');
+
+          @media #{$mobile} {
+            content: none;
+          }
+        }
+      }
+
+      &:hover {
+        background: hsla(294, 19%, 16%, 0.58);
+      }
+  }
 }
 
 @import '031-1__menu-under';
@@ -36,6 +145,16 @@
 
 
 .menu {
+  & > .menu__item {
+    &:first-child {
+      margin-left: 125px;
+
+      @media #{$mobile} {
+        margin-left: 0;
+      }
+    }
+  }
+
   & .menu__item {
     // float: left;
     @media #{$mobile} {
@@ -44,13 +163,7 @@
       text-align: center;
     }
 
-    &:first-child {
-      margin-left: 125px;
 
-      @media #{$mobile} {
-        margin-left: 0;
-      }
-    }
 
     &.dropdown {
 
@@ -68,7 +181,7 @@
 
           display: inline-block;
           position: relative;
-          padding-right: 20px;
+          // padding-right: 20px;
 
           @media #{$mobile} {
             &::before {
@@ -142,7 +255,7 @@
     width: 100vw;
     position: absolute;
     z-index: 2;
-    top: 240px;
+    top: 60px;
     left: 0;
     // width: 200px;
     // height: 300px;

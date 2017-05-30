@@ -112,7 +112,7 @@ RESET
 /* отрабатывать только для определенной страницы
   ================================================ */
 (function($) {
-  if($('body').is('.page-index')){
+  // if($('body').is('.page-index')){
     $('.phone').stop(true, true).mouseenter(function(){
       clearTimeout($.data(this, 'timer'));
       $('.user-block .phone-tooltip').fadeIn(500);
@@ -124,15 +124,21 @@ RESET
       }, this), 500));
 
     });
-  }
+  // }
 })(jQuery); // eof autoFunction
 /* eof ^^^ */
 
 
 
-(function($) {
-  $('ul.menu.flex').flexMenu();
-});
+// (function($) {
+  $('#mainNavbar').flexMenu({
+    linkText: 'Больше'
+  });
+
+  $('.flexMenu-viewMore a').click(function() {
+      $(this).toggleClass('opened');
+  });
+// })(jQuery);
 
 
 /* == eof $ MAIN == */
