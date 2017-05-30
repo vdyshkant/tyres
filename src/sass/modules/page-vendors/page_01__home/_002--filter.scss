@@ -58,7 +58,7 @@
 
 .page-index .filter {
   & .filter-title {
-    @include font(normal, 400, 33px, 48px, 'PT Sans Narrow');
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
     text-transform: uppercase;
     text-align: center;

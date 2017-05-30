@@ -6,6 +6,12 @@
     top: 75px;
     right: 100px;
     width: 260px;
+
+
+    @media #{$mobile} {
+      display: none;
+    }
+
     & .row {
       @include clearfix;
       min-height: 36px;
@@ -17,7 +23,7 @@
 
 .page-index .header {
   & .user-block .phone {
-    @include font(normal, 400, 25px, 48px, 'PT Sans Narrow');
+    @include font(normal, 400, 25px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
     text-decoration: underline;
     text-transform: uppercase;

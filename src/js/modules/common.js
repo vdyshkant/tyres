@@ -136,3 +136,23 @@ RESET
 
 
 /* == eof $ MAIN == */
+
+
+
+/* BURGER отрабатывать только для определенной страницы
+	================================================ */
+(function($) {
+
+   if($('ul').is('.flex.menu')){
+
+     // burger animation itself:
+  	 $('#click').click(function() {
+  			 $('#burger-content').stop(true, true).slideToggle(600);
+  	 });
+
+   }
+
+})(jQuery); // eof autoFunction
+/* eof ^^^ */
+
+// burger:
