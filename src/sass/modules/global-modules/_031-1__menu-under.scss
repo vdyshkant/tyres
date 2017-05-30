@@ -1,6 +1,9 @@
 
 .menu-under {
+  display: none;
+  
   @media #{$mobile} {
+    display: block;
     padding-bottom: 30px;
 
     box-shadow: 0 4px 8px rgba(30, 30, 30, 0.35);
