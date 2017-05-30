@@ -111,7 +111,7 @@
 
 .page-index .slider {
   & .slider-title{
-    @include font(normal, 400, 33px, 48px, 'PT Sans Narrow');
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
     text-transform: uppercase;
     margin-bottom: 10px;

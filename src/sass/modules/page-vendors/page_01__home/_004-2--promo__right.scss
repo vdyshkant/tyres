@@ -4,6 +4,11 @@
     float: left;
     width: 470px;
     margin-right: 30px;
+
+    @media #{$mobile} {
+      width: 320px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -21,6 +26,12 @@
     width: 670px;
     padding-top: 30px;
     padding-bottom: 30px;
+    @media #{$mobile} {
+      width: 320px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -28,7 +39,7 @@
 .page-index .promo {
   & .promo-title{
     color: #f39552;
-    @include font(normal, 400, 24px, 27px, 'PT Sans Narrow');
+    @include font(normal, 400, 24px, 27px, 'PTSans-Narrow');
     margin-bottom: 15px;
   }
 }
@@ -68,6 +79,9 @@
     border-radius: 2px;
     background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
 
+    @media #{$mobile} {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -87,12 +101,56 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
+    @media #{$mobile} {
+      position: relative;
+      top: 0;
+      width: auto;
+      transform: none;
+    }
   }
 }
 
 
 .page-index .promo {
-  & .CLASS{
+  & .CLASS {
+
+  }
+}
+
+
+.page-index .promo {
+  & .promo-show-btn {
+    @include font(normal, 400, 24px, 50px, 'PTSans-Narrow');
+    color: #fefefe;
+    text-align: center;
+    width: 270px;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 2px solid #6b6b72;
+    background-image: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
+
+    position: relative;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 25px;
+      width: 14px;
+      height: 25px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAYAAAABmx/yAAABW0lEQVQ4T53UzUrDQBAA4JndXnwAwdpaNbYqihhiFASxFBXER/UBRFApip4a48mCNqlI21TiC4i2O7KNG7QSkm5uYedjf+YHT4n4evN9KgynP2o1HEDGD91Wv0pIKwDiMwe5s83yTJjFousHNhFYMhiRBvA1PLdWS0EaRnlUo907RmKFSTDKYCJirtc/AoT5GCNeWcbsa9LOI6jwvRccIuJC9A+CcbhIwjH8wej6vRoAKysMMKjblZI/vvMfqLDjdasM+bI6DMCwvlWe837jf1AtOn6whwRrCgtGN9tG4UmtJ0IZ4La6u4RsIw4mvLUq+eboAdPy1Wh3dpjgporjhHdmJf+YCiVwWoGFCLbCQvDLTFCCht85YcSLUZ6Fnwlq7ah1R61XHc8jR3FtLhWfE/NIRPjgve1HPRqVcWrlSDRxrcrWcl6CAyZwMXN3aPWj9gTQnjnaU053rn4DQmHpTL1eEtwAAAAASUVORK5CYII=');
+    }
+  }
+}
+
+
+.page-index .promo {
+  & .CLASS {
 
   }
 }
