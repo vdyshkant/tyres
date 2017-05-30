@@ -78,6 +78,10 @@
     top: 15px;
     left: 50px;
     z-index: 1;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
   & .header-logo-essence {
     width: 282px;
@@ -90,6 +94,10 @@
   & .header-desc {
     margin-left: 140px;
     float: left;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
   & .header-desc .desc {
     margin-bottom: 25px;

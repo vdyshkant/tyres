@@ -130,8 +130,8 @@ RESET
 
 
 
-$( document ).ready(function() {
-  $('nav.menu.flex').flexMenu();
+(function($) {
+  $('ul.menu.flex').flexMenu();
 });
 
 
