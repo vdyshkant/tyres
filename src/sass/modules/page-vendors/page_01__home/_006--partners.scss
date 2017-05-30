@@ -38,6 +38,10 @@
     //
     padding-top: 60px;
     padding-bottom: 130px;
+
+    @media #{$mobile} {
+      padding-bottom: 145px;
+    }
   }
 
   & .partners-wrapper {
@@ -60,11 +64,15 @@
 .page-index .partners {
   & .partners-title{
 
-    @include font(normal, 400, 33px, 48px, 'PT Sans Narrow');
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 15px;
+
+    @media #{$mobile} {
+      margin-bottom: 20px;
+    }
 
     &.wheel-title {
       position: relative;
@@ -103,9 +111,22 @@
     // outline: 2px dashed crimson;
     // outline-offset: -2px;
 
+    @media #{$mobile} {
+      width: 269px;
+      margin: 0 auto;
+      float: none;
+      height: auto;
+      margin-bottom: 37px;
+    }
+
     &:nth-child(3n) {
       margin-right: 0;
       margin-bottom: 50px;
+
+      @media #{$mobile} {
+        margin-right: auto;
+        margin-bottom: 0;
+      }
     }
 
     &:last-child {
@@ -121,6 +142,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @media #{$mobile} {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
     }
   }
 }
