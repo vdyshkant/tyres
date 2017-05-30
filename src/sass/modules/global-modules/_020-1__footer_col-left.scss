@@ -66,12 +66,20 @@
     // float: right;
     padding: 0 20px;
 
-    @media #{$tablet-wide} {
+    @media #{$wide} {
       width: 234px;
+    }
+
+    @media #{$tablet-wide} {
       position: absolute;
       top: 50%;
       right: 0;
       transform: translateY(-50%);
+    }
+
+    @media #{$tablet} {
+      width: 63.24324324324324%; /* 234 / 370 */
+      padding: 0 0 0 40px;
     }
 
     @media #{$mobile} {

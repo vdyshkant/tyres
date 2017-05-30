@@ -23,7 +23,7 @@
 
     @media #{$tablet} {
       min-width: 1024px;
-      max-width: 1024px;
+      // max-width: 1024px;
 
       padding: 0;
     }
@@ -97,6 +97,11 @@
       float: left;
     }
 
+    @media #{$tablet} {
+      width: 31.62393162393162%; /* 370 / 1170 */
+      padding-left: 10px;
+    }
+
     @media #{$mobile} {
       order: 2;
       width: auto;
@@ -122,6 +127,10 @@
       width: 430px;
     }
 
+    @media #{$tablet} {
+      width: 36.752136752136755%; /* 430 / 1170 */
+    }
+
     @media #{$mobile} {
       order: 1;
       width: auto;
@@ -139,6 +148,10 @@
     @media #{$tablet-wide} {
       float: right;
       padding-left: 100px;
+    }
+
+    @media #{$tablet} {
+      width: 31.62393162393162%; /* 370 / 1170 */
     }
 
     @media #{$mobile} {
