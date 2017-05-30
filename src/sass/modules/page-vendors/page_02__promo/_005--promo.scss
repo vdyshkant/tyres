@@ -9,8 +9,8 @@
     margin: 0 auto;
     max-width: 1170px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$tablet} {
       min-width: 1024px;
@@ -34,7 +34,12 @@
   }
 
   & .container {
-    padding: 50px 0 150px;
+    padding: 0px 0 150px;
+
+    @media #{$mobile} {
+      // padding-top: 70px;
+      padding-bottom: 280px;
+    }
   }
 
   & .promo-wrapper {
@@ -61,8 +66,8 @@
   }
 }
 
-@import '004-1--promo__breadcrumbs';
-@import '004-2--promo__right';
+@import '005-2--promo__right';
+@import '005-3--promo__loadMore';
 
 
 .page-promo .promo {

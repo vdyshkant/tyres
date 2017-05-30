@@ -1,6 +1,6 @@
 
 
-.page-index .header {
+.header {
   & .user-block {
     position: absolute;
     top: 75px;
@@ -21,7 +21,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .user-block .phone {
     @include font(normal, 400, 25px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
@@ -60,7 +60,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .phone-tooltip {
     display: none;
 
@@ -116,7 +116,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .user-block .search {
     float: left;
     margin-right: 40px;
@@ -139,7 +139,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .user-block .cart {
     float: left;
     margin-right: 39px;
@@ -162,7 +162,7 @@
 }
 
 
-.page-index .header {
+.header {
   & .user-block .login {
     float: left;
     width: 125px;

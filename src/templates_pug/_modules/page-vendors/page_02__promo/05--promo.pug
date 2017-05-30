@@ -5,12 +5,6 @@ section.promo
       .range
         .promo-wrapper
 
-          ul.breadcrumbs
-            li
-              a Главная
-            li
-              a Акции
-
           //- ITEM
           .promo-item
 
@@ -53,7 +47,8 @@ section.promo
                | Теперь Вы можете купить зимние шины и получить услуги шинного  ... .юююскидкой до 50%!
               .promo-link-container
                 .promo-link-more Узнать больше
-                .promo-desc действует с  01.01.2016 по 29.04.2017
+                .promo-desc
+                  .promo-desc-text действует с  01.01.2016 по 29.04.2017
 
           //- ITEM
           .promo-item
@@ -74,11 +69,32 @@ section.promo
                | Теперь Вы можете купить зимние шины и получить услуги шинного  ... .юююскидкой до 50%!
               .promo-link-container
                 .promo-link-more Узнать больше
-                .promo-desc действует с  01.01.2016 по 29.04.2017
+                .promo-desc
+                  .promo-desc-text действует с  01.01.2016 по 29.04.2017
 
 
 
           //- VIEW ALL
-          .promo-show
-            .promo-show-btn
+          .promo-load-more
+            a.promo-load-more__up(href='#')
+              .promo-load-more__up-text Загрузить еще 5
+            .promo-load-more__paginator
+              a.promo-load-more__paginator__next-btn(href="#")
+                .promo-load-more__paginator__next-btn-text Следующая страница
+              ul.promo-load-more__paginator-list
+                li.promo-load-more__paginator-item
+                  a.promo-load-more__paginator-item-link(href="#") 1
+                li.promo-load-more__paginator-item
+                  a.promo-load-more__paginator-item-link(href="#") 2
+                li.promo-load-more__paginator-item.active
+                  a.promo-load-more__paginator-item-link(href="#") 3
+                li.promo-load-more__paginator-item
+                  a.promo-load-more__paginator-item-link(href="#") 4
+                li.promo-load-more__paginator-item.skip-next
+                  a.promo-load-more__paginator-item-link(href="#") 5
+                li.promo-load-more__paginator-item
+                  a.promo-load-more__paginator-item-link(href="#") 10
+              a.promo-load-more__paginator__prev-btn(href="#")
+                .promo-load-more__paginator__prev-btn-text Предыдущая страница
+
 // promo end
