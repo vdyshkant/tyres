@@ -129,16 +129,18 @@ RESET
 /* eof ^^^ */
 
 
+  if ((window.matchMedia("(min-width: 1024px)").matches)) {
+    // (function($) {
+      $('#mainNavbar').flexMenu({
+        linkText: 'Больше'
+      });
 
-// (function($) {
-  $('#mainNavbar').flexMenu({
-    linkText: 'Больше'
-  });
+      $('.flexMenu-viewMore a').click(function() {
+          $(this).toggleClass('opened');
+      });
+    // })(jQuery);
+  }
 
-  $('.flexMenu-viewMore a').click(function() {
-      $(this).toggleClass('opened');
-  });
-// })(jQuery);
 
 
 /* == eof $ MAIN == */

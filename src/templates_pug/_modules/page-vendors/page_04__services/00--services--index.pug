@@ -2,7 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Главная страница'
+  - var PageTitle = 'Услуги'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
@@ -32,7 +32,7 @@ append 001_config
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-index');
+  - var updateBodyClass = bodyClasses.push('page-services');
 
   //- - var jQueryFancybox = true
 
@@ -69,15 +69,9 @@ block content
     main.main
 
 
-      include 02--filter
+      include 02--btitle
 
-      include 03--slider
-
-      include 04--promo
-
-      include 05--services
-
-      include 06--partners
+      include 03--services
 
 
       //- eof main
