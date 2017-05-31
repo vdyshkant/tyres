@@ -129,17 +129,18 @@ RESET
 /* eof ^^^ */
 
 
-  if ((window.matchMedia("(min-width: 1024px)").matches)) {
-    // (function($) {
-      $('#mainNavbar').flexMenu({
-        linkText: 'Больше'
-      });
-
-      $('.flexMenu-viewMore a').click(function() {
-          $(this).toggleClass('opened');
-      });
-    // })(jQuery);
-  }
+  // // if ((window.matchMedia("(min-width: 1024px)").matches)) {
+  // if ($(window).width() > 1024) {
+  //   // (function($) {
+  //     $('#mainNavbar').flexMenu({
+  //       linkText: 'Больше'
+  //     });
+  //
+  //     $('.flexMenu-viewMore a').click(function() {
+  //         $(this).toggleClass('opened');
+  //     });
+  //   // })(jQuery);
+  // }
 
 
 
@@ -172,7 +173,7 @@ RESET
     target.html( result );
 
     function start_and_end(str) {
-      if (str.length > 30) {
+      if (str.length > 20) {
         return str.substr(0, 5) + '...' + str.substr(str.length-5, str.length);
       }
       return str;
@@ -187,7 +188,7 @@ RESET
     target.html( result );
 
     function start_and_end(str) {
-      if (str.length > 30) {
+      if (str.length > 20) {
         return str.substr(0, 5) + '...' + str.substr(str.length-5, str.length);
       }
       return str;
@@ -199,6 +200,26 @@ RESET
 
 
 })(jQuery); // eof autoFunction
+
+
+
+
+(function() {
+  var contents = $('.item-content');
+  var titles = $('.item-title');
+  titles.on('click',function(){
+    var title = $(this);
+    contents.filter(':visible').slideUp(function(){
+      $(this).parent('.item').removeClass('is-opened');
+    });
+
+    var content = title.next('.item-content');
+
+    if (!content.is(':visible')) {
+      content.slideDown(function(){title.parent('.item').addClass('is-opened')});
+    }
+  });
+})(); // eof autoFunction
 
 
 // burger:

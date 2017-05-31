@@ -73,6 +73,14 @@ html( lang="en" )
 
     if flexmenu
       script( src='https://cdnjs.cloudflare.com/ajax/libs/flexMenu/1.4.2/flexmenu.min.js' )
+      script.
+        $('#mainNavbar').flexMenu({
+          linkText: 'Больше'
+        });
+
+        $('.flexMenu-viewMore a').click(function() {
+            $(this).toggleClass('opened');
+        });
 
     if bxSliderRahisified
       script( src=bxSliderRahisifiedJsSrc )
