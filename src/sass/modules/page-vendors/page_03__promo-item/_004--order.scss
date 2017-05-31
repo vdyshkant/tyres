@@ -1,0 +1,299 @@
+.page-promo-item .order {
+  background: #262627;
+}
+
+
+.page-promo-item .order {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      // min-width: 1024px;
+      max-width: 1170px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .order-wrapper {
+    //
+  }
+
+  & .order-essence {
+    //
+  }
+}
+
+
+.page-promo-item .order {
+  & .order-top-row{
+    max-width: 730px;
+    margin: 0 auto;
+
+    @media #{$mobile} {
+
+      padding: 0 25px;
+    }
+  }
+}
+
+.page-promo-item .order {
+  & .order-title{
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+
+.page-promo-item .order {
+  & .order-steps{
+    margin-bottom: 25px;
+  }
+  & .order-steps__title{
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    margin-bottom: 5px;
+    color: #0ba360;
+  }
+  & .order-steps__list{
+  }
+  & .order-steps__list-item{
+      @include font(italic, 400, 18px, 27px, 'Arial');
+      color: #cfdee7;
+  }
+}
+
+.page-promo-item .order {
+  & .CLASS{
+
+  }
+}
+
+.page-promo-item .order {
+  & .order-send{
+    height: 264px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 3px solid #464649;
+    margin-bottom: 70px;
+
+    @media #{$mobile} {
+      padding: 30px 22px 40px;
+      height: auto;
+    }
+  }
+}
+
+.page-promo-item .order {
+  & .order-send__wrap{
+    width: 970px;
+    margin: 0 auto;
+    @include clearfix;
+    padding-top: 65px;
+
+    @media #{$mobile} {
+      padding-top: 0;
+      width: auto;
+    }
+  }
+  & .CLASS{
+
+  }
+  & .CLASS{
+
+  }
+}
+
+.page-promo-item .order {
+  & .order-send__left{
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+
+    @media #{$mobile} {
+      margin-top: 0;
+      float: none;
+      margin-bottom: 70px;
+    }
+  }
+  & .order-send__left-text{
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+  }
+  & .order-send__left-subtext{
+    display: none;
+
+    @media #{$mobile} {
+      display: block;
+
+      @include font(italic, 400, 14px, 21px, 'Georgia');
+      color: #cfdee7;
+    }
+  }
+}
+
+
+.page-promo-item .order {
+  & .order-send__mid{
+    float: left;
+    width: 470px;
+    margin-right: 30px;
+    @include clearfix;
+
+    @media #{$mobile} {
+      float: none;
+      width: auto;
+      margin-right: 0;
+    }
+  }
+  & .order-send__mid-name {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+    @media #{$mobile} {
+      margin-right: 0;
+      float: none;
+    }
+
+    & > input {
+      width: 170px;
+      padding-left: 15px;
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  }
+  & .order-send__mid-phone {
+    float: right;
+
+    @media #{$mobile} {
+      float: none;
+    }
+    & > input {
+      width: 270px;
+      padding-left: 15px;
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  }
+  & .order-send__mid-label{
+    display: block;
+    margin-bottom: 10px;
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+  }
+  & .order-send__mid-input{
+    /* Style for "Прямоуголь" */
+    width: 170px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #464649;
+    background-color: #353538;
+
+    @include font(italic, 400, 14px, 21px, 'Arial');
+    opacity: 0.4;
+    color: #cfdee7;
+  }
+  & .order-send__mid-desc{
+    width: 400px;
+    float: left;
+    clear: both;
+    @include font(italic, 400, 14px, 21px, 'Georgia');
+    color: #cfdee7;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+.page-promo-item .order {
+  & .order-send__right{
+    width: 270px;
+    float: right;
+    margin-top: 30px;
+  }
+  & .order-send__right-btn{
+    @include font(normal, 400, 18px, 40px, 'Arial');
+    /* Style for "Прямоуголь" */
+width: 270px;
+height: 40px;
+text-align: center;
+
+
+box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+border-radius: 2px;
+background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+
+.page-promo-item .order {
+  & .order__back{
+    width: 770px;
+    margin: 0 auto;
+    padding-left: 30px;
+
+    position: relative;
+
+    text-decoration: none;
+    display: block;
+
+    @media #{$mobile} {
+      width: auto;
+      margin-left: 25px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAABY0lEQVQ4T52UTUvDQBCGZzaxjcQWqSCBUi1YoRcJgkgRBC9iRf0D/s0iKCIVhOLBD3roKZYcYqkI9lAIjTXZkaZuSLUfdve28D7MuzPvDsIc59F6LQGyLQDexP9wRITPVnufGBQHeiLgM0EiYk/N1gEAK0RFONxNBUPopX0ICOs/EDEMbrc3ctZEsFolNbXWOkJiWWFvIWA3ZtGwB/exYKPRSHwmlsuEaIQiJN8nuN4tZB1h9w9YtW0tFSTLCLA6FPE+qf7VTj7fjjdyBKw5zqLm4QkhywztcE8B9dIsGO+/ux+B9fqbHujBGQGmQ4ig52nBxV4u1xk3shC8tz7SKvNOkXApFCG4XzxZKW2udCfNGWuOk0n2lWMg0IcMdRVXqZim4U4LBz40W+eiEhLveBoN7PVmJUoelLYq3RzxFqlxCFgqAAKWipyApUIeVZb5VgKW+sgj8LyrIwbPv6zimY2vx2+txekFO9Wz1QAAAABJRU5ErkJggg==');
+    }
+  }
+  & .order__back-text{
+    @include font(normal, 400, 24px, 27px, 'PTSans-Narrow');
+    color: #fefefe;
+  }
+}
+
+
+.page-promo-item .order {
+  & .CLASS{
+
+  }
+}
