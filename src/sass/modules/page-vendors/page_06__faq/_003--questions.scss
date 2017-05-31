@@ -1,16 +1,16 @@
-.page-index .PROTO {
+.page-faq .faq {
   // bg 1
 }
 
 
-.page-index .PROTO {
+.page-faq .faq {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
     // max-width: 1600px;
 
-    outline: 2px dashed tan;
-    outline-offset: -2px;
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
 
     @media #{$tablet} {
       min-width: 1024px;
@@ -35,33 +35,202 @@
 
   & .container {
     //
+    padding-top: 100px;
+    padding-bottom: 150px;
+
+    @media #{$mobile} {
+      padding-top: 70px;
+      padding-bottom: 130px;
+    }
   }
 
-  & .PROTO-wrapper {
+  & .faq-wrapper {
     //
   }
 
-  & .PROTO-essence {
+  & .faq-essence {
     //
   }
 }
 
 
-.page-index .PROTO {
+.page-faq .faq {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-faq .faq {
+  & .faq-wrapper {
+
+  }
+  & .faq-content {
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-faq .faq {
+  & .faq-row{
+    @include clearfix;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.page-faq .faq {
+  & .faq-item {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+
+    /* Style for "Прямоуголь" */
+    width: 570px;
+    width: 48.717948717948717%; /* 570 / 1170 */;
+    height: 100px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 3px solid #464649;
+    background-color: #353538;
+
+    @media #{$mobile} {
+      width: 100%;
+      padding-top: 25px;
+      padding-bottom: 20px;
+    }
+
+    &:first-child {
+      float: left;
+      margin-right: 30px;
+      margin-right: 2.564102564102564%; /* 30 / 1170 */;
+      @media #{$mobile} {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &:last-child {
+      float: right;
+      @media #{$mobile} {
+        float: none;
+      }
+    }
+  }
+}
+
+
+.page-faq .faq {
+  & .faq-item__text {
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 30px, 'PTSans-Narrow');
+    }
+  }
+}
+
+.page-faq .faq-paginator {
+  width: 210px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-faq .faq-paginator-controls {
+
+}
+
+.page-faq .faq-paginator-controls__left,
+.page-faq .faq-paginator-controls__right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 24px;
+}
+
+.page-faq .faq-paginator-controls__left {
+  left: -14px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAABY0lEQVQ4T52UTUvDQBCGZzaxjcQWqSCBUi1YoRcJgkgRBC9iRf0D/s0iKCIVhOLBD3roKZYcYqkI9lAIjTXZkaZuSLUfdve28D7MuzPvDsIc59F6LQGyLQDexP9wRITPVnufGBQHeiLgM0EiYk/N1gEAK0RFONxNBUPopX0ICOs/EDEMbrc3ctZEsFolNbXWOkJiWWFvIWA3ZtGwB/exYKPRSHwmlsuEaIQiJN8nuN4tZB1h9w9YtW0tFSTLCLA6FPE+qf7VTj7fjjdyBKw5zqLm4QkhywztcE8B9dIsGO+/ux+B9fqbHujBGQGmQ4ig52nBxV4u1xk3shC8tz7SKvNOkXApFCG4XzxZKW2udCfNGWuOk0n2lWMg0IcMdRVXqZim4U4LBz40W+eiEhLveBoN7PVmJUoelLYq3RzxFqlxCFgqAAKWipyApUIeVZb5VgKW+sgj8LyrIwbPv6zimY2vx2+txekFO9Wz1QAAAABJRU5ErkJggg==');
+}
+
+.page-faq .faq-paginator-controls__right {
+  right: -14px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAYAAAABmx/yAAABW0lEQVQ4T53UzUrDQBAA4JndXnwAwdpaNbYqihhiFASxFBXER/UBRFApip4a48mCNqlI21TiC4i2O7KNG7QSkm5uYedjf+YHT4n4evN9KgynP2o1HEDGD91Wv0pIKwDiMwe5s83yTJjFousHNhFYMhiRBvA1PLdWS0EaRnlUo907RmKFSTDKYCJirtc/AoT5GCNeWcbsa9LOI6jwvRccIuJC9A+CcbhIwjH8wej6vRoAKysMMKjblZI/vvMfqLDjdasM+bI6DMCwvlWe837jf1AtOn6whwRrCgtGN9tG4UmtJ0IZ4La6u4RsIw4mvLUq+eboAdPy1Wh3dpjgporjhHdmJf+YCiVwWoGFCLbCQvDLTFCCht85YcSLUZ6Fnwlq7ah1R61XHc8jR3FtLhWfE/NIRPjgve1HPRqVcWrlSDRxrcrWcl6CAyZwMXN3aPWj9gTQnjnaU053rn4DQmHpTL1eEtwAAAAASUVORK5CYII=');
+}
+
+
+.page-faq .faq {
+  & .faq-paginator__list {
+    display: flex;
+    justify-content: center;
+
+    @media #{$mobile} {
+      margin-bottom: 15px;
+    }
+
+  }
+  & .faq-paginator__item {
+      margin-right: 9px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active .faq-paginator__link {
+      color: #f67519;
+    }
+    &.skip-next {
+      margin-right: 30px;
+      position: relative;
+
+      &::before {
+        content: '...';
+        position: absolute;
+        bottom: 4px;
+        right: -22px;
+        color: #cfdee7;
+      }
+    }
+  }
+  & .faq-paginator__link {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+    text-decoration: none;
+  }
+  & .CLASS {
+
+  }
+}
+
+
+.page-faq .faq {
   & .CLASS{
 
   }
 }
 
 
-.page-index .PROTO {
+.page-faq .faq {
+  & .CLASS{
+
+  }
+}
+
+
+.page-faq .faq {
+  & .CLASS{
+
+  }
+}
+
+
+.page-faq .faq {
   & .CLASS{
 
   }

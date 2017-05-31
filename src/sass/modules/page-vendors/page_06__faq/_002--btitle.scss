@@ -1,11 +1,12 @@
 .page-faq .breadcrumbs {
   // bg 1
   min-height: 250px;
-  background: #262627 url('../img/p-services__breadcrumbs_bg.jpg');
+  background: #000000 url('../img/p-faq__breadcrumbs_bg.jpg') no-repeat center top;
   box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
 
   @media #{$mobile} {
     box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.35);
+    background: #000000;
   }
 }
 

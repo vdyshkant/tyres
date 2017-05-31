@@ -43,22 +43,22 @@ gulp.task('pug', function() {
     // '!src/templates_pug/partials/*.pug', // ignore this file
     // '!src/templates_pug/conf/*.pug', // ignore this file
     // 'src/templates_pug/**/*.pug'   // ignore all files
-    'src/templates_pug/pages/index.pug',
-    'src/templates_pug/pages/promo.pug',
-    'src/templates_pug/pages/promo-item.pug',
-    'src/templates_pug/pages/services.pug',
-    'src/templates_pug/pages/services-item.pug',
+    // 'src/templates_pug/pages/index.pug',
+    // 'src/templates_pug/pages/promo.pug',
+    // 'src/templates_pug/pages/promo-item.pug',
+    // 'src/templates_pug/pages/services.pug',
+    // 'src/templates_pug/pages/services-item.pug',
     'src/templates_pug/pages/faq.pug',
-    'src/templates_pug/pages/404.pug',
+    // 'src/templates_pug/pages/404.pug',
     'src/templates_pug/pages/search.pug',
     'src/templates_pug/pages/question.pug',
     'src/templates_pug/pages/about-us.pug',
     'src/templates_pug/pages/search.pug',
     'src/templates_pug/pages/product-page.pug',
-    'src/templates_pug/pages/r444444444.pug',
-    'src/templates_pug/pages/r444444444.pug',
-    'src/templates_pug/pages/r444444444.pug',
-    'src/templates_pug/pages/r444444444.pug',
+    // 'src/templates_pug/pages/r444444444.pug',
+    // 'src/templates_pug/pages/r444444444.pug',
+    // 'src/templates_pug/pages/r444444444.pug',
+    // 'src/templates_pug/pages/r444444444.pug',
     'src/templates_pug/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
