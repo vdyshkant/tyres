@@ -1,11 +1,11 @@
 .page-search .breadcrumbs {
   // bg 1
-  min-height: 250px;
-  background: #262627 url('../img/p-services__breadcrumbs_bg.jpg');
-  box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
+  // min-height: 250px;
+  // background: #262627 url('../img/p-services__breadcrumbs_bg.jpg');
+  // box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
 
   @media #{$mobile} {
-    box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.35);
+    // box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.35);
   }
 }
 
@@ -44,11 +44,8 @@
 
   & .container {
     //
-    padding-top: 85px;
-
-    @media #{$mobile} {
-      padding-top: 75px;
-    }
+    padding-top: 75px;
+    padding-bottom: 25px;
   }
 
   & .breadcrumbs-wrapper {
@@ -78,7 +75,6 @@
         text-align: center;
         @media #{$mobile} {
             white-space: nowrap;
-            text-align: left;
         }
     }
     & .breadcrumbs-item {
@@ -134,7 +130,7 @@
     text-align: center;
 
     @media #{$mobile} {
-      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      // @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
       // width: 250px;
       margin: 0 auto;
     }
