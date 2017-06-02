@@ -1,16 +1,20 @@
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   // bg 1
   min-height: 250px;
-  background: #262627 url('../img/p-services__breadcrumbs_bg.jpg');
+  background: #000000 url('../img/p-about-us__breadcrumbs_bg.jpg') no-repeat center top;
   box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
+
+  margin-bottom: 70px;
 
   @media #{$mobile} {
     box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.35);
+    // background: #000000;
+    margin-bottom: 40px;
   }
 }
 
 
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
@@ -61,7 +65,7 @@
 }
 
 
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   & .CLASS{
 
   }
@@ -69,7 +73,7 @@
 
   }
 }
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
     // margin-bottom: 94px; // 90
     // padding-top: 18px;
 
@@ -78,7 +82,7 @@
         text-align: center;
         @media #{$mobile} {
             white-space: nowrap;
-            text-align: left;
+            // text-align: left;
         }
     }
     & .breadcrumbs-item {
@@ -123,7 +127,7 @@
 // eof breadcrumbs
 
 
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   & .breadcrumbs-title{
 
   }
@@ -141,21 +145,21 @@
   }
 }
 
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   & .CLASS{
 
   }
 }
 
 
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   & .CLASS{
 
   }
 }
 
 
-.page-services .breadcrumbs {
+.page-about-us .breadcrumbs {
   & .CLASS{
 
   }

@@ -1,0 +1,63 @@
+// maps
+section.maps
+  .shell
+      .container
+        .range
+          .maps-wrapper
+            //- titele
+            h2.maps-title.wheel-title Как нас найти?
+
+            //- content
+            .maps-content
+              .top-row
+                a.unit(href="#city01")
+                  .unit-text Алматы
+                a.unit(href="#city02")
+                  .unit-text Астана
+                a.unit(href="#city03")
+                  .unit-text Тараз
+                a.unit(href="#city04")
+                  .unit-text Шымкент
+                a.unit(href="#city05")
+                  .unit-text Актау
+              //- maps instance
+              .instance#city01
+                .maps__item
+                  .left
+                    img.left-img(src="img/about-us__maps_instance-01.jpg")
+                  .right
+                    .address
+                      .address-title Главный офис
+                      .address-text г.Алматы, ул.Джандосова 39
+                    .extra
+                      //- i
+                      .extra-item
+                        .extra-item-title Телефоны:
+                        .extra-item-text +7(727) 394-04-58
+                        .extra-item-text +7(727)392-96-79
+                      //- i
+                      .extra-item
+                        .extra-item-title Магазин:
+                        .extra-item-text +7 701-727-65-42
+                        .extra-item-text +7 701 724-11-49
+                      //- i
+                      .extra-item
+                        .extra-item-title Сервис:
+                        .extra-item-text +7 777-718-50-42
+                        .extra-item-text +7 777-718-50-43
+                      //- i
+                      .extra-item
+                        .extra-item-title Время работы
+                        .extra-item-text 09:00-18:00 Пн-Пт
+                        .extra-item-text 13:00-14:00 Обед
+                        .extra-item-text 09:00-14:00 Сб
+              .instance#city02
+                include 04-1--maps__instance
+              .instance#city03
+                include 04-1--maps__instance
+              .instance#city04
+                include 04-1--maps__instance
+              .instance#city05
+                include 04-1--maps__instance
+
+// maps end

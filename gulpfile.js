@@ -95,7 +95,8 @@ gulp.task('js', function() {
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p01/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p02/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
-      'src/js/modules/p03/flickity-carousel.js' // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p03/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p-about-us/smooth-href-scroll.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))
         .pipe(gulp.dest(outputDir + '/js'))
