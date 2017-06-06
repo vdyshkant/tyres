@@ -15,10 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.0.0",
-    "normalize-css": "^4.1.1",
-    "reset-css": "^2.0.2011012603",
-    "font-awesome": "Font-Awesome#^4.6.3",
-    "modernizr": "^3.3.1"
+    "jquery": "^2.0.0",
+    "normalize-css": "latest",
+    "reset-css": "latest",
+    "font-awesome": "latest",
+    "modernizr": "latest"
   }
 }

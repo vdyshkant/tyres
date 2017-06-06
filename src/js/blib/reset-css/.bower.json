@@ -22,6 +22,6 @@
     "commit": "893e44c21d3a99d98714ccd45b29b6e2b41885cd"
   },
   "_source": "https://github.com/shannonmoeller/reset-css.git",
-  "_target": "^2.0.2011012603",
+  "_target": "*",
   "_originalSource": "reset-css"
 }

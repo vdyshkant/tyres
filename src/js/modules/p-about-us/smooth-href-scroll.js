@@ -1,3 +1,4 @@
+
 /* smooth scrolling from nav menu */
 $(document).ready(function(){
 
