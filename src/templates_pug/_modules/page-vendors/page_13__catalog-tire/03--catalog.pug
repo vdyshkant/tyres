@@ -1,0 +1,47 @@
+
+
+// catalog
+section.catalog
+  .shell
+      .container
+        .range
+          .catalog-wrapper
+
+            .left-col
+              .left-col__title Фильтр:
+              .form-filter
+                .item
+                  .item__title Тип автомобиля
+                  ul.item__units
+                    li.item__unit
+                      input#someID(type='checkbox', name='1st', checked='')
+                      label(for='someID') Коммерческие
+
+
+            .right-col
+              .result__title-container
+                .total-found
+                  | Результат:
+                  span 101 товар
+                .result__title-container
+                  .sorting
+                    .sorting-text Сортировка по:
+                    .sorting-input(type="select")
+
+
+              hr
+
+              .catalog-list
+                //- item
+                .catalog-item
+                a.catalog-item-more
+                  .btn
+                  .one-click-purchase
+
+
+              .load-more0000
+              .next-pages0000
+
+
+
+// catalog end
