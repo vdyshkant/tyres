@@ -7,10 +7,18 @@ section.viewed
         .range
           .viewed-wrapper
             //- titele
-            h2.viewed-title Ранее смотрели
-            hr
+            h2.viewed-title.wheel-title Ранее смотрели
+
+
             //- content
-            .viewed-content
-              .viewed-content__item000000
-                .unit-left
+            ul.viewed-content#viewed
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+            .viewed-controls
+              .viewed-controls__left
+              .viewed-controls__right
 // viewed end

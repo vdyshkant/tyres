@@ -222,4 +222,33 @@ RESET
 })(); // eof autoFunction
 
 
+// page-window-systems COLORS slider
+
+$( document ).ready(function() {
+
+	if($('body').is('.page-catalog-tire')){
+		$("ul#viewed").bxSlider({
+		    speed: 300,
+		    nextText: '',
+		    prevText: '',
+				slideWidth: 270,
+				minSlides: 4,
+				maxSlides: 4,
+				moveSlides: 1,
+				slideMargin: 30,
+				pager: false,
+				prevSelector: ('.viewed-controls__left'),
+				nextSelector: ('.viewed-controls__right')
+		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+		    //    changeRealThumb(realThumbSlider,newIndex);
+		    //
+		    //  }
+		});
+	}
+
+}); // eof .ready
+
+// page-window-systems COLORS slider END
+
+
 // burger:
