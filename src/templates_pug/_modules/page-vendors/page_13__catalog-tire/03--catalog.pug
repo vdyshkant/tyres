@@ -78,7 +78,19 @@ section.catalog
                     .item__unit-expand еще
                 .item
                   .item__title Цена
-                  .item__filter
+                  .item__range-filter
+                    .price-controls
+                      .left
+                        .text от
+                        input.min-price(type="text" placeholder="444")
+                      .right
+                        .text до
+                        input.max-price(type="text" placeholder="12 689")
+                    .range-controls
+                      .scale
+                        .bar
+                      .toggle.min-toggle
+                      .toggle.max-toggle
                 .item
                   .item__title Бренд
                   ul.item__units

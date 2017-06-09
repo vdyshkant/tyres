@@ -12,6 +12,7 @@
   & .catalog-load-more__up {
     position: absolute;
     left: 50%;
+    margin-left: -85px;
     transform: translateX(-50%);
     text-decoration: none;
 
@@ -53,6 +54,7 @@
   & .catalog-load-more__paginator {
     width: 270px;
     float: right;
+    padding-top: 5px;
 
     @media #{$mobile} {
       float: none;

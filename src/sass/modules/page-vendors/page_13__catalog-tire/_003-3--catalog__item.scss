@@ -3,6 +3,7 @@
 .page-catalog-tire .catalog {
   & .result-content {
     @include clearfix;
+    margin-bottom: 15px;
   }
 }
 
