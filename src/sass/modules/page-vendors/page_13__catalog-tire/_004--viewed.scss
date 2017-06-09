@@ -56,11 +56,6 @@
 }
 
 
-.page-catalog-tire .viewed {
-  & .viewed-content {
-    @include clearfix;
-  }
-}
 
 
 .page-catalog-tire .viewed {
@@ -68,6 +63,10 @@
     width: 112px;
     margin: 30px auto 0;
     @include clearfix;
+
+    @media #{$mobile} {
+      margin-top: 5px;
+    }
 
     & .bx-prev, & .bx-next {
       display: block;
@@ -106,7 +105,7 @@
         @media #{$mobile} {
           @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
           width: 250px;
-          margin: 0 auto;
+          margin: 0 auto 25px;
         }
 
         &.wheel-title {

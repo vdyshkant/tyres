@@ -226,29 +226,137 @@ RESET
 
 $( document ).ready(function() {
 
-	if($('body').is('.page-catalog-tire')){
-		$("ul#viewed").bxSlider({
-		    speed: 300,
-		    nextText: '',
-		    prevText: '',
-				slideWidth: 270,
-				minSlides: 4,
-				maxSlides: 4,
-				moveSlides: 1,
-				slideMargin: 30,
-				pager: false,
-				prevSelector: ('.viewed-controls__left'),
-				nextSelector: ('.viewed-controls__right')
-		    //  onSlideBefore:function($slideElement, oldIndex, newIndex){
-		    //    changeRealThumb(realThumbSlider,newIndex);
-		    //
-		    //  }
-		});
-	}
+  if ((window.matchMedia("(min-width: 1600px)").matches)) {
+    if($('body').is('.page-catalog-tire')){
+      $("ul#viewed").bxSlider({
+          speed: 300,
+          nextText: '',
+          prevText: '',
+          slideWidth: 270,
+          minSlides: 4,
+          maxSlides: 4,
+          moveSlides: 1,
+          slideMargin: 30,
+          pager: false,
+          prevSelector: ('.viewed-controls__left'),
+          nextSelector: ('.viewed-controls__right')
+          //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+          //    changeRealThumb(realThumbSlider,newIndex);
+          //
+          //  }
+      });
+    }
+  }
+
+  if ((window.matchMedia("(min-width: 1024px)").matches)
+      && (window.matchMedia("(max-width: 1599px)").matches)) {
+    if($('body').is('.page-catalog-tire')){
+      $("ul#viewed").bxSlider({
+          speed: 300,
+          nextText: '',
+          prevText: '',
+          slideWidth: 270,
+          minSlides: 2,
+          maxSlides: 2,
+          moveSlides: 1,
+          slideMargin: 30,
+          pager: false,
+          prevSelector: ('.viewed-controls__left'),
+          nextSelector: ('.viewed-controls__right')
+          //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+          //    changeRealThumb(realThumbSlider,newIndex);
+          //
+          //  }
+      });
+    }
+  }
+
+
+  if ((window.matchMedia("(max-width: 1023px)").matches)) {
+    if($('body').is('.page-catalog-tire')){
+      $("ul#viewed-min").bxSlider({
+          speed: 300,
+          nextText: '',
+          prevText: '',
+          infiniteLoop: true,
+          slideWidth: 270,
+          minSlides: 1,
+          maxSlides: 1,
+          moveSlides: 1,
+          // slideMargin: 30,
+          pager: false,
+          prevSelector: ('.viewed-controls__left'),
+          nextSelector: ('.viewed-controls__right')
+          //  onSlideBefore:function($slideElement, oldIndex, newIndex){
+          //    changeRealThumb(realThumbSlider,newIndex);
+          //
+          //  }
+      });
+    }
+  }
+
 
 }); // eof .ready
 
 // page-window-systems COLORS slider END
+
+// filter for mobiles show-hide btn
+$( document ).ready(function() {
+
+  if ((window.matchMedia("(max-width: 1023px)").matches)) {
+
+    $('#filter').click(function(){
+      $( ".form-filter" ).show().animate({
+        // 'margin-right': -$('.form-filter').width()/2
+        'right': '0'
+        // left: "+=50"
+        // height: "toggle"
+      });
+
+
+      $('#filter').fadeOut(300);
+      $('.js-filter-back').fadeIn(300);
+
+      // _hide_/show another content:
+        $('.right-col').hide();
+        $('.viewed').hide();
+        $('.filter-selected-params').hide();
+
+    });
+
+
+
+    $('.js-filter-back').click(function(){
+      $( ".form-filter" ).animate({
+        // 'margin-right': -$('.form-filter').width()/2
+        'right': '-300px'
+        // left: "+=50"
+        // height: "toggle"
+      }, 300, function() {
+        // Animation complete.
+      });
+      setTimeout(function() {
+        $( ".form-filter" ).hide();
+        $( ".right-col" ).show();
+      }, 300);
+
+
+      $('#filter').fadeIn(300);
+      // $('.form-filter').hide();
+      $('.js-filter-back').fadeOut(300);
+
+
+      // hide/_show_ another content:
+        $('.right-col').show();
+        $('.viewed').show();
+        $('.filter-selected-params').show();
+    });
+
+
+  }
+
+});
+// eof filter for mobiles show-hide btn
 
 
 // burger:

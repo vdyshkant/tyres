@@ -3,6 +3,25 @@
 .page-catalog-tire .viewed {
   & .viewed-content {
     @include clearfix;
+
+    &.wide {
+      @media #{$tablet-wide} {
+        display: block;
+      }
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    &.min {
+      @media #{$tablet-wide} {
+        display: none;
+      }
+      @media #{$mobile} {
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+      }
+    }
   }
 }
 

@@ -8,7 +8,11 @@ section.catalog
           .catalog-wrapper
 
             .left-col
-              .left-col__title Фильтр:
+              .top-title-container
+                .left-col__title#filter
+                  .left-col__title-text Фильтр:
+                .left-col__back.js-filter-back
+                  .left-col__title-text Назад
               form.form-filter
                 .item
                   .item__title.faq Тип автомобиля:
@@ -159,6 +163,11 @@ section.catalog
                       span.radio-indicator
                       label(for='a22') Без шипов
                       .param (11)
+
+              .left-col__back.js-filter-back
+                .left-col__title-text Назад
+              .filter-selected-params Выбрано параметров:
+                span  10
 
             .right-col
               .result__title-container

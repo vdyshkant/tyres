@@ -17,6 +17,11 @@
     padding-bottom: 15px;
 
     position: relative;
+
+    @media #{$mobile} {
+      width: 270px;
+      margin: 0 auto 35px;
+    }
     &::before {
       content: '';
       position: absolute;
@@ -33,10 +38,17 @@
 
 .page-catalog-tire .catalog {
   & .total-found {
-    float: left;
     padding-top: 5px;
     @include font(normal, 400, 18px, 21px, 'Arial');
     color: #cfdee7;
+
+    @media #{$tablet-wide} {
+      float: left;
+    }
+
+    @media #{$mobile} {
+      padding-top: 140px;
+    }
   }
   & .total-found span {
     @include font(italic, 400, 16px, 21px, 'Georgia');
@@ -48,22 +60,39 @@
 
 .page-catalog-tire .catalog {
   & .sorting {
-    float: right;
     @include clearfix;
 
-    display: flex;
-    align-content: flex-end;
+
+    @media #{$tablet-wide} {
+      float: right;
+
+      display: flex;
+      align-content: flex-end;
+    }
+
+    @media #{$mobile} {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   & .sorting-text {
     @include font(normal, 400, 14px, 21px, 'Arial');
     color: #cfdee7;
-    padding-top: 8px;
     // float: left;
     // align-self: flex-end;
+
+    @media #{$tablet-wide} {
+      align-self: flex-end;
+    }
+
+    @media #{$mobile} {
+      padding-top: 40px;
+      margin-bottom: 15px;
+    }
   }
   & .sorting-input {
     // float: right;
-    margin-left: 20px;
     padding-left: 6px;
     @include font(italic, 400, 12px, 21px, 'Arial');
     opacity: 0.4;
@@ -74,6 +103,10 @@
     border-radius: 2px;
     border: 1px solid #6b6b72;
     background-color: #353538;
+
+    @media #{$tablet-wide} {
+      margin-left: 20px;
+    }
 
   }
 }
