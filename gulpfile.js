@@ -100,6 +100,9 @@ gulp.task('js', function() {
       'src/js/modules/p01/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p02/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p03/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p13/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p14/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p15/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p16/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p-about-us/smooth-href-scroll.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob

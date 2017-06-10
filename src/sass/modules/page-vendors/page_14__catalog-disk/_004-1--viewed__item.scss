@@ -78,7 +78,7 @@
       & .item-title {
         padding: 15px;
         padding-top: 10px;
-        padding-bottom: 2px;
+        padding-bottom: 1px;
         background: #353538;
         margin-bottom: 2px;
 
@@ -125,6 +125,7 @@
       // icons
       & .item-icons {
         @include clearfix;
+        margin-bottom: 15px;
         & .icon-item {
           float: left;
           margin-right: 20px;
