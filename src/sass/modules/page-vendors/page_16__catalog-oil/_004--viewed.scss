@@ -1,9 +1,9 @@
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   // bg 1
 }
 
 
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
@@ -49,7 +49,7 @@
 
 @import '004-1--viewed__item';
 
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   & .CLASS{
 
   }
@@ -58,7 +58,7 @@
 
 
 
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   & .viewed-controls{
     width: 112px;
     margin: 30px auto 0;
@@ -92,7 +92,7 @@
 
 // title
 
-    .page-catalog-tire .viewed {
+    .page-catalog-oil .viewed {
       & .viewed-title{
         /* Style for "Оказываем" */
         @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
@@ -128,21 +128,21 @@
 // eof title
 
 
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   & .CLASS{
 
   }
 }
 
 
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   & .CLASS{
 
   }
 }
 
 
-.page-catalog-tire .viewed {
+.page-catalog-oil .viewed {
   & .CLASS{
 
   }

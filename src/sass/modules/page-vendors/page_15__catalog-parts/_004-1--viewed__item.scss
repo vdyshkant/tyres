@@ -1,6 +1,6 @@
 
 
-.page-catalog-tire .viewed {
+.page-catalog-parts .viewed {
   & .viewed-content {
     @include clearfix;
 
@@ -25,13 +25,14 @@
   }
 }
 
-.page-catalog-tire .viewed {
+.page-catalog-parts .viewed {
 
   & .viewed-content__item {
     margin-right: 30px;
     margin-bottom: 30px;
 
     background: #464649;
+    position: relative;
 
 
     height: 100%;
@@ -43,6 +44,12 @@
     border-radius: 2px;
     border: 3px solid #464649;
     // background-color: #353538;
+
+    &:hover {
+      & .mask {
+        bottom: 0;
+      }
+    }
 
     @media #{$wide} {
       float: left;
@@ -71,13 +78,20 @@
       & .item-title {
         padding: 15px;
         padding-top: 10px;
+        padding-bottom: 2px;
         background: #353538;
+        margin-bottom: 2px;
 
         &-essence {
           @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
           color: #cfdee7;
           margin-bottom: 5px;
         }
+      }
+      & .item-sub-title-essence {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+        color: #cfdee7;
+        margin-bottom: 10px;
       }
       // START
       & .item-stars {
@@ -219,3 +233,71 @@
     }
   }
 }
+
+// hovered goods
+
+.page-catalog-parts .viewed {
+  & .viewed-content__item {
+    & .mask {
+      // display: none;
+
+      position: absolute;
+      bottom: -100%;
+      transition: 0.3s ease-out;
+      // padding-top: 130px;
+      /* Style for "Прямоуголь" */
+      width: 100%;
+      margin: 0 auto;
+      // height: 294px;
+      height: 100%;
+      // top: 200px;
+      // bottom: 0;
+      // right: 0;
+      // left: 0;
+      border-radius: 2px 2px 0 0;
+      background-color: rgba(53, 53, 56, 0.8);
+    }
+  }
+  & .viewed-content__item {
+    & .btn {
+      @include font(normal, 400, 18px, 40px, 'Arial');
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+            /* Style for "Прямоуголь" */
+      width: 220px;
+      height: 40px;
+      box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+      border-radius: 2px;
+      background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
+
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  & .viewed-content__item {
+    & .onebuy {
+      @include font(italic, 400, 14px, 21px, 'Georgia');
+      text-align: center;
+      color: #cfdee7;
+      text-decoration: underline;
+      display: block;
+      // margin-top: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 35px;
+      // text-decoration: none;
+    }
+  }
+  & .item-content {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+// eof hovered goods

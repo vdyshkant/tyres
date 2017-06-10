@@ -1,6 +1,6 @@
 
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .result-content {
     @include clearfix;
     margin-bottom: 15px;
@@ -16,7 +16,7 @@
   }
 }
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
 
   & .result-content__item {
     position: relative;
@@ -90,7 +90,11 @@
 
     & .item-wrap {
 
-
+      & .item-sub-title-essence {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+        color: #cfdee7;
+        margin-bottom: 10px;
+      }
 
       & .item-thumb {
         border-radius: 3px 3px 0 0;
@@ -108,6 +112,7 @@
           margin-bottom: 5px;
         }
       }
+
       // START
       & .item-stars {
         @include clearfix;
@@ -252,7 +257,7 @@
 
 // hovered goods
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .result-content__item {
     & .mask {
       // display: none;

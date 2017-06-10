@@ -1,6 +1,6 @@
 
 
-.page-catalog-tire .catalog {
+.page-catalog-disk .catalog {
   & .result-content {
     @include clearfix;
     margin-bottom: 15px;
@@ -16,7 +16,7 @@
   }
 }
 
-.page-catalog-tire .catalog {
+.page-catalog-disk .catalog {
 
   & .result-content__item {
     position: relative;
@@ -252,7 +252,7 @@
 
 // hovered goods
 
-.page-catalog-tire .catalog {
+.page-catalog-disk .catalog {
   & .result-content__item {
     & .mask {
       // display: none;

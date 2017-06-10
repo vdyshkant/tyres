@@ -1,6 +1,6 @@
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
 
   & .top-title-container {
     @media #{$mobile} {
@@ -119,7 +119,7 @@
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .item__title {
     @include font(normal, 400, 18px, 27px, 'Arial');
     color: #0ba360;
@@ -142,10 +142,28 @@
       }
     }
   }
+  & .item__title-container {
+
+    margin-bottom: 10px;
+    @include clearfix;
+  }
+  & .item__title-text {
+    float: left;
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #0ba360;
+  }
+  & .item__title-up {
+    float: right;
+    @include font(italic, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    text-decoration: underline;
+    margin-right: 15px;
+    cursor: pointer;
+  }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .item__unit {
     @include font(italic, 400, 14px, 21px, 'Arial');
     color: #cfdee7;
@@ -181,11 +199,13 @@
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .item__unit-expand {
 
+    cursor: pointer;
     position: relative;
-    width: 45px;
+    display: inline-block;
+    // width: 45px;
     // margin-left: 30px;
     margin-left: 45px;
     @include font(italic, 400, 14px, 21px, 'Arial');
@@ -196,32 +216,37 @@
       content: '';
       top: 50%;
       transform: translateY(-50%);
-      right: 0;
+      right: -16px;
       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAdElEQVQYV2P8Vip5noGBwYABE1xg/FomFcD4//96dLn/jIyBjP8ZGBi/l0qeQ9N9gbP7uREjSAe6bpAu7q5nG8CSIPCtVPIEAwODOQMDw0mu7ucWIDG45JdSSQ8mBobt/xgYPHm6n+9AkYTqnsDV/bwAZhoABo4mMNK2g+YAAAAASUVORK5CYII=');
       width: 7px;
       height: 7px;
       position: absolute;
     }
 
+    &.less {
+      &::before {
+        transform: translateY(-50%) rotate(180deg);
+      }
+    }
   }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .item {
     margin-bottom: 25px;
   }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }
@@ -230,13 +255,13 @@
 
 // PRICE filter
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .item__range-filter{
 
   }
 }
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .price-controls {
     @include clearfix;
     margin-bottom: 20px;
@@ -273,7 +298,7 @@
   }
 }
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .range-controls{
     width: 256px;
     height: 36px;
@@ -332,7 +357,7 @@
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }
@@ -340,14 +365,14 @@
 
 // eof PRICE filter
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }
@@ -427,7 +452,7 @@
 
 
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .filter-selected-params {
     display: none;
 
@@ -447,13 +472,13 @@
   }
 }
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }
 }
 
-.page-catalog-tire .catalog {
+.page-catalog-oil .catalog {
   & .CLASS{
 
   }

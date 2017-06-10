@@ -54,8 +54,11 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/question.pug',
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/search.pug',
-    'src/templates_pug/pages/product-page.pug',
+    // 'src/templates_pug/pages/product-page.pug',
     'src/templates_pug/pages/catalog-tire.pug',
+    'src/templates_pug/pages/catalog-disk.pug',
+    'src/templates_pug/pages/catalog-parts.pug',
+    'src/templates_pug/pages/catalog-oil.pug',
     // 'src/templates_pug/pages/r444444444.pug',
     // 'src/templates_pug/pages/r444444444.pug',
     // 'src/templates_pug/pages/r444444444.pug',
@@ -97,6 +100,7 @@ gulp.task('js', function() {
       'src/js/modules/p01/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p02/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p03/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p16/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p-about-us/smooth-href-scroll.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))

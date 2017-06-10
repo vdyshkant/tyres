@@ -2,14 +2,14 @@
 @import '003-3--catalog__item';
 @import '003-4--catalog_loadMore';
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .CLASS{
 
   }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .result__title-container {
     @include clearfix;
 
@@ -36,7 +36,7 @@
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .total-found {
     padding-top: 5px;
     @include font(normal, 400, 18px, 21px, 'Arial');
@@ -58,7 +58,7 @@
 
 
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .sorting {
     @include clearfix;
 
@@ -112,14 +112,14 @@
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .CLASS{
 
   }
 }
 
 
-.page-catalog-tire .catalog {
+.page-catalog-parts .catalog {
   & .CLASS{
 
   }
