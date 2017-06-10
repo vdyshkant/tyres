@@ -24,6 +24,9 @@
     margin: 0 auto;
     overflow: hidden;
     height: 60px;
+    @media #{$wide} {
+      width: 1020px;
+    }
 
     @media #{$tablet} {
       margin-left: 190px;
@@ -148,6 +151,10 @@
   & > .menu__item {
     &:first-child {
       margin-left: 125px;
+
+      @media #{$wide} {
+        margin-left: 45px;
+      }
 
       @media #{$mobile} {
         margin-left: 0;
