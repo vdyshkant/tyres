@@ -2,12 +2,12 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Услуги'
+  - var PageTitle = 'Страница продукта'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
-  //- - var jQuery = true
+  - var jQuery = true
   //- - var jQueryUI = true
   //- - var jQueryEasing = true
-  //- - var bxSlider = true
+  - var bxSlider = true
   //- - var picturefill = true
   //- - var animateNumber = true
   //- - var animateCss = true
@@ -15,7 +15,7 @@ append 001_config
   //- - var mainJsSrc = 'js/main.min.js'
 
   //- smoothDivScroll
-  - var jQuery = true
+  //- - var jQuery = true
   //- - var jQueryUI = true
   //- - var jQueryMousewheel = true
   //- - var jQkinetic = true
@@ -27,12 +27,12 @@ append 001_config
   //- - var animateNumber = true
   //- - var animateCss = true
   //- - var wowJs = true
-  - var flickity = true
+  //- - var flickity = true
 
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-services');
+  - var updateBodyClass = bodyClasses.push('page-product');
 
   //- - var jQueryFancybox = true
 
@@ -69,9 +69,11 @@ block content
     main.main
 
 
-      include 02--btitle
+      include 02--product
 
-      include 03--services
+      include 03--similars
+
+      include 04--viewed
 
 
       //- eof main

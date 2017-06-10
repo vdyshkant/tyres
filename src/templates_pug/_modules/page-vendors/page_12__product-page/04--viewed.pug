@@ -1,14 +1,36 @@
-// constructor
-section.constructor
+
+
+// viewed
+section.viewed
   .shell
       .container
         .range
-          .constructor-wrapper
+          .viewed-wrapper
             //- titele
-            h2.constructor-title
-            hr
+            h2.viewed-title.wheel-title Ранее смотрели
+
+
             //- content
-            .constructor-content
-              .constructor-content__item
-                .unit-left
-// constructor end
+            ul.viewed-content.wide#viewed
+              include 04-1--viewed__item
+              include 04-2--viewed__item--oil
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+              include 04-1--viewed__item
+
+            ul.viewed-content.min#viewed-min
+              li
+                include 04-2--viewed__item--min
+                include 04-2--viewed__item--min
+                include 04-2--viewed__item--min
+                include 04-2--viewed__item--min
+              li
+                include 04-2--viewed__item--min
+                include 04-2--viewed__item--min
+                include 04-2--viewed__item--min
+                include 04-2--viewed__item--min
+            .viewed-controls
+              .viewed-controls__left
+              .viewed-controls__right
+// viewed end
