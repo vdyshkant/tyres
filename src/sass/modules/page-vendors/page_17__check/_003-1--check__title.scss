@@ -9,6 +9,13 @@
 
     padding-top: 90px;
     padding-bottom: 65px;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+    }
   }
 }
 

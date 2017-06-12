@@ -8,6 +8,10 @@
     padding-bottom: 3px;
     @include clearfix;
     margin-bottom: 70px;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 }
 
@@ -55,6 +59,10 @@
     color: #cfdee7;
     width: 270px;
     padding-top: 50px;
+
+    @media #{$tablet} {
+      width: 230px;
+    }
   }
 }
 
@@ -75,6 +83,10 @@
     color: #0ba360;
     width: 170px;
     padding-top: 50px;
+
+    @media #{$tablet} {
+      width: 120px;
+    }
   }
 }
 
@@ -82,6 +94,11 @@
 .page-check-first .check {
   & .col.num .cell{
     width: 230px;
+    padding-top: 40px;
+
+    @media #{$tablet} {
+      width: 184px;
+    }
   }
 }
 
@@ -92,6 +109,10 @@
     color: #f39552;
     width: 170px;
     padding-top: 50px;
+
+    @media #{$tablet} {
+      width: 120px;
+    }
   }
 }
 
@@ -99,7 +120,7 @@
 .page-check-first .check {
   & .col.del .cell{
     // width: 115px;
-    width: 79px;
+    width: 119px;
     padding-top: 52px;
 
     position: relative;
@@ -165,18 +186,41 @@
   & .check-sum{
     @include clearfix;
     margin-bottom: 150px;
+
+    @media #{$mobile} {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-bottom: 70px;
+    }
     & .text {
       @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
       color: #cfdee7;
       width: 230px;
       float: left;
       margin-left: 290px;
+
+      @media #{$tablet} {
+        margin-left: 140px;
+      }
+
+      @media #{$mobile} {
+        width: auto;
+        float: none;
+        margin-left: 0;
+        text-align: right;
+      }
     }
     & .num {
       @include font(normal, 400, 45px, 48px, 'Arial');
       color: #cfdee7;
       width: 280px;
       float: left;
+      @media #{$mobile} {
+        float: none;
+        width: auto;
+        text-align: right;
+        margin-bottom: 25px;
+      }
     }
     & .btn {
       float: right;
@@ -188,6 +232,10 @@
       border-radius: 2px;
       background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
       position: relative;
+
+      @media #{$mobile} {
+        width: 270px;
+      }
       &-text {
         position: absolute;
         top: 50%;
@@ -196,6 +244,7 @@
         @include font(normal, 400, 18px, 27px, 'Arial');
         color: #ffffff;
         text-transform: uppercase;
+        white-space: nowrap;
       }
     }
   }
