@@ -1,0 +1,72 @@
+.page-check-first .check {
+  // bg 1
+}
+
+
+.page-check-first .check {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .check-wrapper {
+    //
+  }
+
+  & .check-essence {
+    //
+  }
+}
+
+@import '003-1--check__title';
+@import '003-2--check__steps';
+@import '003-3--check__table';
+@import '003-4--check__fast';
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}
+
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}
+
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}

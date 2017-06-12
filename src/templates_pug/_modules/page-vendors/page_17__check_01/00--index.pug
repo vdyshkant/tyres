@@ -2,7 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Услуги'
+  - var PageTitle = 'Корзина, шаг 1'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- - var jQuery = true
   //- - var jQueryUI = true
@@ -27,12 +27,12 @@ append 001_config
   //- - var animateNumber = true
   //- - var animateCss = true
   //- - var wowJs = true
-  - var flickity = true
+  //- - var flickity = true
 
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-services');
+  - var updateBodyClass = bodyClasses.push('page-check-first');
 
   //- - var jQueryFancybox = true
 
@@ -69,9 +69,9 @@ block content
     main.main
 
 
-      include 02--btitle
+      //- include 02--btitle
 
-      include 03--services
+      include 03--check
 
 
       //- eof main
