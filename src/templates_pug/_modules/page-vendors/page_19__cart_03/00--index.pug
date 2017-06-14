@@ -27,12 +27,12 @@ append 001_config
   //- - var animateNumber = true
   //- - var animateCss = true
   //- - var wowJs = true
-  - var flickity = true
+  //- - var flickity = true
 
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-services');
+  - var updateBodyClass = bodyClasses.push('page-check-third');
 
   //- - var jQueryFancybox = true
 
@@ -57,9 +57,63 @@ block content
           ========================================================
 
     //- header
-    include ../../global-modules/001-0__header-global
+    //- include ../../global-modules/001-0__header-global
     //- eof header
+    // header
+    header.header
+      .shell
+        .container
+          .range
+            .header-wrap
+              //- .header-logo
+              .header-logo
+                img.header-logo-essence(src="img/logo.png")
 
+              //- .header-content
+              .header-desc
+                .desc
+                 | Шины, Диски <br>
+                 | и Масла с доставкой <br>
+                 | по всему Казахстану <br>
+                .dealer
+
+
+              //- .user-block
+              .user-block
+                .phone +7(727)394-04-58
+                  .phone-tooltip
+                    .phone-tooltip-item Магазин
+                    .phone-tooltip-num +7 (727) 394-04-58
+                    .phone-tooltip-item Сервис
+                    .phone-tooltip-num +7 (727) 394-04-58
+
+                .row
+                  .search
+                    .search-essence
+                  .cart
+                    .cart-essence
+                  .login Войти/регистрация
+
+              .header-mobile
+                .header-mobile-wrap
+                  .header-mobile__burger
+                    .header-mobile__burger-container
+                      input#click(name='exit', type='checkbox')
+                      label(for='click')
+                        span.burger
+
+                    //- .header-mobile__burger-essence
+                    //-   input#click(name='exit', type='checkbox')
+                    //-   label(for='click')
+                    //-     span.header-mobile__burger-lines
+                  .header-mobile__logo
+                  .header-mobile__cart
+    //- .menu-wrap
+    //-   .flex.menu
+    .cart-title-line
+      .cart-title-line-wrap
+        .cart-title-line-text 3: Проверка контактных данных и способа оплаты
+    //- eof header
     //
           ========================================================
                                   CONTENT
@@ -69,9 +123,9 @@ block content
     main.main
 
 
-      include 02--btitle
+      //- include 02--btitle
 
-      include 03--services
+      include 03--check
 
 
       //- eof main

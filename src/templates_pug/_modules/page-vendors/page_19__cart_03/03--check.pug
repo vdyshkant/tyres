@@ -1,0 +1,71 @@
+// check
+section.check
+  .shell
+    .container
+      .range
+        .check-wrapper
+
+          .check-title Корзина
+          .steps
+            .steps__control
+            .steps-control-text Ваши заказы
+            ul.steps__list
+              li.steps__list-item.current
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Ваши заказы
+              li.steps__list-item
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Контактные данные
+              li.steps__list-item
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Оплата
+            .steps__progress
+              .steps__progress-text
+                span.current 1
+                | /3
+
+
+          form.step-third
+            .refactor
+              .title Проверьте ваши контактные данные и выберите способ оплаты
+              .desc
+                .row
+                  .left Оплата и доставка:
+                  .right Курьерская служба
+                .row
+                  .left Адрес:
+                  .right Жамбылская обл., г.Тараз, ул. Мамбет батыра, 19 Ш
+                .row
+                  .left Получатель:
+                  .right Марк Цукенберг
+                .row
+                  .left Телефон:
+                  .right +7 555 486 54 12
+                .row
+                  .left E-mail:
+                  .right Mark@mail.com
+
+            .payment
+              .title
+              .desc
+                .row
+                  .left
+                    label Оплата наличными
+                    input(type="radio")
+                  .right Курьеру при получении
+                .row
+                  .left
+                    label Безналичный расчёт
+                    input(type="radio")
+                  .right С помощью банковского перевода
+                .row
+                  .left
+                    label Онлайн оплата
+                    input(type="radio")
+                  .right через онлайн оплату epay
+
+            .checkout-btn
+              .checkout-btn-text Оформить
+
+
+// check end
