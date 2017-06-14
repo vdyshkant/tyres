@@ -1,6 +1,6 @@
 
 
-.page-check-first {
+.page-check-last {
   & .check-title{
     @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
@@ -20,14 +20,14 @@
 }
 
 
-.page-check-first .check {
+.page-check-last .check {
   & .CLASS{
 
   }
 }
 
 
-.page-check-first .check {
+.page-check-last .check {
   & .CLASS{
 
   }
