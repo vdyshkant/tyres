@@ -7,16 +7,19 @@ section.check
 
           .check-title Корзина
           .steps
-            .steps__control
+            .steps__control.active
             .steps-control-text Ваши заказы
             ul.steps__list
-              li.steps__list-item.current
+              li.steps__list-item.done
                 a.steps__list-item-link(href="#")
                   .steps__list-item-text Ваши заказы
-              li.steps__list-item
+              li.steps__list-item.done
+                .arrow
                 a.steps__list-item-link(href="#")
                   .steps__list-item-text Контактные данные
-              li.steps__list-item
+                .arrow-f
+              li.steps__list-item.current
+                .arrow
                 a.steps__list-item-link(href="#")
                   .steps__list-item-text Оплата
             .steps__progress
@@ -46,22 +49,26 @@ section.check
                   .right Mark@mail.com
 
             .payment
-              .title
+              .title Выбор способа оплаты 
               .desc
                 .row
                   .left
-                    label Оплата наличными
-                    input(type="radio")
+                    input#pay01(type='radio', name='payment' checked)
+                    span.radio-indicator
+                    label(for='pay01') Оплата наличными
+
                   .right Курьеру при получении
                 .row
                   .left
-                    label Безналичный расчёт
-                    input(type="radio")
+                    input#pay02(type='radio', name='payment')
+                    span.radio-indicator
+                    label(for='pay02') Безналичный расчет
                   .right С помощью банковского перевода
                 .row
                   .left
-                    label Онлайн оплата
-                    input(type="radio")
+                    input#pay03(type='radio', name='payment')
+                    span.radio-indicator
+                    label(for='pay03') Онлайн оплата
                   .right через онлайн оплату epay
 
             .checkout-btn
