@@ -17,6 +17,10 @@
 
     position: relative;
 
+    @media #{$tablet} {
+      padding: 0 25px 0 25px;
+    }
+
     @media #{$mobile} {
       min-height: 180px;
       padding-left: 25px;

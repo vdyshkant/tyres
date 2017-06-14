@@ -7,6 +7,7 @@
 
   @media #{$tablet-wide} {
     padding: 0 100px;
+    margin-bottom: 60px;
   }
 
   @media #{$mobile} {
@@ -69,8 +70,11 @@
     color: #0ba360;
     text-align: left;
 
-    @media #{$tablet-wide} {
+    @media #{$wide} {
       float: right;
+    }
+
+    @media #{$tablet-wide} {
       width: 740px;
     }
 
