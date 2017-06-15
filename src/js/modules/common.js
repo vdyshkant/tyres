@@ -286,3 +286,141 @@ $( document ).ready(function() {
 
 
 // burger:
+
+
+
+
+
+// modal REG tabs form
+
+$(document).ready(function() {
+  function tabsLoad() {
+       $(".modal-reg .js-tabs-simple").each(function(){
+         if ($(this).find(".active").length) {
+            var index = $(this).find(".active").index();
+         	$(this).next().find(".js-tabs-simple-content").eq(index).show();
+         }
+         else {
+           $(this).find("li").eq(0).addClass("active");
+           $(this).next().find(".js-tabs-simple-content").eq(0).show();
+         }
+       });
+   }
+   tabsLoad();
+    $('.modal-reg .js-tabs-simple a').on("click",function () {
+			var tabs = $(this).parents(".js-tabs-simple");
+			var tabsCont = tabs.next().find(".js-tabs-simple-content");
+			var index = $(this).parents('.tabs__item').index();
+			tabs.find("li").removeClass("active");
+      	$(this).parents('.tabs__item').addClass("active");
+			tabsCont.hide();
+			tabsCont.eq(index).show();
+			return false;
+    });
+});
+
+
+  // appear
+
+    // login reg form
+
+    /* .modal-content.modal-home
+      ================================================ */
+    (function($) {
+      // if($('body').is('.page-index')){
+
+        if($('section').is('.modal-reg')){
+          showMainModal();
+
+          // closeMainModal();
+
+          hideMainOverlay();
+
+
+          $('html body').on('keyup', function(e) {
+            if (e.keyCode === 27) {
+                $('.modal-reg').fadeOut(300);
+                $('.modal-reg-overlay').fadeOut(300);
+            }
+          });
+        }
+      // }
+    })(jQuery); // eof autoFunction
+
+    function showMainModal() {
+        $('#login').click(function(event) {
+            event.preventDefault();
+            // $('.banner--clone .floating-burger-btn #click').attr('checked', false);
+            // $('.banner--clone .floating-burger-essence').removeClass('opened');
+            // $('.banner--clone .floating-burger-btn').removeClass("burger-active");
+            // if ((window.matchMedia("(max-width: 1159px)").matches)) {
+            //   $('.floating-burger-overlay').fadeOut(200, 'linear');
+            // }
+
+            $('.modal-reg').fadeIn(300);
+            $('.modal-reg-overlay').fadeIn(300);
+        });
+    }
+
+    // function closeMainModal() {
+    //     $('.modal-content-close').click(function() {
+    //         $('.modal-content').fadeOut(300);
+    //         $('.modal-reg-overlay').fadeOut(300);
+    //     });
+    // }
+
+    function hideMainOverlay() {
+        $('.modal-reg-overlay').click(function() {
+            $('.modal-reg').fadeOut(300);
+            $('.modal-reg-overlay').fadeOut(300);
+        });
+    }
+
+    /* eof ^^^ */
+
+    // eof login reg form
+
+  // dissappear
+
+// eof modal REG tabs form
+
+
+/* change window text (window block)
+	================================================ */
+
+  (function($) {
+
+    // if($('section').is('.modal-reg')){
+
+      if($('section').is('.modal-reg')){
+        //  new machMedia resizer; the fastest one
+        //  change text on resize event.
+        var mq  = window.matchMedia( '(max-width: 1001px)' );
+        mq.addListener(function(mq) {
+           if (mq.matches) {
+             change2newString();
+           } else {
+             change2originString();
+           }
+        });
+
+        // instant change text on mobile-tablet hw.
+        if ($(window).width() < 1160) {
+            change2newString();
+        }
+      }
+    // }
+  })(jQuery); // eof autoFunction
+
+
+
+
+  function change2newString(){
+    var string = 'Вход';
+    $('.tab-login .tabs-btn-text').text(string);
+  }
+  function change2originString(){
+    var origin = 'Вход в кабинет';
+    $('.tab-login .tabs-btn-text').text(origin);
+  }
+/* eof ^^^ */
