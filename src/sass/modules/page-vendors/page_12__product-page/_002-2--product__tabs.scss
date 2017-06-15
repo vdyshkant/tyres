@@ -27,15 +27,16 @@
       border: none;
       background-color: #464649;
 
-    & .text-wrap {
-      box-shadow: none;
-      border-radius: none;
-      border: none;
-    }
+      & .text-wrap {
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+      }
 
     }
 
     & .text-wrap {
+      display: block;
       height: 40px;
       width: 100%;
       position: relative;

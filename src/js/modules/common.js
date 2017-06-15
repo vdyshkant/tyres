@@ -113,11 +113,11 @@ RESET
   ================================================ */
 (function($) {
   // if($('body').is('.page-index')){
-    $('.phone').stop(true, true).mouseenter(function(){
+    $('#phone').stop(true, true).mouseenter(function(){
       clearTimeout($.data(this, 'timer'));
       $('.user-block .phone-tooltip').fadeIn(500);
     });
-    $('.phone').stop(true, true).mouseleave(function(){
+    $('#phone').stop(true, true).mouseleave(function(){
       $.data(this, 'timer', setTimeout($.proxy(function() {
 
           $('.user-block .phone-tooltip').fadeOut(500);

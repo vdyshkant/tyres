@@ -55,6 +55,8 @@
 @import '002-4--product__params';
 @import '002-5--product__send-form';
 
+@import '009--popup';
+
 .page-product .product {
   & .product-content{
     @include clearfix;

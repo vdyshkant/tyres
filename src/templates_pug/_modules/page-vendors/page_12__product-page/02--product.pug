@@ -17,22 +17,37 @@ section.product
                     img.item-img.small(src="img/p-product__item-img--small.jpg")
                     img.item-img.small(src="img/p-product__item-img--small.jpg")
                 .desc
-                  .tabs-btns
-                    .tabs-btns__item.active
-                      .text-wrap
-                        .text-essence Описание товара
-                    .tabs-btns__item
-                      .text-wrap
-                        .text-essence Отзывы <span>(8)</span>
 
-                  .tabs-content
-                    .tabs-content-item.desc-tab.active
+
+
+
+                  // BEGIN tabs list
+                  ul.tabs.js-tabs-simple
+                    li.tabs__item.tab-login.tabs-btns__item.active
+                      a.tabs__link.text-wrap(href='#')
+                        .text-essence Описание товара
+                    li.tabs__item.tab-reg.tabs-btns__item
+                      a.tabs__link.text-wrap(href='#')
+                        .text-essence Отзывы <span>(8)</span>
+                  // END tabs list
+                  div.tabs-container
+                    // BEGIN tabs content
+                    .tabs-content.js-tabs-simple-content.tabs-content-item.desc-tab.active
                       .text Безопасность на зимней дороге немыслима без Michelin X-Ice North Xin 3. Эти зимние шипованные шины, разработанные как для легковых автомобилей, так и для кроссоверов, демонстрируют надежное поведение при самых сложных погодных условиях и впечатляющую износоустойчивость.
                       .text Секрет успеха X-Ice North Xin 3— в особом составе резиновой смеси FLEX-ICE. Уникальные полимерные соединения, разработанные ведущими химиками компании Michelin, позволяют протектору сохранять эластичность в самый лютый мороз, обеспечивая выдающееся сцепление как на асфальте, так и на льду. Кроме того, смесь FLEX-ICE повышает износоустойчивость шины и снижает сопротивление качению, позволяя автомобилю расходовать меньше топлива.
                       .text Особый дизайн плечевых зон «Step in/Step out» также повышает ходимость шин: некоторые блоки имеют больший выступ вовне, другие — меньший. Это улучшает ходовые качества в глубоком снегу.
                       .text Инновационная дренажная система обеспечивает наискорейшее удаление воды, грязи и снеговой каши из пятна контакта X-Ice North 3 с дорогой. Мокрый асфальт, залитый талой водой или покрытый слякотью — не угроза вашей безопасности, с этими шинами вам не страшно ни аквапланирование ни слашплэнинг.
                       .text На укатанном снегу или в гололед шинам не обойтись без шипов. Система «умный шип», внедренная при создании шин Икс-Айс Норт 3, не только обеспечивает надежное сцепление на льду, но и гарантирует защиту шипов от выпадания
                     .tabs-content-item.feedback-tab
+                      p
+                        | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit am
+                    // END tabs content
+
+
+
+
+
+
 
               //- RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT
               .right
