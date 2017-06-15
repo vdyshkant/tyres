@@ -382,6 +382,28 @@ $(document).ready(function() {
 
   // dissappear
 
+  // recover tab-content
+
+  $('#recover').on("click",function () {
+    var tabLogin = $(this).parents(".js-tabs-simple-content.tab-login");
+    var tabRecover = $('.js-tabs-simple-content.tab-recover');
+
+    tabLogin.hide();
+    tabRecover.show();
+
+  });
+
+  $('#remembered').on("click",function () {
+    var tabRecover = $('.js-tabs-simple-content.tab-recover');
+    var tabInstructions = $('.js-tabs-simple-content.tab-instructions');
+
+    tabRecover.hide();
+    tabInstructions.show();
+
+  });
+
+  // eof recover tab-content
+
 // eof modal REG tabs form
 
 

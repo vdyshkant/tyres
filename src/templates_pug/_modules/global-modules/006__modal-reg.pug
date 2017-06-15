@@ -26,7 +26,7 @@ section.modal-reg
             .password
               label.email-label Введите пароль
               input.email-input(type="password" placeholder="Пароль")
-            a.recover(href="#") Восстановить пароль
+            a.recover#recover(href="#") Восстановить пароль
 
             .btn-wrap
               a.btn-login(href="#")
@@ -76,6 +76,35 @@ section.modal-reg
             .socials-item-text Google plus
       // END tabs content
 
+      .tabs-content.js-tabs-simple-content.tab-recover.tabs-content-item
+        .left
+          //- content
+          form.form-register
+
+            .title Восстановление пароля:
+            .email
+              label.email-label Введите email для восстановления пароля
+              .email-wrap
+                input.email-input(type="text" placeholder="Email")
+                .remembered
+                  .remembered-text Я вспомнил пароль
+
+            a#remembered.btn-recover(href="#")
+              button.btn-recover-text(type="button") Отправить
+
+      .tabs-content.js-tabs-simple-content.tab-instructions.tabs-content-item
+        .left
+          //- content
+          form.form
+
+            .title Инструкции высланы:
+            .subtitle Проверьте вашу почту с инструкциями по смене пароля
+
+            .text-title Не получили электронное сообщение?
+            .text-essence Проверьте, нет ли письма в папке, предназначенной для спама и рекламных сообщений (Spam/Junk). <a href="#">Отправить повторно</a>
+
+            a.btn(href="#")
+              button.btn-text(type="button") Перейти на почту
 
 
 .modal-reg-overlay

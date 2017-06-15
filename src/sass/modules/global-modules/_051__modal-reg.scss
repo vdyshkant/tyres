@@ -7,7 +7,7 @@
   transform: translateX(-50%);
   z-index: 1005;
 
-  display: none;
+  // display: none;
 
   @media #{$mobile} {
     width: 320px;
@@ -23,12 +23,15 @@
 
 .modal-reg {
   & .tabs-container {
+    transition: 0.5s ease-out;
     // width: 631px;
     padding: 35px 30px 60px 30px;
     // height: 439px;
     box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
     border-radius: 2px 2px 0 0;
     background-color: #353538;
+
+    min-height: 390px;
 
     @media #{$mobile} {
       padding: 30px 25px 40px 25px;
@@ -379,12 +382,14 @@
 }
 
 @import '051-2__modal-reg__reg';
+@import '052-3__modal-reg__recover-tab';
+@import '053-4__modal-reg__instructions-tab';
 
-.tabs {
+.modal-reg .tabs {
   overflow: hidden;
 }
 
-.tabs__item {
+.modal-reg .tabs__item {
   float: left;
   // margin: 0 5px 0;
 
@@ -396,7 +401,7 @@
   }
 }
 
-.tabs__link {
+.modal-reg .tabs__link {
   display: block;
   padding: 10px 20px;
   background: #ddd;
@@ -404,7 +409,7 @@
   text-decoration: none;
 }
 
-.tabs-content {
+.modal-reg .tabs-content {
   display: none;
   // margin: 5px 0
   // padding: 20px
