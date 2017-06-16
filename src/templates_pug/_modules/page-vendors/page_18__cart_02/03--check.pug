@@ -34,6 +34,37 @@ section.check
               .profile-subtitle Если у вас есть профиль в tyreplus, вы можете воспользоваться автозаполнением
             .profile-content
 
+              div.tabs-container
+                // BEGIN tabs content
+                .tabs-content.tab-slide
+                  .left
+                    //- content
+                    form.form-login
+
+                      .title Авторизируйтесь
+                      .email
+                        label.email-label Укажите ваш Имейл
+                        input.email-input(type="text" placeholder="Email")
+                      .password
+                        label.email-label Введите пароль
+                        input.email-input(type="password" placeholder="Пароль")
+                      a.recover#recover(href="#") Напомнить пароль
+
+                      .btn-wrap
+                        a.btn-login(href="#")
+                          .btn-login-text Вход
+
+                    //- eof content
+
+                  .right.socials
+                    .title Войти с помощью:
+                    a.socials-item.vk(href="#")
+                      .socials-item-text Вконтакте
+                    a.socials-item.fb(href="#")
+                      .socials-item-text Facebook
+                    a.socials-item.gp(href="#")
+                      .socials-item-text Google plus
+
           .delivery
             .delivery-title Пожалуйста, введите данные необходимые для заказа
             form.delivery-name

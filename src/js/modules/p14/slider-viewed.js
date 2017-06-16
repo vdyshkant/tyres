@@ -24,8 +24,7 @@ $( document ).ready(function() {
     }
   }
 
-  if ((window.matchMedia("(min-width: 1024px)").matches)
-      && (window.matchMedia("(max-width: 1599px)").matches)) {
+  if ((window.matchMedia("(min-width: 1024px)").matches) && (window.matchMedia("(max-width: 1599px)").matches)) {
     if($('body').is('.page-catalog-disk')){
       $("ul#viewed").bxSlider({
           speed: 300,

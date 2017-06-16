@@ -168,11 +168,15 @@ RESET
 
   if($('body').is('.page-catalog-oil')){
 
+    var target;
+    var cutText;
+    var result;
+
     if ((window.matchMedia("(max-width: 1023px)").matches)) {
 
-      var target = $('.breadcrumbs-item .breadcrumbs-link:last');
-      var cutText = target.attr( "data-original" );
-      var result = start_and_end(cutText);
+      target = $('.breadcrumbs-item .breadcrumbs-link:last');
+      cutText = target.attr( "data-original" );
+      result = start_and_end(cutText);
       target.html( result );
 
       function start_and_end(str) {
@@ -185,9 +189,9 @@ RESET
     }
     if ((window.matchMedia("(min-width: 1024px)").matches)) {
 
-      var target = $('.breadcrumbs-item .breadcrumbs-link:last');
-      var cutText = target.attr( "data-original" );
-      var result = start_and_end(cutText);
+      target = $('.breadcrumbs-item .breadcrumbs-link:last');
+      cutText = target.attr( "data-original" );
+      result = start_and_end(cutText);
       target.html( result );
 
       function start_and_end(str) {

@@ -54,9 +54,9 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/question.pug',
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/search.pug',
-    'src/templates_pug/pages/product-page.pug',
+    // 'src/templates_pug/pages/product-page.pug',
       // 'src/templates_pug/pages/check-first.pug',
-      // 'src/templates_pug/pages/check-second.pug',
+      'src/templates_pug/pages/check-second.pug',
       // 'src/templates_pug/pages/check-third.pug',
       // 'src/templates_pug/pages/check-last.pug',
     // 'src/templates_pug/pages/catalog-tire.pug',
@@ -118,6 +118,7 @@ gulp.task('js', function() {
       'src/js/modules/p15/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p16/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p17/plus-minus.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p18/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p-about-us/smooth-href-scroll.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))

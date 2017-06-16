@@ -7,8 +7,8 @@ $(document).ready(function() {
 
 							$('.info-right-form-minus').on('click',function(event) {
 						    event.preventDefault();
-						    current = +$(this).siblings('input').val();
-						    input = $(this).siblings('input');
+						    var current = +$(this).siblings('input').val();
+						    var input = $(this).siblings('input');
 						    $(input).val(current - 1);
 
 						    if (current < 1) {
@@ -18,8 +18,8 @@ $(document).ready(function() {
 
 						  $('.info-right-form-plus').on('click',function(event) {
 						    event.preventDefault();
-						    current = +$(this).siblings('input').val();
-						    input = $(this).siblings('input');
+						    var current = +$(this).siblings('input').val();
+						    var input = $(this).siblings('input');
 						    $(input).val(current + 1);
 						  });
 
