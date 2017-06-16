@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   function tabsLoad() {
-       $(".product-page .js-tabs-simple").each(function(){
+       $(".page-product .js-tabs-simple").each(function(){
          if ($(this).find(".active").length) {
             var index = $(this).find(".active").index();
          	$(this).next().find(".js-tabs-simple-content").eq(index).show();
@@ -14,8 +14,8 @@ $(document).ready(function() {
    }
    tabsLoad();
 
-   
-    $('.product-page .js-tabs-simple a').on("click",function () {
+
+    $('.page-product .js-tabs-simple a').on("click",function () {
 			var tabs = $(this).parents(".js-tabs-simple");
 			var tabsCont = tabs.next().find(".js-tabs-simple-content");
 			var index = $(this).parents('.tabs__item').index();
