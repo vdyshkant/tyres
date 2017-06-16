@@ -21,6 +21,12 @@ section.popup
         .count
           .title Количество, шт.
           .essence
+            label(for='addwin')
+            span.input-wrapper
+              a.info-right-form-minus(href='#') Less
+              input#addwin.people-number(type='text', pattern='[0-9]*', min='0', value='10')
+              a.info-right-form-plus(href='#') More
+
         .sum
           .title Общая сумма
           .essence 120 000

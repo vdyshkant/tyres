@@ -121,6 +121,8 @@
     &-essence {
       @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
       color: #cfdee7;
+      //- !!!:
+      position: relative;
     }
   }
   & .prices-sum{

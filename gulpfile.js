@@ -110,6 +110,8 @@ gulp.task('js', function() {
       'src/js/modules/p12/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p12/tabs.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p12/popup.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p12/popup_less-more.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p12/less-more.js', // e.g. /path/to/mymodule/mymodule/*.js'
 
       'src/js/modules/p13/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p14/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'

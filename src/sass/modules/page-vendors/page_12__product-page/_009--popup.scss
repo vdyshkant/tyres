@@ -26,6 +26,8 @@
   }
 }
 
+@import '009-1--popup__less-more';
+
 
 .page-product .popup {
   & .head {
@@ -122,28 +124,37 @@
     @include clearfix;
 
     & .title {
-      @include font(italic, 400, 16px, 24px, 'Georgia');
+      @include font(italic, 700, 16px, 24px, 'Georgia');
       color: #cfdee7;
+      letter-spacing: 1px;
     }
   }
   & .main .right .count {
     width: 165px;
     float: left;
+
+    & .essence {
+      padding-top: 5px;
+      padding-left: 20px;
+    }
   }
   & .main .right .sum {
     width: 165px;
     float: right;
+    text-align: right;
 
     & .essence {
       @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
       color: #f67519;
       text-transform: uppercase;
+      margin-right: 5px;
     }
   }
   & .main .right .desc {
-    @include font(italic, 400, 16px, 24px, 'Georgia');
+    @include font(italic, 700, 16px, 24px, 'Georgia');
     color: #0ba360;
     margin-bottom: 45px;
+    letter-spacing: 1px;
   }
 }
 

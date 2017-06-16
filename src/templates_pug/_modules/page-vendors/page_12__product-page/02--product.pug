@@ -81,7 +81,12 @@ section.product
                   .prices-pieces
                     .prices-pieces-wrap
                       .prices-pieces-text Количество, шт.
-                      .prices-pieces-essence +/-+-/
+                      .prices-pieces-essence
+                        label(for='addwin')
+                        span.input-wrapper
+                          a.info-right-form-minus(href='#') Less
+                          input#addwin.people-number(type='text', pattern='[0-9]*', min='0', value='4')
+                          a.info-right-form-plus(href='#') More
                   .prices-sum
                     .prices-sum-wrap
                       .prices-sum-text Общая сумма
