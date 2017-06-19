@@ -170,17 +170,24 @@
   }
 }
 
+
+.page-product .product {
+  & .tabs{
+    @include clearfix;
+  }
+}
+
 .page-product .product {
   & .tabs-container{
-    transition: 0.5s ease-out;
+    // transition: 0.5s ease-out;
     // width: 631px;
-    padding: 35px 30px 60px 30px;
+    // padding: 35px 30px 60px 30px;
     // height: 439px;
-    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
-    border-radius: 2px 2px 0 0;
-    background-color: #353538;
+    // box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    // border-radius: 2px 2px 0 0;
+    // background-color: #353538;
 
-    min-height: 390px;
+    // min-height: 390px;
 
     @media #{$mobile} {
       padding: 30px 25px 40px 25px;
