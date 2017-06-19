@@ -10,6 +10,13 @@
     border: 3px solid #464649;
     padding-top: 40px;
     padding-bottom: 50px;
+
+    @media #{$mobile} {
+      width: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-bottom: 70px;
+    }
   }
 
   & .form-send__activated {
@@ -31,6 +38,10 @@
     text-align: center;
     color: #cfdee7;
     text-transform: uppercase;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 48px, 'PTSans-Narrow');
+    }
   }
 }
 
@@ -39,8 +50,15 @@
   & .subtitle{
     @include font(italic, 400, 16px, 24px, 'Georgia');
     max-width: 400px;
-    margin: 0 auto 20px;
     color: #cfdee7;
+
+    @media #{$tablet-wide} {
+      margin: 0 auto 20px;
+    }
+
+    @media #{$mobile} {
+      text-align: center;
+    }
   }
 }
 
@@ -87,6 +105,10 @@
     position: relative;
     margin: 0 auto;
     cursor: pointer;
+
+    @media #{$mobile} {
+      width: auto;
+    }
   }
   & .btn-text {
     @include font(normal, 400, 18px, 27px, 'Arial');

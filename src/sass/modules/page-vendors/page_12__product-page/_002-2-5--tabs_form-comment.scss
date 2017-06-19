@@ -13,11 +13,14 @@
   & .comment .comment__name-label {
     clear: both;
 
-    @include font(mormal, 400, 14px, 21px, 'Arial');
 
+    @include font(mormal, 400, 14px, 21px, 'Arial');
     color: #cfdee7;
-    color: rgba(207, 222, 231, 0.4);
-    color: hsla(203, 33%, 86%, 0.4);
+
+    display: block;
+    margin-bottom: 12px;
+    // color: rgba(207, 222, 231, 0.4);
+    // color: hsla(203, 33%, 86%, 0.4);
   }
 }
 
@@ -41,6 +44,11 @@
 
     margin-right: 30px;
 
+    @media #{$mobile} {
+      float: none;
+      width: 100%;
+    }
+
   }
 }
 
@@ -51,6 +59,10 @@
     margin-bottom: 25px;
     position: relative;
     width: 362px;
+
+    @media #{$mobile} {
+      width: auto;
+    }
   }
 }
 
@@ -76,7 +88,9 @@
     // margin: 0 auto;
     // margin-bottom: 20px;
 
-
+    @media #{$mobile} {
+      display: none;
+    }
 
     &-five {
       // margin-right: 20px;
@@ -154,6 +168,10 @@
 
     position: relative;
     cursor: pointer;
+
+    @media #{$mobile} {
+      width: auto;
+    }
   }
   & .comment .comment__btn-text {
     position: absolute;

@@ -9,6 +9,33 @@
 .page-product .product {
   & .item-imgs {
     margin-bottom: 65px;
+
+    &.wide {
+      display: block;
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    &.mobile {
+      display: none;
+      @media #{$mobile} {
+        display: block;
+        padding: 0 25px;
+      }
+
+      & .item-img {
+        &.big {
+          margin-bottom: 6px;
+        }
+        &.small {
+          margin-right: 6px;
+          width: 86px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
   & .item-img{
 

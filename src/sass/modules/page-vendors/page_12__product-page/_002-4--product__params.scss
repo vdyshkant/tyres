@@ -23,6 +23,10 @@
     border-bottom: 2px solid #464649;
     max-width: 562px;
 
+    @media #{$mobile} {
+      width: auto;
+    }
+
     &-wrap {
       min-height: 50px;
       // @include clearfix;
@@ -56,11 +60,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media #{$mobile} {
+      margin-bottom: 25px;
+    }
   }
   & .params__unit {
     width: 280px;
     min-height: 80px;
     padding-top: 15px;
+
+    @media #{$mobile} {
+      min-height: 70px;
+    }
+
     &:first-child {
       // float: left;
       border-right: 2px solid #464649;
@@ -85,28 +98,53 @@
 
 .page-product .product {
   & .params__vendors {
-
+    @include clearfix;
+    @media #{$mobile} {
+      margin-bottom: 20px;
+    }
   }
   & .params__vendors__item {
+      @media #{$tablet-wide} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
   }
   & .params__vendors__name {
     @include font(italic, 400, 16px, 24px, 'Georgia');
     color: #cfdee7;
-    text-align: right;
-    width: 280px;
-    padding-right: 15px;
+
+    @media #{$tablet-wide} {
+      width: 280px;
+      padding-right: 15px;
+      text-align: right;
+    }
+
+    @media #{$mobile} {
+      text-align: center;
+      @include font(italic, 600, 16px, 24px, 'Georgia');
+    }
+
+
   }
   & .params__vendors__value {
     @include font(normal, 400, 14px, 21px, 'Arial');
     color: #0ba360;
-    text-align: left;
-    width: 280px;
-    padding-left: 15px;
+
+    @media #{$tablet-wide} {
+      width: 280px;
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    @media #{$mobile} {
+      text-align: center;
+    }
   }
 }
 

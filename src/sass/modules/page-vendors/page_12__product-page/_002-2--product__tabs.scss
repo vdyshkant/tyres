@@ -23,6 +23,16 @@
     margin-right: 20px;
     height: 50px;
 
+    @media #{$mobile} {
+      width: 170px;
+      margin-right: 10px;
+
+      &.tab-reg {
+        width: 140px;
+        margin-right: 0;
+      }
+    }
+
     &.active {
       border: none;
       background-color: #464649;

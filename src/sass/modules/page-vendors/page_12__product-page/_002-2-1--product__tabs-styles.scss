@@ -92,6 +92,10 @@
   // background: #ddd;
   color: #000;
   text-decoration: none;
+
+  @media #{$mobile} {
+    padding: 10px;
+  }
 }
 
 .page-product .product .tabs-content {
