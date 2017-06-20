@@ -7,7 +7,7 @@
 }
 
 
-.page-index .filter {
+.page-index .filter #tab1 {
   & .tab-cont-wrapper {
     @include clearfix;
   }
@@ -84,7 +84,7 @@
 }
 
 
-.page-index .filter {
+.page-index .filter #tab1 {
   & .form-suv4-left {
     padding-top: 20px;
     background: url('../img/home_filter_tab-1_thumb-left.png') no-repeat;
@@ -105,7 +105,7 @@
 }
 
 
-.page-index .filter {
+.page-index .filter #tab1 {
   & .form-suv4-right-item,
   & .form-suv4-left-item {
 

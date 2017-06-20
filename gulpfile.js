@@ -54,8 +54,8 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/question.pug',
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/search.pug',
-    'src/templates_pug/pages/product-page.pug',
-    'src/templates_pug/pages/module.pug',
+    // 'src/templates_pug/pages/product-page.pug',
+    // 'src/templates_pug/pages/module.pug',
       // 'src/templates_pug/pages/check-first.pug',
       // 'src/templates_pug/pages/check-second.pug',
       // 'src/templates_pug/pages/check-third.pug',
@@ -103,6 +103,7 @@ gulp.task('js', function() {
       'src/js/modules/common.js', // e.g. /path/to/mymodule/mymodule.js',
       'src/js/modules/logger.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p01/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p01/tabs.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p02/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p03/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
 
