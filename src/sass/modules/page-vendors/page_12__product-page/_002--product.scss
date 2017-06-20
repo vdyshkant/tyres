@@ -74,6 +74,11 @@
       margin-right: 30px;
     }
 
+    @media #{$tablet} {
+      margin: 0 auto;
+      float: none;
+    }
+
     @media #{$mobile} {
       width: auto;
       float: none;
@@ -82,6 +87,12 @@
   & .right{
     width: 570px;
     float: right;
+
+    @media #{$tablet} {
+      width: auto;
+      float: none;
+      margin-bottom: 20px;
+    }
 
     @media #{$mobile} {
       width: auto;

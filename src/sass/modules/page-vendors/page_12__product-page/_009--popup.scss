@@ -14,6 +14,12 @@
   border-radius: 2px;
   background-color: #353538;
 
+  @media #{$mobile} {
+    // width: 270px;
+    max-width: 95%;
+    position: absolute;
+  }
+
   & .close {
     position: absolute;
     top: -15px;
@@ -23,6 +29,13 @@
     cursor: pointer;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAABvElEQVQ4T5WUPUgjURSFzzExC7GIzSI4WqxxqljpKLaLjS4KW4iCbKVgYSGKFi4WCxaihYIWi4I2wsoiNrIuiL+tsKNdGmNsjBErsVAxcXKXl0ySMX/q696dOR/vnXvuo3l2tQjKECDbqHD1GdXVD3hlmeGwDwnPBsA2CmZohiJxAG5bd+TDY4eu60/FOCnAh10ALfY/tzRDlysAB9IiAf54Y3fdgUAglgs6DV1/TMDaAdDo+DbHDRFX3Xl0DZC+UiAbcAigIQMglpr82hBV4TXQ8cVNlduK778AgLOGrk0ofRKSBn06v/pFoNd5Iog1QrqUB35HfbpZr5lM7zMQVQgGg54Hj2+TQJfjzsr48uxevht67YzTrxeQEqCUhhg36mvmcg0vAqncIqQ9v838YejaVElIkevcA6jICrOG5nlSGMD1hDs2VvZcvpfT2oUmvzZKUjLdSbU4sgnwa4Yu+B3WtW89pKUyImL9FaI5LyOkvDlsBeKueGsX9Vo//51FlkkMviX2NkjFvtXR8lU1gGpGkjkQwYE3fvel0NykRWY06sV9YhvAZ7sW50koMi/A8LuegiTIWgfYCeHP/5v/2iEX5IRVAAAAAElFTkSuQmCC') no-repeat;
     background-position: center center;
+
+    @media #{$mobile} {
+      top: -40px;
+      right: -8px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAABvElEQVQ4T5WUPUgjURSFzzExC7GIzSI4WqxxqljpKLaLjS4KW4iCbKVgYSGKFi4WCxaihYIWi4I2wsoiNrIuiL+tsKNdGmNsjBErsVAxcXKXl0ySMX/q696dOR/vnXvuo3l2tQjKECDbqHD1GdXVD3hlmeGwDwnPBsA2CmZohiJxAG5bd+TDY4eu60/FOCnAh10ALfY/tzRDlysAB9IiAf54Y3fdgUAglgs6DV1/TMDaAdDo+DbHDRFX3Xl0DZC+UiAbcAigIQMglpr82hBV4TXQ8cVNlduK778AgLOGrk0ofRKSBn06v/pFoNd5Iog1QrqUB35HfbpZr5lM7zMQVQgGg54Hj2+TQJfjzsr48uxevht67YzTrxeQEqCUhhg36mvmcg0vAqncIqQ9v838YejaVElIkevcA6jICrOG5nlSGMD1hDs2VvZcvpfT2oUmvzZKUjLdSbU4sgnwa4Yu+B3WtW89pKUyImL9FaI5LyOkvDlsBeKueGsX9Vo//51FlkkMviX2NkjFvtXR8lU1gGpGkjkQwYE3fvel0NykRWY06sV9YhvAZ7sW50koMi/A8LuegiTIWgfYCeHP/5v/2iEX5IRVAAAAAElFTkSuQmCC') no-repeat;
+      background-position: center center;
+    }
   }
 }
 
@@ -34,20 +47,38 @@
     min-height: 80px;
     padding-left: 30px;
     padding-right: 30px;
+
+    @media #{$mobile} {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     & .shell-wide {
-      padding: 30px;
+      @media #{$tablet-wide} {
+        padding: 30px;
+      }
+      padding-top: 30px;
+      padding-bottom: 25px;
     }
   }
   & .head .cart {
     @include clearfix;
   }
   & .head .title {
-    float: left;
+
     @include font(normal, 400, 24px, 24px, "PTSans-Narrow");
     color: #0ba360;
     margin-right: 15px;
 
     position: relative;
+
+    @media #{$tablet-wide} {
+      float: left;
+    }
+
+    @media #{$mobile} {
+      margin-left: 40px;
+      margin-bottom: 12px;
+    }
 
     &::before {
       content: '';
@@ -61,20 +92,42 @@
     }
   }
   & .head .goods {
-    float: left;
     @include font(italic, 400, 16px, 24px, "Georgia");
     color: #cfdee7;
     text-decoration: underline;
     margin-right: 10px;
+
+    // @media #{$tablet-wide} {
+      float: left;
+    // }
   }
 
   & .head .sum {
-    float: left;
+
     @include font(italic, 400, 16px, 24px, "Georgia");
     color: #cfdee7;
 
-    & span {
+    // @media #{$tablet-wide} {
+      float: left;
+    // }
+    @media #{$mobile} {
+      clear: right;
+      float: none;
+    }
 
+    &-total {
+      @include font(italic, 400, 16px, 24px, "Georgia");
+      color: #cfdee7;
+      @media #{$mobile} {
+        float: left;
+      }
+    }
+
+
+    & span {
+      // @media #{$mobile} {
+      //   float: left;
+      // }
     }
   }
 }
@@ -84,29 +137,63 @@
     padding: 75px 30px 70px 30px;
     background-color: #464649;
     @include clearfix;
+
+    @media #{$mobile} {
+      padding-top: 40px;
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 45px;
+    }
   }
   & .main .left {
     float: left;
     width: 370px;
+
+    @media #{$mobile} {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
   & .main .right {
     float: left;
     width: 330px;
+
+    @media #{$mobile} {
+      width: 100%;
+    }
   }
   & .main .thumb {
     display: block;
     margin-bottom: 35px;
+
+    @media #{$mobile} {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   & .main .text {
     @include font(italic, 400, 16px, 24px, "Georgia");
     color: #cfdee7;
     letter-spacing: 1px;
+
+    @media #{$mobile} {
+      text-align: center;
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
   & .main .text + a {
     @include font(italic, 400, 16px, 24px, "Georgia");
     color: #cfdee7;
     text-decoration: underline;
     letter-spacing: 1px;
+
+    @media #{$mobile} {
+      display: block;
+      text-align: center;
+      max-width: 200px;
+      margin: 0 auto;
+    }
   }
   & .wwwwwwww {
 
@@ -118,6 +205,12 @@
     @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
     color: #cfdee7;
     text-transform: uppercase;
+
+    @media #{$mobile} {
+      text-align: center;
+      margin-bottom: 10px;
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    }
   }
 
   & .main .right .vendors {
@@ -127,15 +220,27 @@
       @include font(italic, 700, 16px, 24px, 'Georgia');
       color: #cfdee7;
       letter-spacing: 1px;
+
+      @media #{$mobile} {
+        text-align: center;
+      }
     }
   }
   & .main .right .count {
     width: 165px;
     float: left;
 
+    @media #{$mobile} {
+      float: none;
+      margin: 0 auto 20px;
+    }
+
     & .essence {
-      padding-top: 5px;
-      padding-left: 20px;
+
+      @media #{$tablet-wide} {
+        padding-top: 5px;
+        padding-left: 20px;
+      }
     }
   }
   & .main .right .sum {
@@ -143,11 +248,21 @@
     float: right;
     text-align: right;
 
+    @media #{$mobile} {
+      float: none;
+      margin: 0 auto;
+    }
+
     & .essence {
       @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
       color: #f67519;
       text-transform: uppercase;
       margin-right: 5px;
+
+      @media #{$mobile} {
+        margin-right: 0;
+        text-align: center;
+      }
     }
   }
   & .main .right .desc {
@@ -155,10 +270,16 @@
     color: #0ba360;
     margin-bottom: 45px;
     letter-spacing: 1px;
+
+    @media #{$mobile} {
+      text-align: center;
+      width: 180px;
+      margin: 0 auto 20px;
+    }
   }
 }
 
-.page-product .popup {
+.page-product .popup .main {
   & .btn {
     /* Style for "Прямоуголь" */
     width: 270px;
@@ -170,6 +291,13 @@
     cursor: pointer;
     white-space: nowrap;
     position: relative;
+
+    @media #{$mobile} {
+      width: 250px;
+      margin: 0 auto;
+      float: none;
+
+    }
   }
   & .btn-text {
 
@@ -191,12 +319,24 @@
     padding: 30px;
     padding-top: 20px;
     padding-right: 50px;
+
+    @media #{$mobile} {
+      padding-top: 55px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 .page-product .popup {
   & .foot .title {
     @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
     color: #0ba360;
+
+    @media #{$mobile} {
+
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 .page-product .popup {
@@ -207,22 +347,42 @@
     display: block;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    @media #{$mobile} {
+
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 .page-product .popup {
   & .foot .phone{
+
+    @media #{$mobile} {
+      width: 250px;
+      margin: 0 auto;
+    }
 
     & .label {
       @include font(normal, 400, 14px, 21px, 'Arial');
       color: #cfdee7;
       display: block;
       margin-bottom: 10px;
+
+      @media #{$mobile} {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
     }
   }
 }
 .page-product .popup {
   & .foot .phone-wrap{
     @include clearfix;
+
+    @media #{$mobile} {
+      // margin-left: 10px;
+      // padding-right: 10px;
+    }
   }
 }
 .page-product .popup {
@@ -243,9 +403,18 @@
     color: rgba(207, 222, 231, 0.4);
     color: hsla(203, 33%, 86%, 0.4);
     padding-left: 10px;
+
+    @media #{$mobile} {
+      margin-bottom: 30px;
+      margin-right: 0;
+      display: block;
+      width: 250px;
+      // width: 100%;
+      // width: 100%;
+    }
   }
 }
-.page-product .popup {
+.page-product .popup .foot {
   & .btn {
     float: left;
 
@@ -256,10 +425,25 @@
     border-radius: 2px;
     background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
 
+    position: relative;
+
+    @media #{$mobile} {
+      width: 250px;
+      margin: 0 auto;
+    }
+
     &-text {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
       @include font(normal, 400, 18px, 27px, 'Arial');
       color: #ffffff;
       text-transform: uppercase;
+
+      text-align: center;
     }
   }
 }
@@ -286,4 +470,6 @@ display: block;
   // opacity: 0.4;
   background-color: #202021;
   opacity: 0.7;
+
+
 }

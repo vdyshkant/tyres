@@ -5,6 +5,10 @@
     @include clearfix;
 
     &.wide {
+
+      width: 270px;
+      margin: 0 auto;
+      
       @media #{$tablet-wide} {
         display: block;
       }

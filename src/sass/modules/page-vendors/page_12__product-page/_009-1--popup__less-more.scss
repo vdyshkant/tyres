@@ -9,6 +9,11 @@
     width: 100px;
     display: inline-block;
     position: relative;
+
+    @media #{$mobile} {
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 
