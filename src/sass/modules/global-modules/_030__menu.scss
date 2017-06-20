@@ -138,6 +138,7 @@
 }
 
 @import '031-1__menu-under';
+@import '030-1__menu__tabs-styles';
 
 
 .menu {
@@ -258,7 +259,7 @@
 // SUBMENU:
 .menu {
   & .submenu {
-    display: none;
+    // display: none;
     width: 100vw;
     position: absolute;
     z-index: 2;
@@ -270,10 +271,14 @@
     // background: hsla(210, 19%, 16%, 0.6);
     // background: hsla(0, 19%, 16%, 0.6);
 
-    outline: 2px dashed yellowgreen;
-    outline-offset: 0px;
+    // outline: 2px dashed yellowgreen;
+    // outline-offset: 0px;
     // width: auto;
     // min-width: 100%;
+    /* Style for "Прямоуголь" */
+    box-shadow: 2px 3px 8px rgba(30, 30, 30, 0.35);
+    border: 2px solid #464649;
+
 
     padding-top: 3px;
   }
@@ -294,7 +299,7 @@
     width: 320px;
     // background: #464649;
     & .tab-item {
-      background: #3a3a3d;
+      // background: #3a3a3d;
       margin-bottom: 2px;
       height: 150px;
 

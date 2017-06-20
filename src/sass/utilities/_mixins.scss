@@ -26,4 +26,8 @@
         display: inline-block;
         vertical-align: top;
     }
+
+    > * {
+      font-size: initial;
+    }
 }

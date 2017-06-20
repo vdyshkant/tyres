@@ -6,15 +6,26 @@
 
       .submenu
         .submenu-shell
-          .tabs
-            .tab-item
-              .tab-item-text Легковые/suv4x4 шины
-            .tab-item
-              .tab-item-text Коммерческие шины
-            .tab-item
-              .tab-item-text Грузовые шины
-          .tabs-cont
-            .tab-cont-1
+
+
+          // BEGIN tabs list
+          ul.tabs.js-tabs-simple
+            li.tabs__item.tab-item
+              a.tabs__link(href='#')
+                .tabs__link-substrate
+                .tabs__link-text Легковые/suv4x4 шины
+            li.tabs__item.tab-item
+              a.tabs__link(href='#')
+                .tabs__link-substrate
+                .tabs__link-text Коммерческие шины
+            li.tabs__item.tab-item
+              a.tabs__link(href='#')
+                .tabs__link-substrate
+                .tabs__link-text Грузовые шины
+          // END tabs list
+          div.tabs-cont.tab-cont-1
+            // BEGIN tabs content
+            .tabs-content.js-tabs-simple-content
               .col-left
                 .col-left-title Бренды
                 ul.col-left-firm-list
@@ -30,6 +41,7 @@
                     img.firm-item-img(src="img/menu_firm_05.png")
                   li.col-left-firm-item
                     img.firm-item-img(src="img/menu_firm_06.png")
+
               //- MID
               .col-mid
                 .col-mid-wrap
@@ -75,7 +87,13 @@
               .col-right
                 .message Пора «переобуться»!  Закажите летние шины со скидкой до 10 %
                 .discount-btn получить скидку
-                .more узнать больше
+                .more узнать больше            // END tabs content
+
+            .tabs-content.js-tabs-simple-content
+              p 222
+            .tabs-content.js-tabs-simple-content
+              p 333
+
 
     li.menu__item
       a.menu__link
