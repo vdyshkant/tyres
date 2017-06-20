@@ -55,6 +55,7 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/search.pug',
     'src/templates_pug/pages/product-page.pug',
+    'src/templates_pug/pages/module.pug',
       // 'src/templates_pug/pages/check-first.pug',
       // 'src/templates_pug/pages/check-second.pug',
       // 'src/templates_pug/pages/check-third.pug',
