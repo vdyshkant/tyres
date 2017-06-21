@@ -2,7 +2,7 @@ extends ../../../conf/002_docwrapper
 
 
 append 001_config
-  - var PageTitle = 'Услуги'
+  - var PageTitle = 'Воспользуйтесь фильтром поиска шин'
   //- - var MetaDesc = 'Now we override default configed MetaDesc'
   //- is needed for dropDown menu: (3 items)
   - var jQuery = true
@@ -16,7 +16,7 @@ append 001_config
   //- - var mainJsSrc = 'js/main.min.js'
 
   //- smoothDivScroll
-  //- - var jQuery = true
+  - var jQuery = true
   //- - var jQueryUI = true
   //- - var jQueryMousewheel = true
   //- - var jQkinetic = true
@@ -28,12 +28,12 @@ append 001_config
   //- - var animateNumber = true
   //- - var animateCss = true
   //- - var wowJs = true
-  - var flickity = true
+  //- - var flickity = true
 
   //- countdown circles
   //- - var TimeCircles = true
 
-  - var updateBodyClass = bodyClasses.push('page-services');
+  - var updateBodyClass = bodyClasses.push('page-cab');
 
   //- - var jQueryFancybox = true
 
@@ -70,9 +70,9 @@ block content
     main.main
 
 
-      include 02--btitle
+      //- include 02--btitle
 
-      include 03--services
+      include 02--cab
 
 
       //- eof main

@@ -1,9 +1,38 @@
+
+
 .page-search .result {
+  & .result-content {
+    @include clearfix;
+
+    &.wide {
+      @media #{$tablet-wide} {
+        display: block;
+      }
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    &.min {
+      @media #{$tablet-wide} {
+        display: none;
+      }
+      @media #{$mobile} {
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.page-search .result {
+
   & .result-content__item {
     margin-right: 30px;
     margin-bottom: 30px;
 
     background: #464649;
+    position: relative;
 
 
     height: 100%;
@@ -15,6 +44,12 @@
     border-radius: 2px;
     border: 3px solid #464649;
     // background-color: #353538;
+
+    &:hover {
+      & .mask {
+        bottom: 0;
+      }
+    }
 
     @media #{$wide} {
       float: left;
@@ -35,8 +70,6 @@
 
     & .item-wrap {
 
-
-
       & .item-thumb {
         border-radius: 3px 3px 0 0;
         display: block;
@@ -45,13 +78,20 @@
       & .item-title {
         padding: 15px;
         padding-top: 10px;
+        padding-bottom: 1px;
         background: #353538;
+        margin-bottom: 2px;
 
         &-essence {
           @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
           color: #cfdee7;
           margin-bottom: 5px;
         }
+      }
+      & .item-sub-title-essence {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+        color: #cfdee7;
+        margin-bottom: 10px;
       }
       // START
       & .item-stars {
@@ -85,6 +125,7 @@
       // icons
       & .item-icons {
         @include clearfix;
+        margin-bottom: 15px;
         & .icon-item {
           float: left;
           margin-right: 20px;
@@ -193,3 +234,94 @@
     }
   }
 }
+
+// hovered goods
+
+.page-search .result {
+  & .result-content__item {
+    & .mask {
+      // display: none;
+
+      position: absolute;
+      bottom: -100%;
+      transition: 0.3s ease-out;
+      // padding-top: 130px;
+      /* Style for "Прямоуголь" */
+      width: 100%;
+      margin: 0 auto;
+      // height: 294px;
+      height: 100%;
+      // top: 200px;
+      // bottom: 0;
+      // right: 0;
+      // left: 0;
+      border-radius: 2px 2px 0 0;
+      background-color: rgba(53, 53, 56, 0.8);
+    }
+  }
+  & .result-content__item {
+    & .btns-container {
+      height: 90px;
+      margin-top: 25px;
+      position: absolute;
+      white-space: nowrap;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    & .btn-wrap {
+      width: 220px;
+      margin: 0 auto 10px;
+      height: 40px;
+      position: relative;
+    }
+    & .btn {
+      @include font(normal, 400, 18px, 40px, 'Arial');
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+            /* Style for "Прямоуголь" */
+      width: 220px;
+      height: 40px;
+      box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+      border-radius: 2px;
+      background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
+
+      cursor: pointer;
+
+      // ---
+      transition: 0.5s;
+      background-size: 100% auto;
+      background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+      position: relative;
+      user-select: none;
+      &:hover {
+        background-size: 200% auto;
+        background-position: bottom center; /* change the direction of the change here */
+      }
+      &:active {
+        top: 1px;
+      }
+      &.inactive {
+        opacity: 0.5;
+      }
+      // ---
+    }
+  }
+  & .result-content__item {
+    & .onebuy {
+      @include font(italic, 400, 14px, 21px, 'Georgia');
+      text-align: center;
+      color: #cfdee7;
+      text-decoration: underline;
+      display: block;
+      margin-top: 15px;
+    }
+  }
+  & .item-content {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+// eof hovered goods
