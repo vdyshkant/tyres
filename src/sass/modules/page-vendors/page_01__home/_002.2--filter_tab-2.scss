@@ -1,10 +1,9 @@
+
+
 .page-index .filter .tab2 {
   &.tab-cont {
-    background: #464649;
     padding-top: 25px;
     padding-left: 20px;
-    height: 630px;
-    min-height: 630px;
 
     position: relative;
 
@@ -12,6 +11,17 @@
                 url('../img/home_filter_tab-2_bg-thumb-btm.png') no-repeat;
     background-position: right 25px bottom 120px,
                          left -5px bottom -300px;
+    background-color: #464649;
+
+    @media #{$tablet-wide} {
+      height: 630px;
+      min-height: 630px;
+    }
+
+    @media #{$mobile} {
+      background: #464649;
+      padding: 0;
+    }
 
     &::before {
       content: '';
@@ -21,6 +31,10 @@
       top: 3px;
       right: 2px;
       background: #353538;
+
+      @media #{$mobile} {
+        display: none;
+      }
     }
   }
 }
@@ -34,7 +48,7 @@
 
   }
   & .tab-cont-wrapper {
-
+    @include clearfix;
   }
   & .CLASS {
 
@@ -53,6 +67,10 @@
 
       &:last-child {
         margin-bottom: 43px;
+
+        @media #{$mobile} {
+          margin-bottom: 32px;
+        }
       }
     }
   }
@@ -60,15 +78,30 @@
     float: left;
     width: 240px;
     margin-right: 40px;
+
+    @media #{$mobile} {
+      float: none;
+    }
   }
   & .form-col-right{
     float: right;
     width: 240px;
+
+    @media #{$mobile} {
+      float: none;
+    }
   }
   & .tab-cont__left {
     float: left;
     width: 240px;
     margin-right: 45px;
+
+    @media #{$mobile} {
+      float: none;
+      padding-left: 20px;
+      padding-top: 25px;
+      padding-bottom: 50px;
+    }
 
     & .form-comm-list {
       float: left;

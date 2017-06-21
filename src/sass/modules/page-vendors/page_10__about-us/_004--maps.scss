@@ -108,7 +108,8 @@
 .page-about-us .maps {
   & .top-row{
     @include clearfix;
-    margin-bottom: 40px;
+    width: 970px;
+    margin: 0 auto 40px;
   }
   & .unit{
     /* Style for "Прямоуголь" */
