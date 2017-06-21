@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 
-  console.log('works1');
-
 	if($('body').is('.page-check-second')){
 
     console.log('works2');
