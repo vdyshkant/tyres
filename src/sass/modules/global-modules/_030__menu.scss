@@ -259,8 +259,8 @@
 // SUBMENU:
 .menu {
   & .submenu {
-    display: block !important;
-    // display: none;
+    // display: block !important;
+    display: none;
     width: 100vw;
     position: absolute;
     z-index: 2;

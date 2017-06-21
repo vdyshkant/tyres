@@ -244,16 +244,35 @@
   & .order-send__right-btn{
     @include font(normal, 400, 18px, 40px, 'Arial');
     /* Style for "Прямоуголь" */
-width: 270px;
-height: 40px;
-text-align: center;
+    width: 270px;
+    height: 40px;
+    text-align: center;
 
 
-box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
-border-radius: 2px;
-background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
     color: #ffffff;
     text-transform: uppercase;
+
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
   }
 }
 
