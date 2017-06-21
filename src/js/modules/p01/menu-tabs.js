@@ -1,4 +1,4 @@
-if($('body').is('.page-index')){
+if($('.menu').is('#mainNavbar')){
 
   $(document).ready(function() {
     function tabsLoad() {
@@ -27,5 +27,5 @@ if($('body').is('.page-index')){
   			return false;
       });
   });
-  
+
 }

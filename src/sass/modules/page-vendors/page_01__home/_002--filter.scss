@@ -427,16 +427,20 @@
 
     position: relative;
     &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background: #353538;
-      display: block;
-      z-index: 1;
+      display: none;
+
+      @media #{$mobile} {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: #353538;
+        display: block;
+        z-index: 1;
+      }
     }
   }
 

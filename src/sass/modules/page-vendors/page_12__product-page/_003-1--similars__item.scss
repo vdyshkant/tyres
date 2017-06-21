@@ -7,7 +7,7 @@
     &.wide {
       width: 270px;
       margin: 0 auto;
-      
+
       @media #{$tablet-wide} {
         display: block;
       }
@@ -263,12 +263,21 @@
     }
   }
   & .similars-content__item {
+    & .btn-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px;
+      height: 40px;
+    }
     & .btn {
       @include font(normal, 400, 18px, 40px, 'Arial');
       color: #ffffff;
       text-transform: uppercase;
       text-align: center;
             /* Style for "Прямоуголь" */
+
       width: 220px;
       height: 40px;
       box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
@@ -276,10 +285,25 @@
       background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
 
       cursor: pointer;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+
+      // ---
+      transition: 0.5s;
+      background-size: 100% auto;
+      background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+      position: relative;
+      user-select: none;
+      &:hover {
+        background-size: 200% auto;
+        background-position: bottom center; /* change the direction of the change here */
+      }
+      &:active {
+        top: 1px;
+      }
+      &.inactive {
+        opacity: 0.5;
+      }
+      // ---
     }
   }
   & .similars-content__item {

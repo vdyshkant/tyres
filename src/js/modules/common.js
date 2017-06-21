@@ -86,26 +86,31 @@ RESET
 
 // dropDown menu [!! jqueryEasing]
 (function() {
-    if ($(window).width() > 768) {
-        $('.dropdown').mouseenter(
-            function() {
-                clearTimeout($.data(this, 'timer'));
+    if($('.menu').is('#mainNavbar')){
 
-                $(this).children('.submenu').stop(true, true).slideDown(200, 'easeInOutCubic');
-                $(this).addClass('active');
-            }
-        );
-        $('.dropdown').mouseleave(
-            function() {
-                $.data(this, 'timer', setTimeout($.proxy(function() {
+      if ($(window).width() > 768) {
+          $('.dropdown').mouseenter(
+              function() {
+                  clearTimeout($.data(this, 'timer'));
 
-                    $(this).children('.submenu').stop(true, true).slideUp(200, 'easeInOutCubic');
-                    $(this).removeClass('active');
-                }, this), 200));
+                  $(this).children('.submenu').stop(true, true).slideDown(200, 'easeInOutCubic');
+                  $(this).addClass('active');
+              }
+          );
+          $('.dropdown').mouseleave(
+              function() {
+                  $.data(this, 'timer', setTimeout($.proxy(function() {
 
-            }
-        );
+                      $(this).children('.submenu').stop(true, true).slideUp(200, 'easeInOutCubic');
+                      $(this).removeClass('active');
+                  }, this), 200));
+
+              }
+          );
+      }
+
     }
+
 })();
 // EOF dropDown menu
 

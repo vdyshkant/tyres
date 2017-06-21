@@ -1,10 +1,10 @@
 
 
-.page-index #mainNavbar .tabs {
+#mainNavbar .tabs {
   overflow: hidden;
 }
 
-.page-index #mainNavbar .tabs__item {
+#mainNavbar .tabs__item {
   // float: left;
   // margin: 0 5px 0;
 
@@ -15,6 +15,7 @@
     background: #353538;
     transition: all 0.3s ease-out;
     position: relative;
+    cursor: pointer;
 
     &:last-child {
       margin-bottom: 0;
@@ -96,7 +97,7 @@
   }
 }
 
-.page-index #mainNavbar .tabs__link {
+#mainNavbar .tabs__link {
   display: block;
   // padding: 10px 20px;
   // background: #ddd;
@@ -108,7 +109,7 @@
   }
 }
 
-.page-index #mainNavbar .tabs-content {
+#mainNavbar .tabs-content {
   display: none;
   // margin: 5px 0
   // padding: 20px
@@ -120,7 +121,7 @@
 
 
 // is-active | hovered:
-.page-index #mainNavbar .tabs__item.is-active {
+#mainNavbar .tabs__item.is-active {
   & .tabs__link {
     background: #464649;
   }
