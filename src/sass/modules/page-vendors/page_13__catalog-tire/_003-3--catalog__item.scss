@@ -254,29 +254,41 @@
 
 .page-catalog-tire .catalog {
   & .result-content__item {
+    & .item-content {
+      position: relative;
+      overflow: hidden;
+    }
     & .mask {
+
+      height: 100%;
       // display: none;
 
       position: absolute;
       bottom: -100%;
       transition: 0.3s ease-out;
-      padding-top: 130px;
+      // padding-top: 130px;
       /* Style for "Прямоуголь" */
       width: 264px;
       margin: 0 auto;
-      height: 294px;
       border-radius: 2px 2px 0 0;
       background-color: rgba(53, 53, 56, 0.8);
     }
   }
   & .result-content__item {
-    & .btn-wrap {
+    & .btns-container {
+      height: 90px;
+      margin-top: 25px;
       position: absolute;
+      white-space: nowrap;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    & .btn-wrap {
       width: 220px;
+      margin: 0 auto 10px;
       height: 40px;
+      position: relative;
     }
     & .btn {
       @include font(normal, 400, 18px, 40px, 'Arial');
@@ -291,8 +303,7 @@
       background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
 
       cursor: pointer;
-      margin: 0 auto;
-      margin-bottom: 15px;
+
       // ---
       transition: 0.5s;
       background-size: 100% auto;
@@ -319,7 +330,7 @@
       color: #cfdee7;
       text-decoration: underline;
       display: block;
-      // text-decoration: none;
+      margin-top: 15px;
     }
   }
   & .result-content__item {

@@ -260,13 +260,20 @@
     }
   }
   & .viewed-content__item {
-    & .btn-wrap {
+    & .btns-container {
+      height: 90px;
+      margin-top: 25px;
       position: absolute;
+      white-space: nowrap;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+    & .btn-wrap {
       width: 220px;
+      margin: 0 auto 10px;
       height: 40px;
+      position: relative;
     }
     & .btn {
       @include font(normal, 400, 18px, 40px, 'Arial');
@@ -281,7 +288,6 @@
       background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
 
       cursor: pointer;
-
 
       // ---
       transition: 0.5s;
@@ -309,13 +315,7 @@
       color: #cfdee7;
       text-decoration: underline;
       display: block;
-      // margin-top: 15px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-top: 35px;
-      // text-decoration: none;
+      margin-top: 15px;
     }
   }
   & .item-content {
