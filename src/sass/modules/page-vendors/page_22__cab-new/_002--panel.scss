@@ -1,4 +1,4 @@
-.page-cab .panel {
+.page-cab-new .panel {
   // bg 1
 
   /* Style for "Прямоуголь" */
@@ -8,7 +8,7 @@
 }
 
 
-.page-cab .panel {
+.page-cab-new .panel {
   & .shell {
     margin: 0 auto;
     max-width: 1170px;
@@ -63,14 +63,14 @@
 }
 
 
-.page-cab .panel {
+.page-cab-new .panel {
   & .CLASS{
 
   }
 }
 
 
-.page-cab .panel {
+.page-cab-new .panel {
   & .panel {
 
     background-color: #353538;
@@ -78,7 +78,7 @@
 }
 
 
-.page-cab .panel {
+.page-cab-new .panel {
   & .panel-content{
     width: 770px;
     margin: 0 auto;
@@ -92,7 +92,7 @@
 
 // thumb
 // eof thumb
-.page-cab .panel {
+.page-cab-new .panel {
   & .thumb {
     width: 96px;
     height: 96px;
@@ -125,7 +125,7 @@
 }
 
 // mail:
-.page-cab .panel {
+.page-cab-new .panel {
   & .mail{
     @include clearfix;
 
@@ -196,7 +196,7 @@
 }
 
 // logout block
-.page-cab .panel {
+.page-cab-new .panel {
   & .logout{
     width: 170px;
     float: right;
@@ -226,7 +226,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    @include font(italic, 400, 18px, 27px, 'Arial');
+    @include font(normal, 400, 18px, 27px, 'Arial');
     text-align: center;
     user-select: none;
 
@@ -241,7 +241,7 @@
 }
 
 
-.page-cab .panel {
+.page-cab-new .panel {
   & .CLASS{
 
   }
