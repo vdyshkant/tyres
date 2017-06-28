@@ -23,7 +23,11 @@
     @include list;
     margin: 0 auto;
     overflow: hidden;
-    height: 60px;
+
+    @media #{$tablet-wide} {
+
+      height: 60px;
+    }
     @media #{$wide} {
       width: 1020px;
     }
@@ -32,6 +36,8 @@
       margin-left: 190px;
       // max-width: 900px;
     }
+
+
 }
 
 .menu .flexMenu-viewMore .menu__link{
@@ -189,9 +195,11 @@
 
           display: inline-block;
           position: relative;
-          // padding-right: 20px;
+          //
 
           @media #{$mobile} {
+            padding-right: 20px;
+            
             &::before {
               content: '';
               position: absolute;
