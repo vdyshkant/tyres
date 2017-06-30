@@ -54,11 +54,34 @@
     background-color: #353538;
     outline: none;
     padding: 12px;
-    @include font(italic, 600, 14px, 21px, 'Georgia');
     opacity: 0.4;
     color: #cfdee7;
+    @include font(normal, 600, 14px, 21px, 'Arial');
 
     margin-bottom: 30px;
+
+    &:focus  {
+      opacity: 1;
+      border-radius: 2px;
+      border: 1px solid #cfdee7;
+    }
+
+    &::placeholder {
+      @include font(italic, 600, 14px, 21px, 'Arial');
+    }
+    &::-webkit-input-placeholder {
+      @include font(italic, 600, 14px, 21px, 'Arial');
+    }
+    &::-moz-placeholder {
+      @include font(italic, 600, 14px, 21px, 'Arial');
+    }/* Firefox 19+ */
+    &:-moz-placeholder {
+      @include font(italic, 600, 14px, 21px, 'Arial');
+    }/* Firefox 18- */
+    &:-ms-input-placeholder {
+      @include font(italic, 600, 14px, 21px, 'Arial');
+    }
+    // early 2014 http://html5.by/blog/placeholder/
   }
 }
 

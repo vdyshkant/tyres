@@ -79,6 +79,23 @@
     float: left;
     margin-right: 20px;
   }
+
+  & .socials__item-link {
+    text-decoration: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    transition: 0.3s ease-out;
+    display: block;
+
+    &:hover {
+      box-shadow: 0 0 7px rgba(255, 255, 255, 0.35);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
 }
 
 

@@ -43,11 +43,11 @@ gulp.task('pug', function() {
     // '!src/templates_pug/partials/*.pug', // ignore this file
     // '!src/templates_pug/conf/*.pug', // ignore this file
     // 'src/templates_pug/**/*.pug'   // ignore all files
-    // 'src/templates_pug/pages/index.pug', // 01
-    // 'src/templates_pug/pages/promo.pug',
-    // 'src/templates_pug/pages/promo-item.pug',
-    // 'src/templates_pug/pages/services.pug',
-    // 'src/templates_pug/pages/services-item.pug',
+    'src/templates_pug/pages/index.pug', // 01
+    'src/templates_pug/pages/promo.pug',
+    'src/templates_pug/pages/promo-item.pug',
+    'src/templates_pug/pages/services.pug',
+    'src/templates_pug/pages/services-item.pug',
     'src/templates_pug/pages/faq.pug',
     // 'src/templates_pug/pages/404.pug',
     // 'src/templates_pug/pages/search.pug',
@@ -56,8 +56,8 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/product-page.pug', // 12
     // 'src/templates_pug/pages/module.pug', // 21
-    'src/templates_pug/pages/cab-new.pug', // 22
-    'src/templates_pug/pages/cab.pug', // 23
+    // 'src/templates_pug/pages/cab-new.pug', // 22
+    // 'src/templates_pug/pages/cab.pug', // 23
       // 'src/templates_pug/pages/check-first.pug',
       // 'src/templates_pug/pages/check-second.pug',
       // 'src/templates_pug/pages/check-third.pug',

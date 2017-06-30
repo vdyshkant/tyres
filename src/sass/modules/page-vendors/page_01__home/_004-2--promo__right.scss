@@ -158,7 +158,6 @@
 
 .page-index .promo {
   & .promo-show-btn {
-    @include font(normal, 400, 24px, 50px, 'PTSans-Narrow');
     color: #fefefe;
     text-align: center;
     width: 270px;
@@ -167,9 +166,30 @@
     box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
     border-radius: 2px;
     border: 2px solid #6b6b72;
-    background-image: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
+    background: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
 
     position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &-text {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include font(normal, 400, 24px, 32px, 'PTSans-Narrow');
+
+    }
+
+    &:hover {
+      background: radial-gradient(circle 114px at center, #464649 0%, #464649 100%);
+    }
+
+    &:active {
+      background: #3a3a3d;
+    }
 
 
     &::before {

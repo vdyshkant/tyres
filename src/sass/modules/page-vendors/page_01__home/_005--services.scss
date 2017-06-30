@@ -274,9 +274,28 @@
     text-align: center;
 
     float: left;
-
     @media #{$mobile} {
       float: none;
+    }
+
+
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background: radial-gradient(circle 114px at center, #464649 0%, #464649 100%);
+    }
+
+    &:active {
+      background: #3a3a3d;
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
