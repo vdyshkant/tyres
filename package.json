@@ -19,5 +19,8 @@
     "gulp-uglify": "^1.5.3",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.1"
   }
 }

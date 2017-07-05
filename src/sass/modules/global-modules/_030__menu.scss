@@ -191,6 +191,10 @@
           padding-right: 25px;
         }
 
+        &:hover {
+          text-decoration: underline;
+        }
+
         &-text {
 
           display: inline-block;
@@ -199,7 +203,7 @@
 
           @media #{$mobile} {
             padding-right: 20px;
-            
+
             &::before {
               content: '';
               position: absolute;
@@ -239,6 +243,7 @@
     position: relative;
     @include font(normal, 400, 16px, 60px, 'PTSans-Narrow');
     color: #cfdee7;
+    // color: #7f868b;
     text-transform: uppercase;
     height: 60px;
     padding-left: 25px;
@@ -246,13 +251,27 @@
 
     transition: background .3s ease-out;
     cursor: pointer;
+    text-decoration: none;
 
     @media #{$mobile} {
       @include font(normal, 400, 24px, 60px, 'PTSans-Narrow');
     }
 
+    // &:hover {
+    //   background: hsla(294, 19%, 16%, 0.58);
+    // }
     &:hover {
-      background: hsla(294, 19%, 16%, 0.58);
+
+      & .menu__link-text {
+        text-decoration: underline;
+      }
+    }
+
+    &:active {
+      & .menu__link-text {
+        font-weight: 700;
+        text-decoration: none;
+      }
     }
   }
 }
