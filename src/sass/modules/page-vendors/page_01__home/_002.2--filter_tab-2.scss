@@ -18,6 +18,10 @@
       min-height: 630px;
     }
 
+    @media #{$tablet} {
+      width: 700px;
+    }
+
     @media #{$mobile} {
       background: #464649;
       padding: 0;

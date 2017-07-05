@@ -130,6 +130,10 @@
     width: 890px;
     float: right;
 
+    @media #{$tablet} {
+      width: auto;
+    }
+
     @media #{$mobile} {
       float: none;
       width: auto;

@@ -19,6 +19,10 @@
 
     position: relative;
 
+    @media #{$tablet} {
+      width: 320px;
+    }
+
 
 
     @media #{$tablet-wide} {
@@ -80,6 +84,10 @@
       margin-right: 20px;
     }
 
+    @media #{$tablet} {
+      width: 320px;
+    }
+
     @media #{$mobile} {
       float: none;
 
@@ -125,7 +133,7 @@
   & .form-suv4-left {
     padding-top: 20px;
 
-    @media #{$tablet-wide} {
+    @media #{$wide} {
       background: url('../img/home_filter_tab-1_thumb-left.png') no-repeat;
       background-position: 90% 10px;
     }
