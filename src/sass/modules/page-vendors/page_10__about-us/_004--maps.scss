@@ -124,6 +124,25 @@
     display: block;
     text-decoration: none;
 
+
+    transition: 0.3s ease-out;
+    &:hover {
+      background: #353538;
+
+      &::after {
+        border-top-color: #353538;
+      }
+    }
+
+    &:active {
+      box-shadow: inset 0 0 19px 2px rgba(32, 32, 33, 0.35);
+      background-color: #353538;
+
+      &::after {
+        border-top-color: #353538;
+      }
+    }
+
     @media #{$mobile} {
       margin: 0 auto;
       margin-bottom: 30px;
@@ -149,6 +168,7 @@
     	width: 0;
     	position: absolute;
     	pointer-events: none;
+      transition: 0.3s ease-out;
 
       @media #{$mobile} {
         display: none;
