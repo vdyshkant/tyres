@@ -77,6 +77,11 @@
 .page-product .product .tabs__item {
   float: left;
   // margin: 0 5px 0;
+  transition: 0.3s ease-out;
+
+  &:not(.active):hover .tabs__link {
+    background-color: #353538;
+  }
 
   &.is-active {
     & .tabs__link {
@@ -92,6 +97,7 @@
   // background: #ddd;
   color: #000;
   text-decoration: none;
+  transition: 0.3s ease-out;
 
   @media #{$mobile} {
     padding: 10px;

@@ -354,36 +354,38 @@ $(document).ready(function() {
           });
         }
       // }
+
+      function showMainModal() {
+          $('#login').click(function(event) {
+              event.preventDefault();
+              // $('.banner--clone .floating-burger-btn #click').attr('checked', false);
+              // $('.banner--clone .floating-burger-essence').removeClass('opened');
+              // $('.banner--clone .floating-burger-btn').removeClass("burger-active");
+              // if ((window.matchMedia("(max-width: 1159px)").matches)) {
+              //   $('.floating-burger-overlay').fadeOut(200, 'linear');
+              // }
+
+              $('.modal-reg').fadeIn(300);
+              $('.modal-reg-overlay').fadeIn(300);
+          });
+      }
+
+      // function closeMainModal() {
+      //     $('.modal-content-close').click(function() {
+      //         $('.modal-content').fadeOut(300);
+      //         $('.modal-reg-overlay').fadeOut(300);
+      //     });
+      // }
+
+      function hideMainOverlay() {
+          $('.modal-reg-overlay').click(function() {
+              $('.modal-reg').fadeOut(300);
+              $('.modal-reg-overlay').fadeOut(300);
+          });
+      }
     })(jQuery); // eof autoFunction
 
-    function showMainModal() {
-        $('#login').click(function(event) {
-            event.preventDefault();
-            // $('.banner--clone .floating-burger-btn #click').attr('checked', false);
-            // $('.banner--clone .floating-burger-essence').removeClass('opened');
-            // $('.banner--clone .floating-burger-btn').removeClass("burger-active");
-            // if ((window.matchMedia("(max-width: 1159px)").matches)) {
-            //   $('.floating-burger-overlay').fadeOut(200, 'linear');
-            // }
 
-            $('.modal-reg').fadeIn(300);
-            $('.modal-reg-overlay').fadeIn(300);
-        });
-    }
-
-    // function closeMainModal() {
-    //     $('.modal-content-close').click(function() {
-    //         $('.modal-content').fadeOut(300);
-    //         $('.modal-reg-overlay').fadeOut(300);
-    //     });
-    // }
-
-    function hideMainOverlay() {
-        $('.modal-reg-overlay').click(function() {
-            $('.modal-reg').fadeOut(300);
-            $('.modal-reg-overlay').fadeOut(300);
-        });
-    }
 
     /* eof ^^^ */
 

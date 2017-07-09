@@ -98,6 +98,19 @@
     border: 3px solid #464649;
     background-color: #353538;
 
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    &:hover {
+      border: 2px solid #6b6b72;
+    }
+
+    &:active {
+      position: relative;
+      top: 2px;
+      box-shadow: inset 0 0 19px 2px rgba(32, 32, 33, 0.35);
+      border: 3px solid #464649;
+    }
+
     @media #{$mobile} {
       width: 100%;
       padding-top: 25px;
@@ -128,6 +141,7 @@
   & .faq-item__text {
     @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
     color: #cfdee7;
+    user-select: none;
 
     @media #{$mobile} {
       @include font(normal, 400, 24px, 30px, 'PTSans-Narrow');
