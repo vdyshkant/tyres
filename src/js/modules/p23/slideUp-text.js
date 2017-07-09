@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   if ((window.matchMedia("(min-width: 1024px)").matches)) {
 
-    if($('body').is('.page-cab-new')){
+    if($('body').is('.page-cab')){
 
       var contents = $('.profile-content');
       var titles = $('.profile-title');

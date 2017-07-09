@@ -61,16 +61,16 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/product-page.pug', // 12
     // 'src/templates_pug/pages/module.pug', // 21
-    // 'src/templates_pug/pages/cab-new.pug', // 22
-    // 'src/templates_pug/pages/cab.pug', // 23
+    'src/templates_pug/pages/cab-new.pug', // 22
+    'src/templates_pug/pages/cab.pug', // 23
     //   'src/templates_pug/pages/check-first.pug',
     //   'src/templates_pug/pages/check-second.pug',
     //   'src/templates_pug/pages/check-third.pug',
     //   'src/templates_pug/pages/check-last.pug',
-    // 'src/templates_pug/pages/catalog-tire.pug',
-    // 'src/templates_pug/pages/catalog-disk.pug',
-    // 'src/templates_pug/pages/catalog-parts.pug',
-    // 'src/templates_pug/pages/catalog-oil.pug',
+    'src/templates_pug/pages/catalog-tire.pug',
+    'src/templates_pug/pages/catalog-disk.pug',
+    'src/templates_pug/pages/catalog-parts.pug',
+    'src/templates_pug/pages/catalog-oil.pug',
 
 
 
@@ -135,6 +135,7 @@ gulp.task('js', function() {
       'src/js/modules/p17/plus-minus.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p18/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p22/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p23/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p-about-us/smooth-href-scroll.js' // e.g. /path/to/mymodule/mymodule/*.js'
     ])     // выборка files from glob
         .pipe(concat('main.js'))

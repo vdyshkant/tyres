@@ -78,6 +78,11 @@
     @include font(normal, 400, 18px, 27px, 'Arial');
     color: #cfdee7;
     text-decoration: none;
+    
+    transition: 0.3s ease-out;
+    &:hover {
+      color: #fff;
+    }
   }
   & .CLASS {
 

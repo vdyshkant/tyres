@@ -15,12 +15,23 @@
     margin-left: -85px;
     transform: translateX(-50%);
     text-decoration: none;
+    transition: 0.4s ease-out;
 
     @media #{$mobile} {
       display: none;
     }
+
+    &:hover .catalog-load-more__up-text {
+      box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
+      background-color: #464649;
+    }
+    &:active .catalog-load-more__up-text {
+      box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
+      background-color: #3a3a3d;
+    }
   }
   & .catalog-load-more__up-text {
+    transition: 0.4s ease-out;
     @include font(normal, 400, 14px, 21px, 'Arial');
     /* Style for "Загрузить" */
     color: #cfdee7;
@@ -32,7 +43,8 @@
     height: 100px;
     border: 2px solid #6b6b72;
     border-radius: 50%;
-    background-image: radial-gradient(circle 227px at center, #464649 0%, #3a3a3d 100%);
+    // background-image: radial-gradient(circle 227px at center, #464649 0%, #3a3a3d 100%);
+    background-color: #454549;
 
     position: relative;
 
@@ -135,6 +147,12 @@
       @include font(normal, 400, 18px, 27px, 'Arial');
       color: #cfdee7;
       text-decoration: none;
+
+
+      transition: 0.3s ease-out;
+      &:hover {
+        color: #fff;
+      }
     }
     &:last-child {
       margin-right: 0;

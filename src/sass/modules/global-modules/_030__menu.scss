@@ -138,8 +138,20 @@
       }
 
       &:hover {
-        background: hsla(294, 19%, 16%, 0.58);
+        // background: hsla(294, 19%, 16%, 0.58);
       }
+  }
+  &:hover {
+    & > a {
+      text-decoration: underline;
+    }
+  }
+
+  &:active {
+    & > a {
+      font-weight: 700;
+      text-decoration: none;
+    }
   }
 }
 
