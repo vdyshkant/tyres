@@ -208,6 +208,7 @@
   }
   & .tab-login .socials-item {
       display: block;
+      transition: 0.3s ease-out;
 
     /* Style for "Прямоуголь" */
       width: 100%;
@@ -237,6 +238,13 @@
 
     &.vk {
       background-color: #45668e;
+      &:hover {
+        background-color: #537aaa;
+      }
+      &:active {
+        background-color: #395474;
+        box-shadow: none;
+      }
       & .socials-item-text {
         padding-left: 35px;
 
@@ -256,6 +264,13 @@
     }
     &.fb {
       background-color: #3b5998;
+      &:hover {
+        background-color: #4163ac;
+      }
+      &:active {
+        background-color: #334d83;
+        box-shadow: none;
+      }
       & .socials-item-text {
         padding-left: 30px;
 
@@ -275,6 +290,13 @@
     }
     &.gp {
       background-color: #dc4e41;
+      &:hover {
+        background-color: #f75d4e;
+      }
+      &:active {
+        background-color: #c8473b;
+        box-shadow: none;
+      }
       & .socials-item-text {
         padding-left: 35px;
 

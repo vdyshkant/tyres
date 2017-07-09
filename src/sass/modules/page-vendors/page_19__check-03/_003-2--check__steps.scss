@@ -52,11 +52,17 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      transition: 0.3s ease-out;
       transform: translate(-50%, -50%);
       width: 14px;
       height: 24px;
       background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAABQ0lEQVQ4T53Uy0rDQBQGYE+S5mJFbSpmFaSU4CLgqit3eQkf0pfo0iIRoSsv1BKpSNRpkRLTJJMciTAwrWnSJLuB+XLOzPwzsFfjGz2TQzkNDiQNQ9jV3U+nxxiJ+/n8TM1wJzj2vA4NQWNFxEj+LoWICDezWUcNUGVo1YbFpWlubzVHtw9vegsyhbW3RFw4vd4qHxdWRETh7uldF5DKDB0lydyyrIhV/geLkBYExLbtmN/INZij8cQ/SWks5ZOoombtn8/5Jlpr9RpRPJ/4XR4J5JUMBoOk6Mj+Kg6HKGlnH105jsR8HMtKGnqnxHGAbjtncF23RXVTZ0iUZPrYN8gVQFoWDhi9+AaPLvrGFwBkVYlqDhu32nhz2FoaHQfDjQLA482cVkauDFeGnMP1rxWPa19kPjm1nw4eN3qs2A/45/EX6+MP5nm8zWYAAAAASUVORK5CYII=') no-repeat;
 
+    }
+    &:hover {
+      &::before {
+        transform: translate(-100%, -50%);
+      }
     }
   }
 }
