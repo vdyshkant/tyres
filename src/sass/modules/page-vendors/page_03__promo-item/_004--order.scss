@@ -217,9 +217,42 @@
     border: 1px solid #464649;
     background-color: #353538;
 
-    @include font(italic, 400, 14px, 21px, 'Arial');
-    opacity: 0.4;
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    // opacity: 0.4;
     color: #cfdee7;
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+
+
   }
   & .order-send__mid-desc{
     width: 400px;

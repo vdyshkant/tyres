@@ -45,9 +45,6 @@ gulp.task('pug', function() {
     // 'src/templates_pug/**/*.pug'   // ignore all files
 
 
-
-
-
     // 'src/templates_pug/pages/index.pug', // 01
     // 'src/templates_pug/pages/promo.pug',
     // 'src/templates_pug/pages/promo-item.pug',
@@ -59,11 +56,11 @@ gulp.task('pug', function() {
     //
     // 'src/templates_pug/pages/question.pug',
     // 'src/templates_pug/pages/about-us.pug',
-    // 'src/templates_pug/pages/product-page.pug', // 12
+    'src/templates_pug/pages/product-page.pug', // 12
     // 'src/templates_pug/pages/module.pug', // 21
-    'src/templates_pug/pages/cab-new.pug', // 22
-    'src/templates_pug/pages/cab.pug', // 23
-    //   'src/templates_pug/pages/check-first.pug',
+    // 'src/templates_pug/pages/cab-new.pug', // 22
+    // 'src/templates_pug/pages/cab.pug', // 23
+      // 'src/templates_pug/pages/check-first.pug',
     //   'src/templates_pug/pages/check-second.pug',
     //   'src/templates_pug/pages/check-third.pug',
     //   'src/templates_pug/pages/check-last.pug',
@@ -71,9 +68,6 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/catalog-disk.pug',
     // 'src/templates_pug/pages/catalog-parts.pug',
     // 'src/templates_pug/pages/catalog-oil.pug',
-
-
-
 
 
     // 'src/templates_pug/pages/r444444444.pug',
@@ -119,6 +113,10 @@ gulp.task('js', function() {
       'src/js/modules/p01/menu-tabs.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p02/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p03/flickity-carousel.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p05/fireFancyBox.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p09/fireFancyBox.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p10/fireFancyBox.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p12/fireFancyBox.js', // e.g. /path/to/mymodule/mymodule/*.js'
 
       'src/js/modules/p12/breadcrumbs.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p12/slider-similars.js', // e.g. /path/to/mymodule/mymodule/*.js'

@@ -37,6 +37,12 @@
 
     transition: all .145s 0s ease-in;
 
+    @media #{$tablet-wide} {
+      &:hover {
+        color: #fff;
+      }
+    }
+
     &::before,
     &::after {
       content: '';

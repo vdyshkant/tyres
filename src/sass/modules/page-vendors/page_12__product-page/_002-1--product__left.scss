@@ -37,15 +37,22 @@
       }
     }
   }
+  & .item-img-row {
+    @include clearfix;
+  }
   & .item-img{
 
     &.big {
       width: 570px;
       // height: 720px;
       margin-bottom: 15px;
+      display: block;
     }
     &.small {
       margin-right: 15px;
+      display: block;
+      // width: 172px;
+      float: left;
 
       // width: 570px;
       // height: 720px;

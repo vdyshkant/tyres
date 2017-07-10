@@ -179,9 +179,41 @@
     border: 1px solid #464649;
     background-color: #353538;
 
-    @include font(italic, 400, 14px, 21px, 'Arial');
-    opacity: 0.4;
+    @include font(normal, 400, 14px, 21px, 'Arial');
     color: #cfdee7;
+    color: rgba(207, 222, 231, 1);
+    color: hsla(203, 33%, 86%, 1);
+
+    transition: 50ms ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
   }
   & .order-send__mid-desc{
     width: 400px;
@@ -218,7 +250,7 @@
     text-transform: uppercase;
 
     // ---
-    transition: background 0.5s;
+    transition: background 50ms;
     background-size: 100% auto;
     background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
     position: relative;

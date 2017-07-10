@@ -56,7 +56,7 @@
     padding: 12px;
     opacity: 0.4;
     color: #cfdee7;
-    @include font(normal, 600, 14px, 21px, 'Arial');
+    @include font(normal, 400, 14px, 21px, 'Arial');
 
     margin-bottom: 30px;
 
@@ -67,19 +67,19 @@
     }
 
     &::placeholder {
-      @include font(italic, 600, 14px, 21px, 'Arial');
+      @include font(italic, 400, 14px, 21px, 'Arial');
     }
     &::-webkit-input-placeholder {
-      @include font(italic, 600, 14px, 21px, 'Arial');
+      @include font(italic, 400, 14px, 21px, 'Arial');
     }
     &::-moz-placeholder {
-      @include font(italic, 600, 14px, 21px, 'Arial');
+      @include font(italic, 400, 14px, 21px, 'Arial');
     }/* Firefox 19+ */
     &:-moz-placeholder {
-      @include font(italic, 600, 14px, 21px, 'Arial');
+      @include font(italic, 400, 14px, 21px, 'Arial');
     }/* Firefox 18- */
     &:-ms-input-placeholder {
-      @include font(italic, 600, 14px, 21px, 'Arial');
+      @include font(italic, 400, 14px, 21px, 'Arial');
     }
     // early 2014 http://html5.by/blog/placeholder/
   }

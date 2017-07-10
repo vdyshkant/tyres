@@ -256,6 +256,17 @@
     position: relative;
 
 
+    // display: block;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #fff;
+    }
+
+
+
 
 
     &-text {

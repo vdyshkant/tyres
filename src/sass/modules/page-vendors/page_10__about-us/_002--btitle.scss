@@ -6,6 +6,11 @@
 
   margin-bottom: 70px;
 
+  @media #{$wide} {
+    background: #000000 url('../img/p-about-us__breadcrumbs_bg.jpg') no-repeat center top;
+    background-size: cover;
+  }
+
   @media #{$mobile} {
     box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.35);
     // background: #000000;
