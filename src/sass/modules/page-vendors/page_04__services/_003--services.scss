@@ -269,13 +269,10 @@
     box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
     border-radius: 2px;
     border: 2px solid #6b6b72;
-    background-image: linear-gradient(27deg, #464649 0%, #3a3a3d 100%);
+    // background-image: linear-gradient(27deg, #464649 0%, #3a3a3d 100%);
+    background-color: #3a3a3d;
 
     color: #fefefe;
-    font-family: Arial;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 40px;
     text-align: center;
 
     float: left;
@@ -283,5 +280,27 @@
     @media #{$mobile} {
       float: none;
     }
+
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include font(normal, 400, 18px, 32px, 'Arial');
+    }
+
+    &:hover {
+      background-color: #464649;
+    }
+
+    &:active {
+      background-color: #3a3a3d;
+    }
+
   }
 }

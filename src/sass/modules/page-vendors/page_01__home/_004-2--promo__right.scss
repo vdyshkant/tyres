@@ -166,7 +166,7 @@
     box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
     border-radius: 2px;
     border: 2px solid #6b6b72;
-    background: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
+    background-color: #3a3a3d;
 
     position: relative;
     cursor: pointer;
@@ -184,11 +184,11 @@
     }
 
     &:hover {
-      background: radial-gradient(circle 114px at center, #464649 0%, #464649 100%);
+      background-color: #464649;
     }
 
     &:active {
-      background: #3a3a3d;
+      background-color: #3a3a3d;
     }
 
 

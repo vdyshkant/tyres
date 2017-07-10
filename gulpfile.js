@@ -53,7 +53,7 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/promo-item.pug',
     // 'src/templates_pug/pages/services.pug',
     // 'src/templates_pug/pages/services-item.pug',
-    'src/templates_pug/pages/faq.pug',
+    // 'src/templates_pug/pages/faq.pug',
     // 'src/templates_pug/pages/404.pug',
     // 'src/templates_pug/pages/search.pug',
     //
@@ -67,10 +67,10 @@ gulp.task('pug', function() {
     //   'src/templates_pug/pages/check-second.pug',
     //   'src/templates_pug/pages/check-third.pug',
     //   'src/templates_pug/pages/check-last.pug',
-    'src/templates_pug/pages/catalog-tire.pug',
-    'src/templates_pug/pages/catalog-disk.pug',
-    'src/templates_pug/pages/catalog-parts.pug',
-    'src/templates_pug/pages/catalog-oil.pug',
+    // 'src/templates_pug/pages/catalog-tire.pug',
+    // 'src/templates_pug/pages/catalog-disk.pug',
+    // 'src/templates_pug/pages/catalog-parts.pug',
+    // 'src/templates_pug/pages/catalog-oil.pug',
 
 
 

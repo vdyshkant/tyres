@@ -100,6 +100,14 @@
     // @media #{$tablet-wide} {
       float: left;
     // }
+
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   & .head .sum {
@@ -193,6 +201,15 @@
       text-align: center;
       max-width: 200px;
       margin: 0 auto;
+    }
+
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #fff;
     }
   }
   & .wwwwwwww {

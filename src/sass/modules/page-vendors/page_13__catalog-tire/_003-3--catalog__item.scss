@@ -331,6 +331,15 @@
       text-decoration: underline;
       display: block;
       margin-top: 15px;
+
+      display: block;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.3s ease-out;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
   & .result-content__item {

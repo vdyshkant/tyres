@@ -86,8 +86,20 @@
     box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
     border-radius: 2px;
     border: 2px solid #6b6b72;
-    background-image: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
+    background-color: #3a3a3d;
     margin-bottom: 15px;
+
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      background-color: #464649;
+    }
+
+    &:active {
+      background-color: #3a3a3d;
+    }
 
     &::before {
       content: '';

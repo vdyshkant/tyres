@@ -122,6 +122,7 @@
 
 .page-cab .log {
   & .col.del .cell{
+    display: block;
     // width: 115px;
     width: 119px;
     padding-top: 50px;
@@ -130,6 +131,12 @@
     @include font(italic, 400, 16px, 24px, 'Georgia');
     color: #cfdee7;
     text-decoration: underline;
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s ease-out;
+    }
 
     & .remove-btn {
       cursor: pointer;

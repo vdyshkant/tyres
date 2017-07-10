@@ -117,6 +117,15 @@
         @include font(italic, 300, 16px, 24px, 'Georgia');
         color: #cfdee7;
         text-decoration: underline;
+
+        // display: block;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.3s ease-out;
+
+        &:hover {
+          color: #fff;
+        }
     }
 }
 

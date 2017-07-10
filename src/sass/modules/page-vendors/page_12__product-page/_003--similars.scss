@@ -89,13 +89,23 @@
     width: 16px;
     height: 29px;
     cursor: pointer;
+
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
   }
   & .similars-controls__left {
     float: left;
   }
   & .similars-controls__right {
     float: right;
-    transform: rotate(180deg);
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAdCAYAAACjbey/AAABBElEQVRIS63VsQ7BQBgH8P/XENIO9g4WY1fxBLpJGAwexDt4Ey9gICKxsfQNqhtmXUQqenItQrTua0/n/n/35e67+8jzDxNAjAVoRcZl1G61QhT4yPP3VwAVmRHAliyj27btM9eQwBKA+xZYwzJ6XIS8IGggrkmkUwYhGdJBEkAHeQFlkQ+gDPIFFEUygSJILpCHCNDCjE59x3Ei+c9PIB/BzIzCoUSUgAphAfl7QlM2kCLHJuJ4B6D66L8bG8hud2YFWWGBdCOVFfwKK08hK0zAvB6FA2UfcK/4/+8Cd+XnO/K/96Doyh8VlA0nt1EnnALac+FtMhGwEZbhcofKowK92XgHZ3bXEXNmwowAAAAASUVORK5CYII=') no-repeat;
   }
 }
 

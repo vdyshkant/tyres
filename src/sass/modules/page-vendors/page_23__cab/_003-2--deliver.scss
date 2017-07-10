@@ -68,6 +68,12 @@
     // opacity: 0.4;
     padding-left: 10px;
 
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
   }
 
   & .delivery-name input::-webkit-input-placeholder {
@@ -187,6 +193,12 @@
     margin-bottom: 20px;
     &:last-child {
       margin-bottom: 0px;
+    }
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
     }
   }
 }
@@ -396,6 +408,12 @@
   background-position: center bottom;
 }
 
+.page-cab .cab  .delivery-type input[type="radio"]:active + .radio-indicator {
+  position: absolute;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABjUlEQVQ4T61UPUjDQBT+XoemOIjgoji4OgnS1UVxblEEQXRxVJc2oklAOBCSKCZd1NHFHyiI0M6ii6sInVwdtC6CdCiNQ56kvbMxoC657f3cd9/33rtHSBwhREbTBovMWCTCDIBRmdJkxh0RroKgVRNChPGrFDcc5zAPZE4BTCYfSNgNIFwzza0H5f8Gsm2vQERVADkZbAN0QxQ+RTZzZgLgOQADMt5h5iXL0uuR3QWSTO4VCBH5nQ72hCh9xJkIURnK5bDLzGUFBoTTETOSNXlUcoh41TD087+kua63wkxnMqcRBK0pchx/HsB1lx6Rbxgl/Z/6dMOuW/FizBbItv0LIiwDaAcBjcXl2PbRMNHnUq9G2aplbb6rRyKZmsYvUc2YcRkxeu21mOqmWSqqRAkSdWVc+p6Zs/k4mONUagAXADQjIO7J4gPD0HcUkOP46wCOEzI3TLN8onyu6+0z03b3fppA6UhLs9jptD+1gUzti/TnJoVP25+dFNZIf/R/LLZZACMy9saM298W2xfdLRO4gkNR0QAAAABJRU5ErkJggg==') no-repeat;
+  background-position: center bottom;
+}
+
 // catalog items | tile
 
 .page-cab .cab  {
@@ -490,6 +508,12 @@
     background-color: #353538;
     // opacity: 0.4;
     padding-left: 10px;
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
 
   }
 

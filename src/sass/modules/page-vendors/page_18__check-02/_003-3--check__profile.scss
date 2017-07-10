@@ -182,7 +182,7 @@
 
 .page-check-second .profile-content {
   & .tab-slide input {
-    @include font(italic, 400, 14px, 21px, 'Arial');
+    @include font(normal, 400, 14px, 21px, 'Arial');
     padding-left: 10px;
 
     /* Style for "Прямоуголь" */
@@ -194,6 +194,37 @@
 
     // opacity: 0.4;
     color: #cfdee7;
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
   }
 }
 
@@ -211,6 +242,14 @@
     text-decoration: underline;
     margin-bottom: 15px;
     display: block;
+
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -267,6 +306,7 @@
 .page-check-second .profile-content {
   & .tab-slide .socials-item {
       display: block;
+      transition: 0.3s ease-out;
 
     /* Style for "Прямоуголь" */
       width: 100%;
@@ -296,6 +336,13 @@
 
     &.vk {
       background-color: #45668e;
+      &:hover {
+        background-color: #537aaa;
+      }
+      &:active {
+        background-color: #395474;
+        box-shadow: none;
+      }
       & .socials-item-text {
         padding-left: 35px;
 
@@ -315,6 +362,13 @@
     }
     &.fb {
       background-color: #3b5998;
+      &:hover {
+        background-color: #4163ac;
+      }
+      &:active {
+        background-color: #334d83;
+        box-shadow: none;
+      }
       & .socials-item-text {
         padding-left: 30px;
 
@@ -334,6 +388,13 @@
     }
     &.gp {
       background-color: #dc4e41;
+      &:hover {
+        background-color: #f75d4e;
+      }
+      &:active {
+        background-color: #c8473b;
+        box-shadow: none;
+      }
       & .socials-item-text {
         padding-left: 35px;
 

@@ -55,9 +55,39 @@
     border: 1px solid #464649;
     background-color: #353538;
 
-    @include font(italic, 400, 14px, 21px, 'Arial');
-    opacity: 0.4;
+    @include font(normal, 400, 14px, 21px, 'Arial');
     color: #cfdee7;
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
   }
 }
 
@@ -71,12 +101,24 @@
     box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
     border-radius: 2px;
     border: 2px solid #6b6b72;
-    background-image: radial-gradient(circle 91px at center, #464649 0%, #3a3a3d 100%);
+      background-color: #3a3a3d;
     cursor: pointer;
     user-select: none;
     position: relative;
     &:active {
       top: 1px;
+    }
+
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      background-color: #464649;
+    }
+
+    &:active {
+      background-color: #3a3a3d;
     }
   }
   & .log-row .search-btn-text{
