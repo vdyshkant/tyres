@@ -1,13 +1,14 @@
 
 
-.page-module .module {
-  & .size .jcf-select {
-    width: 169px;
+.page-catalog-tire .catalog {
+  & .jcf-select {
+    width: 270px;
     height: 30px;
     border-radius: 2px;
     border: 1px solid #6b6b72;
     background-color: #353538;
     margin-bottom: 0;
+    margin-left: 20px;
 
     transition: 50ms ease-out;
 
@@ -25,14 +26,14 @@
   }
 }
 
-.page-module .module {
+.page-catalog-tire .catalog {
   .jcf-range.jcf-focus .jcf-active-handle {
       border: 1px solid #6b6b72;
       margin: -5px 0 0 -1px
   }
 }
 
-.page-module .module {
+.page-catalog-tire .catalog {
   .jcf-focus,
   .jcf-focus * {
       border-color: #6b6b72!important
@@ -41,7 +42,7 @@
 
 
 
-.page-module .module {
+.page-catalog-tire .catalog {
 
   & .jcf-select-opener {
    position: absolute;
@@ -79,7 +80,7 @@
 
 
 
-.page-module {
+.page-catalog-tire {
   & .jcf-select-drop .jcf-select-drop-content {
     // border: 1px solid red;
     /* Style for "Прямоуголь" */
@@ -139,7 +140,8 @@
   }
 
   & .jcf-select-text {
-    @include font(normal, 400, 12px, 30px, 'Georgia');
+    // @include font(normal, 400, 12px, 30px, 'Georgia');
+    @include font(italic, 400, 12px, 30px, 'Arial');
     color: #cfdee7;
     color: rgba(207, 222, 231, 0.4);
     color: hsla(203, 33%, 86%, 0.4);
@@ -157,8 +159,8 @@
 }
 
 
-.page-module .module {
-  & .size .jcf-hidden{
+.page-catalog-tire .catalog {
+  & .jcf-hidden{
     -webkit-appearance: none;
     position: absolute;
     left: -9999px;
@@ -170,16 +172,16 @@
 }
 
 
-.page-module .module {
-  & .size .jcf-unselectable{
+.page-catalog-tire .catalog {
+  & .jcf-unselectable{
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 }
 
 // custom styles for select option tags:
-.page-module .module {
-  & .size .jcf-unselectable{
+.page-catalog-tire .catalog {
+  & .jcf-unselectable{
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
