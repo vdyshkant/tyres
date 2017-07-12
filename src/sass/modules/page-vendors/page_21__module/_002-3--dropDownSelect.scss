@@ -9,6 +9,8 @@
     background-color: #353538;
     margin-bottom: 0;
 
+    cursor: pointer !important;
+
     transition: 50ms ease-out;
 
     &:hover {
@@ -143,7 +145,9 @@
     color: #cfdee7;
     color: rgba(207, 222, 231, 0.4);
     color: hsla(203, 33%, 86%, 0.4);
-    margin-left: 10px;
+    margin-left: 0px;
+    padding-left: 10px;
+    cursor: pointer;
   }
 
   & .jcf-scrollbar-vertical .jcf-scrollbar-dec,

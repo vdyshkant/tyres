@@ -50,6 +50,13 @@ $break-tablet: 1024px;
 // $break-desktop: 1000px;
 // $break-laptop: 1200px;
 $break-wide: 1600px;
+
+
+$break-970: 970px;
+$break-1170: 1170px;
+
+$head-break: "only screen and (min-width: "$break-970") and (max-width: "$break-1170 - 1")";
+
 // когда таблет высчитывается от значения desktop, поэтому после комментирования,
 // его рассчет был изменен на отсчет от значения WIDE!!!!
 

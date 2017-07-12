@@ -92,8 +92,13 @@
     left: 50px;
     z-index: 2;
 
+
     @media #{$tablet} {
       left: 30px;
+    }
+
+    @media #{$head-break} {
+      left: 10px;
     }
 
     @media #{$mobile} {

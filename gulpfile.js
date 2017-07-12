@@ -57,7 +57,7 @@ gulp.task('pug', function() {
     // 'src/templates_pug/pages/question.pug',
     // 'src/templates_pug/pages/about-us.pug',
     // 'src/templates_pug/pages/product-page.pug', // 12
-    'src/templates_pug/pages/module.pug', // 21
+    // 'src/templates_pug/pages/module.pug', // 21
     // 'src/templates_pug/pages/cab-new.pug', // 22
     // 'src/templates_pug/pages/cab.pug', // 23
       // 'src/templates_pug/pages/check-first.pug',
