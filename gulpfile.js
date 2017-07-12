@@ -56,8 +56,8 @@ gulp.task('pug', function() {
     //
     // 'src/templates_pug/pages/question.pug',
     // 'src/templates_pug/pages/about-us.pug',
-    'src/templates_pug/pages/product-page.pug', // 12
-    // 'src/templates_pug/pages/module.pug', // 21
+    // 'src/templates_pug/pages/product-page.pug', // 12
+    'src/templates_pug/pages/module.pug', // 21
     // 'src/templates_pug/pages/cab-new.pug', // 22
     // 'src/templates_pug/pages/cab.pug', // 23
       // 'src/templates_pug/pages/check-first.pug',
@@ -132,6 +132,7 @@ gulp.task('js', function() {
       'src/js/modules/p16/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p17/plus-minus.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p18/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p21/fire_jsc.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p22/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p23/slideUp-text.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p-about-us/smooth-href-scroll.js' // e.g. /path/to/mymodule/mymodule/*.js'

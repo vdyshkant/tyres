@@ -65,6 +65,12 @@
       color: #cfdee7;
       text-transform: uppercase;
       padding-left: 10px;
+
+      transition: 0.3s ease-out;
+
+      &:hover {
+        border: 1px solid #cfdee7;
+      }
     }
   }
 }
@@ -212,6 +218,13 @@
 
 .page-module .module {
   & .dimentions .CLASS{
+
+  }
+}
+
+
+.page-module .module {
+  & .size .CLASS{
 
   }
 }
